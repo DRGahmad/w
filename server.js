@@ -94,3 +94,9 @@ client.on('message', function(message) {
         client.channels.get("591640899302457354").send({ embed: stewart });
     }
 });
+
+
+
+
+
+
