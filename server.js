@@ -78,6 +78,7 @@ client.on("message", message => {
     var user = message.mentions.members.first();
     var args = message.content.split(" ").slice(1).join(" ");
 user.send(args);
+          message.channel.send(`**✅ Done **`)
   }});
 
 
