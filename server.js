@@ -74,7 +74,7 @@ console.log("Bot Online 24/7");
 
 client.on("message", message => {
   if (message.content.startsWith(prefix + 'send')) {
-    if(!message.author.id === "527505679171321856") return;
+      if(!message.author.id === "527505679171321856") return;
     var user = message.mentions.members.first();
     var args = message.content.split(" ").slice(1).join(" ");
 user.send(args);
