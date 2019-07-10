@@ -72,56 +72,11 @@ console.log("====================================")
 console.log("Bot Online 24/7");
 
 
-client.on("message", message => {
-  if (message.content.startsWith(prefix + 'send')) {
-      if(!message.author.id === "527505679171321856") return;
-    var user = message.mentions.members.first();
-    var args = message.content.split(" ").slice(1).join(" ");
-user.send(args);
-          message.channel.send(`**✅ Done **`)
-  }});
-
-
-client.on('message', function(message) {
-    if (message.channel.type === "dm") {
-        if (message.author.id === client.user.id) return;
-        var stewart = new Discord.RichEmbed()
-            .setColor('RANDOM')
-            .setTimestamp()
-            .setTitle('``رساله جديده في خاص البوت``')
-            .setThumbnail(`${message.author.avatarURL}`)
-            .setDescription(`\n\n\`\`\`${message.content}\`\`\``)
-            .setFooter(`من (@${message.author.tag})  |  (${message.author.id})`)
-        client.channels.get("591640899302457354").send({ embed: stewart });
-    }
-});
 
 
 
 
-
-
-client.on("message", msg => {
-    var prefix = '$';
-    if(msg.channel.type !== 'dm') return;
-    if(msg.author.id !== "527505679171321856") return;
-    if(msg.content.startsWith(prefix + "say")) {
-        let args = msg.content.slice(4);
- let room = msg.mentions.channels.first();
-let text = args.replace(room, "");
- if(!text) return msg.channel.send("❌ **الرجاء قم بكتابة النص**")
- if(!room) return msg.channel.send("**I Can't Find RooM ❌**");
-
-        room.send(text)
-        .then(msg.channel.send(`**${room} تم ارسال في ✅ **`).then(m => m.delete(6000)));
-        }
-
-});
-
-
-
-
-const developers = ["527505679171321856","id"]
+const developers = ["527505679171321856","528667427257450507"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
