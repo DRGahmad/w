@@ -125,17 +125,13 @@ if(message.channel.type === 'dm') return;
  .setTitle(`${client.user.username}`)
  .setDescription(`
  -=-=-=-=-=-=-=-=-=-=
- 🎖 Broadcast sends to a specific role without embed
- 
- 🏅 Broadcast sends to a specific role with embed
- 
+ 🎖 Broadcast sends to a specific role without embed 
  📭 Broadcast sends for all members with embed
  
  📧 Broadcast sends for all members without embed
  
  🔵 Broadcast sends for online members only without embed
  
- 🔷 Broadcast sends for online members only with embed
  
  ❌ To Cancel the process
  -=-=-=-=-=-=-=-=-=-=
@@ -143,11 +139,8 @@ if(message.channel.type === 'dm') return;
  
  message.channel.sendEmbed(recembed).then(msg => { 
      msg.react('🎖')
-     .then(() => msg.react('🏅'))
-     .then(() => msg.react('📭'))
      .then(() =>  msg.react('📧'))
      .then(() => msg.react('🔵'))
-     .then(() => msg.react('🔷'))
      .then(() => msg.react('❌'))
 
  
