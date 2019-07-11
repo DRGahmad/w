@@ -76,40 +76,48 @@ console.log("Bot Online 24/7");
 
 
 
-const developers = ["527505679171321856","528667427257450507"]
-client.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!developers.includes(message.author.id)) return;
-      
-  if (message.content.startsWith(prefix + 'setg')) {
-    client.user.setGame(argresult);
-      message.channel.send(`**✅   ${argresult}**`)
-  } else 
-     if (message.content === (prefix + "leave")) {
-    message.guild.leave();        
-  } else  
-  if (message.content.startsWith(prefix + 'setw')) {
-  client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**✅   ${argresult}**`)
-  } else 
-  if (message.content.startsWith(prefix + 'setl')) {
-  client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**✅   ${argresult}**`)
-  } else 
-  if (message.content.startsWith(prefix + 'sets')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/dream");
-      message.channel.send(`**✅**`)
-  }
-  if (message.content.startsWith(prefix + 'setname')) {
-  client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
-} else
-if (message.content.startsWith(prefix + 'setava')) {
-  client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
-}
+const status = JSON.parse(fs.readFileSync('./status.json' , 'utf8'));
+client.on("ready",() => { //iTzMurtaja
+console.log("Ready!"); //iTzMurtaja
+if(!status[client.user.id]) {status[client.user.id] = {
+    text: client.user.tag,
+    type: "WATCHING"
+}} //iTzMurtaja
+client.user.setActivity(status[client.user.id].text, {type: status[client.user.id].type})    //iTzMurtaja
 });
 
+client.on("message", message => { //iTzMurtaja
+if(message.content.startsWith(prefix + "pre")) { //iTzMurtaja
+if(message.author.id !== "527505679171321856") return; //iTzMurtaja
+var args = message.content.split(" ").slice(1).join(" "); //iTzMurtaja
+status[client.user.id].text = args //iTzMurtaja
+message.reply("Done, I set it to \`" + args +"\`") //iTzMurtaja
+  client.user.setActivity(status[client.user.id].text,{  type : status[client.user.id].type})} //iTzMurtaja
+fs.writeFile("./status.json", JSON.stringify(status), (err) => { //iTzMurtaja
+if (err) console.error(err) //iTzMurtaja
+}) //iTzMurtaja
+}); //iTzMurtaja
+
+client.on("message", message => { //iTzMurtaja
+if (message.author.id !== "527505679171321856") return; //iTzMurtaja
+  if(message.content === (prefix + "watching")) { //iTzMurtaja
+status[client.user.id].type = "WATCHING" //iTzMurtaja
+message.reply("Done, I set it to \`WATCHING\`") //iTzMurtaja
+client.user.setActivity(status[client.user.id], {type: status[client.user.id].type})} //iTzMurtaja
+else //iTzMurtaja
+if(message.content === (prefix + "listening")) { //iTzMurtaja
+status[client.user.id].type = "LISTENING" //iTzMurtaja
+message.reply("Done, I set it to \`LISTENING\`") //iTzMurtaja
+client.user.setActivity(status[client.user.id], {type: status[client.user.id].type})} //iTzMurtaja
+else //iTzMurtaja
+if(message.content === (prefix + "playing")) { //iTzMurtaja
+status[client.user.id].type = "PLAYING" //iTzMurtaja
+message.reply("Done, I set it to \`PLAYING\`") //iTzMurtaja
+client.user.setActivity(status[client.user.id], {type: status[client.user.id].type})} //iTzMurtaja
+fs.writeFile("./status.json", JSON.stringify(status), (err) => { //iTzMurtaja
+if (err) console.error(err) //iTzMurtaja
+
+})}) //iTzMurtaja
 
 
 client.on('message', message => {
