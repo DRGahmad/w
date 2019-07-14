@@ -79,8 +79,8 @@ console.log("Bot Online 24/7");
 client.on('message', message => {
 if(message.author.bot) return;
 if(message.channel.type === 'dm') return;
+  !message.guild.member(message.author).hasPermission('ADMINISTRATOR') 
     if(message.content.startsWith(prefix + 'bc')) {
-      !message.member.hasPermission("ADMINISTRATOR") 
      let filter = m => m.author.id === message.author.id;
  
  let recembed = new Discord.RichEmbed()
@@ -162,7 +162,7 @@ if(message.channel.type === 'dm') return;
                  })
                  .then(collected => {
                    if(collected.first().content === 'yes') {
-   message.channel.send(`**:white_check_mark: The Message Has Been Sent The Members :loudspeaker:**`);
+   message.channel.send(`**:white_check_mark: The Message Has Been Sent ${member.get} The Members :loudspeaker:**`);
    
    
    message.guild.members.filter(m => m.presence.status === 'online').forEach(m => {
