@@ -162,7 +162,7 @@ if(message.channel.type === 'dm') return;
                  })
                  .then(collected => {
                    if(collected.first().content === 'yes') {
-   message.channel.send(`**:white_check_mark: The Message Has Been Sent ${member.get} The Members :loudspeaker:**`);
+   message.channel.send(`**:white_check_mark: The Message Has Been Sent The Members :loudspeaker:**`);
    
    
    message.guild.members.filter(m => m.presence.status === 'online').forEach(m => {
