@@ -82,7 +82,7 @@ client.on('message', message => {
   let filter = m => m.author.id == message.author.id
   let broadcastt = new Discord.RichEmbed()
   .setColor('#36393e')
-  .addField(`**[1] broadcast for all members\n\n[2] broadcast for online members\n\n[0] to cansel**`,`** **`)
+  .addField(`**[1] broadcast for all members\n\n[2] broadcast for online members\n\n[0] to cancel**`,`** **`)
   message.channel.send(broadcastt).then(msg => {
   message.channel.awaitMessages(filter, {
     max: 1,
