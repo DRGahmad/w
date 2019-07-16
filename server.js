@@ -74,51 +74,47 @@ console.log("Bot Online 24/7");
 
 
 
-
-client.on('message', message => { // Toxic Codes 
-   if(!message.channel.guild) return;
-if(message.content.startsWith(prefix + '+bc')) {
-if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(' **ADMINISTRATORلا يوجد صلاحيه **');
-const args = message.content.split(" ").slice(1).join(" ")
-const BcList = new Discord.RichEmbed()
-.setThumbnail(message.author.avatarURL)
-.setAuthor(`محتوى الرساله : ${args}`)
-.setDescription(`**برودكاست بـ امبد 📝\nبرودكاست بدون امبد✏ \nلديك دقيقه للأختيار قبل الغاء البرودكاست\nلكتابه اسم السيرفر اكتب في الرساله :[server]\nلكتابه اسم المراسل  اكتب في الرساله :[by]\nلكي يقوم  البوت بمنشن الاعضاء اكتب في الرساله :[user]**`)
-if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(BcList).then(msg => {
-msg.react('📝')
-.then(() => msg.react('✏'))
-.then(() =>msg.react('📝'))
- 
-var EmbedBcFilter = (reaction, user) => reaction.emoji.name === '📝' && user.id === message.author.id;
-var NormalBcFilter = (reaction, user) => reaction.emoji.name === '✏' && user.id === message.author.id;
- 
-var EmbedBc = msg.createReactionCollector(EmbedBcFilter, { time: 60000 });
-var NormalBc = msg.createReactionCollector(NormalBcFilter, { time: 60000 });
- 
- 
-EmbedBc.on("collect", r => {
- 
-message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : عدد الاعضاء المستلمين`).then(m => m.delete(5000));
-message.guild.members.forEach(m => {
-var EmbedRep = args.replace('[server]' ,message.guild.name).replace('[user]', m).replace('[by]', `${message.author.username}#${message.author.discriminator}`)
-var bc = new
-Discord.RichEmbed()
-.setColor('RANDOM')
-.setDescription(EmbedRep)
-.setThumbnail(message.author.avatarURL)
-m.send({ embed: bc })
-msg.delete();
-})
-})
-NormalBc.on("collect", r => {
-  message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'all').size}\` : عدد الاعضاء المستلمين`).then(m => m.delete(5000));
-message.guild.members.forEach(m => {
-var NormalRep = args.replace('[server]' ,message.guild.name).replace('[user]', m).replace('[by]', `${message.author.username}#${message.author.discriminator}`)
-m.send(NormalRep);
-msg.delete();
-})
-})
-})
-}
-});
+client.on('message', message => {
+  if(message.content.startsWith(prefix + 'bc')) {
+            if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+  let args = message.content.split(" ").slice(1).join(" ");
+  if(!args) return message.channel.send(`**:rolling_eyes: please type the broadcast message**`)
+  let filter = m => m.author.id == message.author.id
+  let broadcastt = new Discord.RichEmbed()
+  .setColor('#36393e')
+  .addField(`**[1] broadcast for all members\n\n[2] broadcast for online members\n\n[0] to cansel**`,`** **`)
+  message.channel.send(broadcastt).then(msg => {
+  message.channel.awaitMessages(filter, {
+    max: 1,
+    time: 90000,
+    errors: ['time']
+  })
+  .then(collected => {
+    if(collected.first().content === '1') {
+      message.channel.bulkDelete(1)
+  message.channel.send(`**Broadcast begin send to \`${message.guild.members.size}\` members....**`);
+  msg.delete()
+     return message.guild.members.forEach(m => {
+  m.send(args.replace('[user]', m))
+      })
+  }
+  if(collected.first().content === '2') {
+    msg.delete()
+    message.channel.bulkDelete(1)
+    message.channel.send(`**Broadcast begin send to \`${message.guild.members.filter(m=>m.presence.status == 'online').size}\` members....**`);
+  message.guild.members.filter(m => m.presence.status === 'online').forEach(m => {
+    m.send(args.replace('[user]', m)) 
+  })
+  message.guild.members.filter(m => m.presence.status === 'dnd').forEach(m => {
+    m.send(args.replace('[user]', m)) 
+  })
+  return message.guild.members.filter(m => m.presence.status === 'idle').forEach(m => {
+    m.send(args.replace('[user]', m)) 
+  })
+    }
+  if(collected.first().content === '0') {
+    message.channel.bulkDelete(1)
+    msg.delete()
+    return message.channel.send(`**Broadcast Has Been Canseled**`);
+  }})})}
+  });
