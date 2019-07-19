@@ -133,9 +133,7 @@ client.on('message', message => {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else
-     if (message.content === (prefix + "leaveserverplease")) {
-    message.guild.leave();        
-  } else  
+ 
   if (message.content.startsWith(prefix + 'setw')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
       message.channel.send(`**✅   ${argresult}**`)
