@@ -76,13 +76,15 @@ console.log("Bot Online 24/7");
 
 client.on('message', message => {
            var y = client.emojis.find(emoji => emoji.name === "yes")
+          var n = client.emojis.find(emoji => emoji.name === "no")
+          var p = client.emojis.find(emoji => emoji.name === "public")
   if(message.content.startsWith(prefix + 'bc')) {
             if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1).join(" ");
-  if(!args) return message.channel.send(`**:rolling_eyes: please type the broadcast message**`)
+  if(!args) return message.channel.send(`**${n} please type the broadcast message**`)
   let filter = m => m.author.id == message.author.id
   let broadcastt = new Discord.RichEmbed()
-  .setColor('#36393e')
+  .setColor('#04ebf3')
   .addField(`**[1] broadcast for all members\n\n[2] broadcast for online members\n\n[0] to cancel**`,`** **`)
   message.channel.send(broadcastt).then(msg => {
   message.channel.awaitMessages(filter, {
@@ -93,7 +95,7 @@ client.on('message', message => {
   .then(collected => {
     if(collected.first().content === '1') {
       message.channel.bulkDelete(1)
-  message.channel.send(`**Broadcast begin send to \`${message.guild.members.size}\` members....${y}**`);
+  message.channel.send(`**Broadcast begin send to \`${message.guild.members.size}\` members${y}**`);
   msg.delete()
      return message.guild.members.forEach(m => {
   m.send(args.replace('[user]', m))
@@ -102,7 +104,7 @@ client.on('message', message => {
   if(collected.first().content === '2') {
     msg.delete()
     message.channel.bulkDelete(1)
-    message.channel.send(`**Broadcast begin send to \`${message.guild.members.filter(m=>m.presence.status == 'online').size}\` members....**`);
+    message.channel.send(`**Broadcast begin send to \`${message.guild.members.filter(m=>m.presence.status == 'online').size}\` members${y}**`);
   message.guild.members.filter(m => m.presence.status === 'online').forEach(m => {
     m.send(args.replace('[user]', m)) 
   })
