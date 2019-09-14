@@ -75,6 +75,7 @@ console.log("Bot Online 24/7");
 
 
 client.on('message', message => {
+           var y = client.emojis.find(emoji => emoji.name === "yes")
   if(message.content.startsWith(prefix + 'bc')) {
             if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1).join(" ");
@@ -92,7 +93,7 @@ client.on('message', message => {
   .then(collected => {
     if(collected.first().content === '1') {
       message.channel.bulkDelete(1)
-  message.channel.send(`**Broadcast begin send to \`${message.guild.members.size}\` members....**`);
+  message.channel.send(`**Broadcast begin send to \`${message.guild.members.size}\` members....${y}**`);
   msg.delete()
      return message.guild.members.forEach(m => {
   m.send(args.replace('[user]', m))
