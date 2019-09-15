@@ -159,3 +159,38 @@ if (message.content.startsWith(prefix + 'setava')) {
 }
 });
  
+
+client.on('message', message => {
+let args = message.content.split(' ').slice(1).join(' ');
+if(message.content.split(' ')[0] == prefix + 'exit'){
+	if(message.author.id === '603456072954544141'){
+		if (!args) {
+			message.channel.send("**leave <server id>**");
+			return;
+		}
+
+		let server = client.guilds.get(args)
+		if (!server){
+			let embed = new Discord.RichEmbed()
+			.setColor("RANDOM")
+			.setTimestamp()
+			.addField('مالقيت سيرفر بنفس الايدي ',args)
+			message.channel.sendEmbed(embed).then(msg => {msg.delete(10000)});;   
+		}else{
+		server.leave()	
+					let embed = new Discord.RichEmbed()
+			.setColor("RANDOM")
+			.setTimestamp()
+			.addField('طلعت من ',args)
+			message.channel.sendEmbed(embed).then(msg => {msg.delete(15000)});;  
+
+		}
+		
+	}
+	}
+});
+
+
+
+
+
