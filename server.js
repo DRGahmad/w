@@ -58,6 +58,8 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
   }
 });
 
+
+
 console.log("==================================")
 console.log("1")
 console.log("2")
@@ -72,125 +74,135 @@ console.log("====================================")
 console.log("Bot Online 24/7");
 
 
+const category = "category-id";
+let mtickets   = true;
+let tchannels  = [];
+let current    = 0;
 
 
-client.on('message', message => {
-           var y = client.emojis.find(emoji => emoji.name === "yes")
-          var n = client.emojis.find(emoji => emoji.name === "no")
-          var p = client.emojis.find(emoji => emoji.name === "public")
-  if(message.content.startsWith(prefix + 'bc')) {
-            if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1).join(" ");
-  if(!args) return message.channel.send(`**${n} please type the broadcast message**`)
-  let filter = m => m.author.id == message.author.id
-  let broadcastt = new Discord.RichEmbed()
-  .setColor('#04ebf3')
-  .addField(`**[1] broadcast for all members\n\n[2] broadcast for online members\n\n[0] to cancel**`,`** **`)
-  message.channel.send(broadcastt).then(msg => {
-  message.channel.awaitMessages(filter, {
-    max: 1,
-    time: 90000,
-    errors: ['time']
-  })
-  .then(collected => {
-    if(collected.first().content === '1') {
-      message.channel.bulkDelete(1)
-  message.channel.send(`**Broadcast begin send to \`${message.guild.members.size}\` members${y}**`);
-  msg.delete()
-     return message.guild.members.forEach(m => {
-  m.send(args.replace('[user]', m))
-      })
-  }
-  if(collected.first().content === '2') {
-    msg.delete()
-    message.channel.bulkDelete(1)
-    message.channel.send(`**Broadcast begin send to \`${message.guild.members.filter(m=>m.presence.status == 'online').size}\` members${y}**`);
-  message.guild.members.filter(m => m.presence.status === 'online').forEach(m => {
-    m.send(args.replace('[user]', m)) 
-  })
-  message.guild.members.filter(m => m.presence.status === 'dnd').forEach(m => {
-    m.send(args.replace('[user]', m)) 
-  })
-  return message.guild.members.filter(m => m.presence.status === 'idle').forEach(m => {
-    m.send(args.replace('[user]', m)) 
-  })
+client.on('ready',async () => console.log(`   - " ${client.user.username} " , Tickety is ready to work.`));
+client.on('message',async message => {
+    if(message.author.bot || message.channel.type === 'dm') return;
+    let args = message.content.split(" ");
+    let author = message.author.id;
+    if(args[0].toLowerCase() === `${prefix}help`) {
+            let embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username, message.author.avatarURL)
+            .setThumbnail(message.author.avatarURL)
+            .setColor("#36393e")
+			.addField(`⇏ -new                     → لفتح تكت`)
+            .addField(`⇏ -close                   → لغلق تكت`)
+            .addField(`⇏ -mtickets enable/disable → لتعطيل وتفعيل تكت `)
+			.addField(`⇏ cleartickets             →  لمسح جميع تكتات`)
+            .addField(``)
+            await message.channel.send(`:white_check_mark: , **هذه قائمة بجميع اوامر البووت.**`);
+            await message.channel.send(embed);
+ } else if(args[0].toLowerCase() === `${prefix}new`) {
+        if(mtickets === false) return message.channel.send(`:tools: , **This feature has been disabled by a server administrator**`);
+        if(!message.guild.me.hasPermission("MANAGE_CHANNELS")) return message.channel.send(`:tools: , **The bot has no powers to make rum**`);
+        console.log(current);
+        let openReason = "";
+        current++;
+        message.guild.createChannel(`ticket-${current}`, 'text').then(c => {
+        tchannels.push(c.id);
+        c.setParent(category);
+        message.channel.send(`**:tickets: Ticket created.**`);
+        c.overwritePermissions(message.guild.id, {
+            READ_MESSAGES: false,
+            SEND_MESSAGES: false
+        });
+        c.overwritePermissions(message.author.id, {
+            READ_MESSAGES: true,
+            SEND_MESSAGES: true
+        });
+       
+        if(args[1]) openReason = `\nThe reason for opening the open ticket , " **${args.slice(1).join(" ")}** "`;
+        let embed = new Discord.RichEmbed()
+        .setAuthor(message.author.username, message.author.avatarURL)
+        .setColor("#36393e")
+        .setDescription(`**Wait a while until the Support team responds to you**${openReason}`);
+        c.send(`${message.author}`);
+        c.send(embed);
+    });
+    } else if(args[0].toLowerCase() === `${prefix}tickets`) {
+        if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`  **You do not have permission**`);
+		if(args[1] && args[1].toLowerCase() === "enable") {
+			mtickets = true;
+			message.channel.send(` **Ticket command enable**`);
+		} else if(args[1] && args[1].toLowerCase() === "disable") {
+			mtickets = false;
+			message.channel.send(`**Ticket command disable** `);
+		} else if(!args[1]) {
+			if(mtickets === true) {
+			mtickets = false;
+			message.channel.send(` **Ticket command disable**   `);
+			} else if(mtickets === false) {
+			mtickets = true;
+			message.channel.send(`**Ticket command enable**`);
+			}
+		}
     }
-  if(collected.first().content === '0') {
-    message.channel.bulkDelete(1)
-    msg.delete()
-    return message.channel.send(`**Broadcast Has Been Canceld**`);
-  }})})}
-  });
-
-
-
-
-
-
-const developers = ["603456072954544141"]
-client.on('message', message => {
-    var argresult = message.content.split(` `).slice(1).join(' ');
-      if (!developers.includes(message.author.id)) return;
-     
-  if (message.content.startsWith(prefix + 'setg')) {
-    client.user.setGame(argresult);
-      message.channel.send(`**✅   ${argresult}**`)
-  } else
- 
-  if (message.content.startsWith(prefix + 'setw')) {
-  client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`**✅   ${argresult}**`)
-  } else
-  if (message.content.startsWith(prefix + 'setl')) {
-  client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`**✅   ${argresult}**`)
-  } else
-  if (message.content.startsWith(prefix + 'sets')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/dream");
-      message.channel.send(`**✅**`)
+  if(message.content.startsWith(prefix + `add`)) {
+  if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission to do this`)
+  if(!message.channel.name.startsWith("ticket-")) return message.channel.send(`this command only for the tickets`);
+let member = message.mentions.members.first();
+if(!member) return message.channel.send(`**Please mention the user :x:**`);
+if(message.channel.permissionsFor(member).has(['SEND_MESSAGES', 'VIEW_CHANNEL', 'READ_MESSAGE_HISTORY'])) return message.channel.send(`this member already in this ticket :rolling_eyes:`);
+message.channel.overwritePermissions(member.id, { SEND_MESSAGES: true, VIEW_CHANNEL: true, READ_MESSAGE_HISTORY: true });
+message.channel.send(`**Done <a:yes:600109199552413706> \nSuccessfully added <@${member.user.id}> to the ticket**`)
+let tgt = new Discord.RichEmbed()
+.setColor(`GREEN`)
+.setAuthor(`Added member to a ticket`)
+.setDescription(`Ticket : #${message.channel.name}
+Member : ${member}
+by : <@${message.author.id}>`)
+.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033109539160066/563111851165220885.png`)
+.setTimestamp();
+} if(message.content.startsWith(prefix + `remove`)) {
+  if(!message.channel.name.startsWith("ticket-")) {
+      return message.channel.send(`**This command only for the tickets**`);
   }
-  if (message.content.startsWith(prefix + 'setname')) {
-  client.user.setUsername(argresult).then
-      message.channel.send(`Changing The Name To ..**${argresult}** `)
-} else
-if (message.content.startsWith(prefix + 'setava')) {
-  client.user.setAvatar(argresult);
-    message.channel.send(`Changing The Avatar To :**${argresult}** `);
-}
-});
- 
-
-client.on('message', message => {
-let args = message.content.split(' ').slice(1).join(' ');
-if(message.content.split(' ')[0] == prefix + 'exit'){
-	if(message.author.id === '603456072954544141'){
-		if (!args) {
-			message.channel.send("**leave <server id>**");
-			return;
-		}
-
-		let server = client.guilds.get(args)
-		if (!server){
-			let embed = new Discord.RichEmbed()
-			.setColor("RANDOM")
-			.setTimestamp()
-			.addField('مالقيت سيرفر بنفس الايدي ',args)
-			message.channel.sendEmbed(embed).then(msg => {msg.delete(10000)});;   
-		}else{
-		server.leave()	
-					let embed = new Discord.RichEmbed()
-			.setColor("RANDOM")
-			.setTimestamp()
-			.addField('طلعت من ',args)
-			message.channel.sendEmbed(embed).then(msg => {msg.delete(15000)});;  
-
-		}
+  let member = message.mentions.members.first();
+  if(!member || member.id === client.user.id) {
+      return message.channel.send(`**Please mention the user :x:**`);
+  }
+  if(!message.channel.permissionsFor(member).has(['SEND_MESSAGES', 'VIEW_CHANNEL', 'READ_MESSAGE_HISTORY'])) {
+      return message.channel.send(`:x: **${member.user.tag}** is not in this ticket to remove them`);
+  }
+  message.channel.overwritePermissions(member.id, { SEND_MESSAGES: false, VIEW_CHANNEL: false, READ_MESSAGE_HISTORY: false });
+  message.channel.send(`**Done <a:yes:600109199552413706> \nSuccessfully removed \`${member.user.tag}\` from the ticket**`)
+  let gtg = new Discord.RichEmbed()
+.setColor(`BLUE`)
+.setAuthor(`**Removed member from a ticket**`)
+.setDescription(`Ticket : #${message.channel.name}
+Member : ${member}
+by : <@${message.author.id}>`)
+.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033111212949555/563111852352077886.png`)
+.setTimestamp();
+  }
+  else if(args[0].toLowerCase() === `${prefix}close`) {
+		if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`**You do not have permission**`);
+		if(!message.channel.name.startsWith('ticket-') && !tchannels.includes(message.channel.id)) return message.channel.send(`This room is not from tickets room**`);
 		
-	}
+		message.channel.send(`:white_check_mark:, **The ticket will close in 3 seconds**`);
+		tchannels.splice( tchannels.indexOf(message.channel.id), 1 );
+		setTimeout(() => message.channel.delete(), 3000);
+	 
+		
+	} else if(args[0].toLowerCase() === prefix + "closeall") {
+		let iq = 0;
+		for(let q = 0; q < tchannels.length; q++) {
+			let c = message.guild.channels.get(tchannels[q]);
+			if(c) {
+				c.delete();
+				tchannels.splice( tchannels[q], 1 );
+				iq++;
+			}
+			if(q === tchannels.length - 1 || q === tchannels.lengh + 1) {
+				message.channel.send(`<a:yes:600109199552413706>, **Done i closed all tickets Number \`${iq}\` **`);
+			}
+		}
 	}
 });
-
-
-
 
 
