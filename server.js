@@ -74,139 +74,111 @@ console.log("====================================")
 console.log("Bot Online 24/7");
 
 
-const category = "category-id";
-let mtickets   = true;
-let tchannels  = [];
-let current    = 0;
 
 
-client.on('ready',async () => console.log(`   - " ${client.user.username} " , Tickety is ready to work.`));
-client.on('message',async message => {
-    if(message.author.bot || message.channel.type === 'dm') return;
-    let args = message.content.split(" ");
-    let author = message.author.id;
-    if(args[0].toLowerCase() === `${prefix}help`) {
-            let embed = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setThumbnail(message.author.avatarURL)
-            .setColor("#36393e")
-			.addField(`⇏ -new                     → لفتح تكت`)
-            .addField(`⇏ -close                   → لغلق تكت`)
-            .addField(`⇏ -mtickets enable/disable → لتعطيل وتفعيل تكت `)
-			.addField(`⇏ cleartickets             →  لمسح جميع تكتات`)
-            .addField(``)
-            await message.channel.send(`:white_check_mark: , **هذه قائمة بجميع اوامر البووت.**`);
-            await message.channel.send(embed);
- } else if(args[0].toLowerCase() === `${prefix}new`) {
-        if(mtickets === false) return message.channel.send(`:tools: , **This feature has been disabled by a server administrator**`);
-        if(!message.guild.me.hasPermission("MANAGE_CHANNELS")) return message.channel.send(`:tools: , **The bot has no powers to make rum**`);
-        console.log(current);
-        let openReason = "";
-        current++;
-        message.guild.createChannel(`ticket-${current}`, 'text').then(c => {
-        tchannels.push(c.id);
-        c.setParent(category);
-        message.channel.send(`**:tickets: Ticket created.**`);
-        c.overwritePermissions(message.guild.id, {
-            READ_MESSAGES: false,
-            SEND_MESSAGES: false
-        });
-        c.overwritePermissions(message.author.id, {
-            READ_MESSAGES: true,
-            SEND_MESSAGES: true
-        });
-       
-        if(args[1]) openReason = `\nThe reason for opening the open ticket , " **${args.slice(1).join(" ")}** "`;
-        let embed = new Discord.RichEmbed()
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setColor("#36393e")
-        .setDescription(`**Wait a while until the Support team responds to you**${openReason}`);
-        c.send(`${message.author}`);
-        c.send(embed);
-    });
-    } else if(args[0].toLowerCase() === `${prefix}tickets`) {
-        if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`  **You do not have permission**`);
-		if(args[1] && args[1].toLowerCase() === "enable") {
-			mtickets = true;
-			message.channel.send(` **Ticket command enable**`);
-		} else if(args[1] && args[1].toLowerCase() === "disable") {
-			mtickets = false;
-			message.channel.send(`**Ticket command disable** `);
-		} else if(!args[1]) {
-			if(mtickets === true) {
-			mtickets = false;
-			message.channel.send(` **Ticket command disable**   `);
-			} else if(mtickets === false) {
-			mtickets = true;
-			message.channel.send(`**Ticket command enable**`);
-			}
-		}
+
+
+client.on("message", message => { // تقديم اداره
+  if(message.content.startsWith("#apply")) {
+        if(!message.channel.guild) return;
+                if(message.author.bot) return;
+        let channel = message.guild.channels.find("name", "applying")
+            if(!channel) return message.reply("**لانشاء روم التقديمات !!setsubmissions من فضلك اكتب الامر**")
+            if(channel) {
+            message.channel.send( message.member + '`1`').then( (m) =>{
+              m.edit( message.member + ', اسمك' )
+              m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m1) => {
+                  m1 = m1.first();
+                  var name = m1.content;
+                  m1.delete();
+                  m.edit(message.member + '`2`').then( (m) =>{
+                      m.edit( message.member + ', عمرك' )
+                      setTimeout(() => {
+                        m.delete()
+                      }, 2500);
+                      m.channel.awaitMessages( m2 => m2.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m2) => {
+                          m2 = m2.first();
+                          var age = m2.content;
+                          m2.delete()
+                          message.channel.send( message.member + '`3`').then( (m) =>{
+                            m.edit( message.member + ' كم لك بالديسكورد' )
+                            setTimeout(() => {
+                              m.delete()
+                            }, 2500);
+                            m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m3) => {
+                                m3 = m3.first();
+                                var ask = m3.content;
+                                m3.delete();
+                                message.channel.send( message.member + '`4`').then( (m) =>{
+                                  m.edit( message.member + ', تعرف القوانين كاملة !' )
+                                  setTimeout(() => {
+                                    m.delete()
+                                  }, 2500);
+                                  m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m4) => {
+                                      m4 = m4.first();
+                                      var ask2 = m4.content;
+                                      m4.delete();
+                                      message.channel.send( message.member + '``5``').then( (m) =>{
+                                        m.edit( message.member + ', مدة تفاعلك' )
+                                        m.channel.awaitMessages( m1 => m1.author == message.author,{ maxMatches: 1, time: 60*1000 } ).then ( (m5) => {
+                                            m5 = m5.first();
+                                            var ask3 = m5.content;
+                                            m5.delete();
+                      m.edit(message.member + ', Data is being sent').then( (mtime)=>{
+                        setTimeout(() => {
+                          let embed = new Discord.RichEmbed()
+                          .setAuthor(message.author.username, message.author.avatarURL) 
+                          .setColor('#c3cdff')
+                        .setTitle(`\`Apply Administartion\` \n سوف يتم الرد عليك قريبا من الادارة , \n > ID: ${message.author.id}`)
+                        .addField('> \`Name:\`', ` ** ${name} ** ` , true)
+                        .addField('> \`Age:\`', ` ** ${age} ** ` , true)
+                        .addField('> \`Your period of stay Discord:\`',`** ${ask} ** ` , true)
+                        .addField('> \`Do you know all the laws:\` ',` ** ${ask2} ** ` , true)
+                        .addField('> \`Duration your reaction: ?\`',` ** ${ask3} ** ` , true)
+                        .addField('> __Your Account Created: __',` \`${message.author.createdAt} \` ` , true)
+                        channel.send(embed)
+                        }, 2500);
+                        setTimeout(() => {
+                          mtime.delete()
+                        }, 3000);
+
+                  })
+                })
+                })
+              })
+            })
+          })
+        })
+        })
+              })
+          })
+        })
     }
-  if(message.content.startsWith(prefix + `add`)) {
-  if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission to do this`)
-  if(!message.channel.name.startsWith("ticket-")) return message.channel.send(`this command only for the tickets`);
-let member = message.mentions.members.first();
-if(!member) return message.channel.send(`**Please mention the user :x:**`);
-if(message.channel.permissionsFor(member).has(['SEND_MESSAGES', 'VIEW_CHANNEL', 'READ_MESSAGE_HISTORY'])) return message.channel.send(`this member already in this ticket :rolling_eyes:`);
-message.channel.overwritePermissions(member.id, { SEND_MESSAGES: true, VIEW_CHANNEL: true, READ_MESSAGE_HISTORY: true });
-message.channel.send(`**Done <a:yes:600109199552413706> \nSuccessfully added <@${member.user.id}> to the ticket**`)
-let tgt = new Discord.RichEmbed()
-.setColor(`GREEN`)
-.setAuthor(`Added member to a ticket`)
-.setDescription(`Ticket : #${message.channel.name}
-Member : ${member}
-by : <@${message.author.id}>`)
-.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033109539160066/563111851165220885.png`)
-.setTimestamp();
-} if(message.content.startsWith(prefix + `remove`)) {
-  if(!message.channel.name.startsWith("ticket-")) {
-      return message.channel.send(`**This command only for the tickets**`);
+}
+        });
+        client.on('message',async message => {
+          let mention = message.mentions.members.first();
+          if(message.content.startsWith("#accept")) {
+          if(!message.channel.guild) return
+          let acRoom = message.guild.channels.find('name', 'apply1');
+          if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return;
+          if(!mention) return message.reply("Please Mention");
+         
+          acRoom.send(`> اهلا بك تم قبولك ك اداري في السيرفر \n ${mention} Discord staff - :partying_face: `)
+          }
+        });
+
+client.on('message',async message => {
+  let mention = message.mentions.members.first();
+  if(message.content.startsWith("#refusal")) {
+  if(!message.channel.guild) return;
+  let acRoom = message.guild.channels.find('name', 'apply1');
+  if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return;
+  if(!mention) return message.reply("Please Mention");
+ 
+  acRoom.send(`> نعتذر منك تم رفضك محاولة اخرى في وقت لاحق \n ${mention} - :pleading_face: `)
   }
-  let member = message.mentions.members.first();
-  if(!member || member.id === client.user.id) {
-      return message.channel.send(`**Please mention the user :x:**`);
-  }
-  if(!message.channel.permissionsFor(member).has(['SEND_MESSAGES', 'VIEW_CHANNEL', 'READ_MESSAGE_HISTORY'])) {
-      return message.channel.send(`:x: **${member.user.tag}** is not in this ticket to remove them`);
-  }
-  message.channel.overwritePermissions(member.id, { SEND_MESSAGES: false, VIEW_CHANNEL: false, READ_MESSAGE_HISTORY: false });
-  message.channel.send(`**Done <a:yes:600109199552413706> \nSuccessfully removed \`${member.user.tag}\` from the ticket**`)
-  let gtg = new Discord.RichEmbed()
-.setColor(`BLUE`)
-.setAuthor(`**Removed member from a ticket**`)
-.setDescription(`Ticket : #${message.channel.name}
-Member : ${member}
-by : <@${message.author.id}>`)
-.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033111212949555/563111852352077886.png`)
-.setTimestamp();
-  }
-  else if(args[0].toLowerCase() === `${prefix}close`) {
-		if(!message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`**You do not have permission**`);
-		if(!message.channel.name.startsWith('ticket-') && !tchannels.includes(message.channel.id)) return message.channel.send(`This room is not from tickets room**`);
-		
-		message.channel.send(`:white_check_mark:, **The ticket will close in 3 seconds**`);
-		tchannels.splice( tchannels.indexOf(message.channel.id), 1 );
-		setTimeout(() => message.channel.delete(), 3000);
-	 
-		
-	} else if(args[0].toLowerCase() === prefix + "closeall") {
-		let iq = 0;
-		for(let q = 0; q < tchannels.length; q++) {
-			let c = message.guild.channels.get(tchannels[q]);
-			if(c) {
-				c.delete();
-				tchannels.splice( tchannels[q], 1 );
-				iq++;
-			}
-			if(q === tchannels.length - 1 || q === tchannels.lengh + 1) {
-				message.channel.send(`<a:yes:600109199552413706>, **Done i closed all tickets Number \`${iq}\` **`);
-			}
-		}
-	}
 });
-
-
-
 
 
 
