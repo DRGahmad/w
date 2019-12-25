@@ -129,9 +129,9 @@ client.on('message', message => {
 
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
-let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '523816752396632065'//مين بيتحوله الكريديت// ahmeD_Hossam
+let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message',async message => {// ahmeD_Hossam
-if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
+if(message == prefix +'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
   sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
   nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam
   message.channel.send(new Discord.RichEmbed().setAuthor('✅ متجر الحسابات')// ahmeD_Hossam
@@ -152,7 +152,7 @@ message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,messag
 \`#credits <@${URID}> ${P}\`
 لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
 let P2 = Math.floor(P-(P*(5/100)));// ahmeD_Hossam
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}>`);// ahmeD_Hossam// ahmeD_Hossam
+let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@603456072954544141> **`);// ahmeD_Hossam// ahmeD_Hossam
 message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })// ahmeD_Hossam
 .then( collected =>{// ahmeD_Hossam
 let C = 0;let Accs = [];// ahmeD_Hossam
@@ -170,7 +170,7 @@ if(cmd == 'NFA') {
   \`#credits <@${URID}> ${P}\`
   لديك 3 دقائق قبل الالغاء.**`));
   let P2 = Math.floor(P-(P*(5/100)));
-  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}>`);
+  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@603456072954544141> **`);
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
   let C = 0;let Accs = [];
