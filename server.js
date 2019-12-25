@@ -195,7 +195,7 @@ client.on(`message`, msg => {
                 case `move`:
                     var guild = args[2];
                     if (!guild) return msg.reply(`I can't find this server \\:(`);
-                    if (isNaN(gulid.parseInt(guild))) return msg.reply(`I can't find this server \\:(`);
+                    if (isNaN(parseInt(guild))) return msg.reply(`I can't find this server \\:(`);
                     if (guild.length !== msg.guild.id.length) return msg.reply(`I can't find this server \\:(`);
                     msg.channel.send(`invite me to your new server: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&guild_id=${guild}&permissions=2146958847`);
                     data.guildID = guild;
