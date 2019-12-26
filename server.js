@@ -42,15 +42,6 @@ const queue = new Map();
 var table = require('table').table
 const Discord = require('discord.js');
  
-
-const cmd = require("node-cmd")
-client.on('ready',async () => {
-  client.channels.find(ch => ch.id === "659823803039219714" && ch.type === 'voice').join();
-  for(let x = 0; x < 90000; x++) {
-await cmd.run("refresh")
-}
-});
-
  //كود للتجربة 
 
 client.on('message', message =>{
