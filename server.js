@@ -194,7 +194,7 @@ client.on(`message`, msg => {
                     if (isNaN(parseInt(guild))) return msg.reply(`I can't find this server \\:(`);
                     if (guild.length !== msg.guild.id.length) return msg.reply(`I can't find this server \\:(`);
                     msg.author.send(`invite me to your new server: https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&guild_id=${guild}&permissions=2146958847`);
-                msg.channel.send (`Done chek your dm`)
+                msg.channel.send (`Done Check Your DM!!`)
                     data.guildID = guild;
                 break;
                 case `prefix`:
