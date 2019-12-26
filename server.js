@@ -127,7 +127,13 @@ client.on('message', message => {
   });
 
 
-
+client.on('message',message => {
+    if (message.content.startsWith(prefix + 'vip info')) {
+message.channel.send(`Vip Info
+Owner : <@
+`)
+    }
+});
 const developers = ["603456072954544141"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -204,7 +210,7 @@ client.on(`message`, msg => {
                     msg.channel.send(`done , my prefix now is : ${prfx}`);
                 break;
                  case `transfer`:
-                    var owner = args[1];
+                    var owner = args[2];
                     if (!owner) return msg.reply(`id ?`);
                     data.ownerID = owner.trim();
                     msg.channel.send(`done , owner now is ${data.ownerID} `);
@@ -232,3 +238,5 @@ client.on(`ready`, () => {
 });
 
 client.login(`${data.token}`);
+
+ 
