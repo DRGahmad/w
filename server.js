@@ -43,11 +43,12 @@ var table = require('table').table
 const Discord = require('discord.js');
  
 
-
-client.on('ready', () => { 
-
-let voiceRoom = client.guild.channels.get("659823803039219714")
-voiceRoom.join
+const cmd = require("node-cmd")
+client.on('ready',async () => {
+  client.channels.find(ch => ch.id === "659823803039219714" && ch.type === 'voice').join();
+  for(let x = 0; x < 90000; x++) {
+await cmd.run("refresh")
+}
 });
 
  //كود للتجربة 
@@ -277,5 +278,3 @@ if (message.content.startsWith(prefix + 'setava')) {
 
 
 client.login(`${data.token}`);
-
- 
