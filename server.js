@@ -41,10 +41,14 @@ client.login(TOKEN);
 const queue = new Map();
 var table = require('table').table
 const Discord = require('discord.js');
-client.on('ready', () => { 
-  console.log(`Logged in as ${client.user.tag}!`);
-});
  
+
+
+client.on('ready', () => { 
+
+let voiceRoom = client.guild.channels.get("659823803039219714")
+voiceRoom.join
+});
 
  //كود للتجربة 
 
@@ -125,74 +129,6 @@ client.on('message', message => {
     return message.channel.send(`**Broadcast Has Been Canceld**`);
   }})})}
   });
-
-
-
-
-
-
-let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
-let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
-let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '523816752396632065'//مين بيتحوله الكريديت// ahmeD_Hossam
-client.on('message',async message => {// ahmeD_Hossam
-if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
-  sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
-  nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam
-  message.channel.send(new Discord.RichEmbed().setAuthor('✅ متجر الحسابات')// ahmeD_Hossam
-  .addField('SFA [فل داتا]:',`${ahmed} Account(s)`,true)  .addField('NFA [عادي]:',`${hossam} Account(s)`,true).setColor('GREEN')// ahmeD_Hossam
-.addField('معلومه:',`[SFA] => بمعني فل داتا - يمكن تغير الاسم والرمز والسكن فقط
-[NFA] => يعني حسابات عاديه - لا يمكن تغير اي شئ فقط اللعب بها`)// ahmeD_Hossam
-.addField('الاسعار:',`[1xSFA] => ${SFAP} Credits ProBot\n[1xNFA] => ${NFAP} Credits ProBot`)// ahmeD_Hossam
-.setFooter(`${prefix}buy [SFA/NFA] [الحسابات لا يوجد عليها ضمان | لشراء حساب الرجاء كتابه الامر التالي [الكميه`) )}// ahmeD_Hossam
-if(message.content.startsWith(prefix+'buy')){// ahmeD_Hossam
-let cmd = message.content.split(" ")[1];// ahmeD_Hossam
-let args = message.content.split(" ")[2];// ahmeD_Hossam
-if(!cmd || !args || isNaN(args)) return message.channel.send(`**USE: ${prefix}buy [SFA/NFA]  [الكميه]**`);// ahmeD_Hossam
-if(cmd == 'SFA') {// ahmeD_Hossam
-message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{// ahmeD_Hossam
-let P = Math.floor(args*(SFAP))// ahmeD_Hossam
-message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('GREEN')// ahmeD_Hossam
-.setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
-\`#credits <@${URID}> ${P}\`
-لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
-let P2 = Math.floor(P-(P*(5/100)));// ahmeD_Hossam
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@603456072954544141> **`) ;// ahmeD_Hossam// ahmeD_Hossam
-message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })// ahmeD_Hossam
-.then( collected =>{// ahmeD_Hossam
-let C = 0;let Accs = [];// ahmeD_Hossam
-sfa.forEach(acc =>{if(!acc.email) return;if(C == args)return;;Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;// ahmeD_Hossam// ahmeD_Hossam
-delete acc.email;delete acc.pass;// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
-fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
-});message.channel.send('**Done,,\nNow Check Your DM**!')
-message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
-});}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) }
-if(cmd == 'NFA') {
-  message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{
-  let P = Math.floor(args*(NFAP))
-  message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('GREEN')
-  .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
-  \`#credits <@${URID}> ${P}\`
-  لديك 3 دقائق قبل الالغاء.**`));
-  let P2 = Math.floor(P-(P*(5/100))); //603456072954544141
-  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@542472221671686145> **`) ;
-  message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
-  .then( collected =>{
-  let C = 0;let Accs = [];
-  nfa.forEach(acc =>{if(!acc.email) return;if(C == args)return;;Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;
-  delete acc.email;delete acc.pass;
-  fs.writeFile("./nfa.json", JSON.stringify(nfa), (err) => {if (err) console.error(err)})
-  });message.channel.send('**Done,,\nNow Check Your DM**!')
-  message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
-  });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
-})
-
-
-
-
-
-
-
-
 
 
 
