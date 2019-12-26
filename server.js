@@ -202,6 +202,12 @@ client.on(`message`, msg => {
                     data.prefix = prfx.trim();
                     msg.channel.send(`done , my prefix now is : ${prfx}`);
                 break;
+                 case `transfer`:
+                    var owner = args[3];
+                    if (!prefix) return msg.reply(`id ?`);
+                    data.ownerID = owner.trim();
+                    msg.channel.send(`done , my prefix now is : ${prfx}`);
+                break;
             }
         break;
     };
