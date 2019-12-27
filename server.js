@@ -1,4 +1,4 @@
-const http = require('http');
+  const http = require('http');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -145,10 +145,12 @@ let cmd = message.content.split(" ")[1];// ahmeD_Hossam
 let args = message.content.split(" ")[2];// ahmeD_Hossam
 if(!cmd || !args || isNaN(args)) return message.channel.send(`**استخدام خاطئ ّ! \n Correct Usage Example: $buy SFA 1**`);// ahmeD_Hossam
 if(cmd == 'SFA') {// ahmeD_Hossam
-  if(sfa.email) return message.channel.send("لا يوجد حسابات")
-message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{// ahmeD_Hossam
+  let ahmed = 0
+  sfa.forEach(acc =)
+      if(ahmed < 1) return message.channel.send("لا يوجد حسابات")
+message.author.send('✅ Nothing.. Just Check  If Your DM open or no').then(()=>{// ahmeD_Hossam
 let P = Math.floor(args*(SFAP))// ahmeD_Hossam
-message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('RED')// ahmeD_Hossam
+message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('#918383')// ahmeD_Hossam
 .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 \`#credits <@${URID}> ${P}\`
 لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
