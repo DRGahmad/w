@@ -197,7 +197,7 @@ client.on(`message`, msg => {
                     var owner = args[2];
                     if (!owner) return msg.reply(`id ?`);
                     data.ownerID = owner.trim();
-                    msg.channel.send(`done , owner now is ${data.ownerID} `);
+                    msg.channel.send(`done , owner now is <@${data.ownerID}> `);
                                     data.ownerID = owner;
 
                 break;
