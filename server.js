@@ -135,15 +135,15 @@ if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
   sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
   nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam // i will kill you soon ok ? xD
   message.channel.send(new Discord.RichEmbed().setTitle('💵 متجر اوريو 💵')// ahmeD_Hossam
-  .addField('SFA [فل داتا]:',`${ahmed} Account(s)`,true)  .addField('NFA [عادي]:',`${hossam} Account(s)`,true).setColor('GREEN')// ahmeD_Hossam
-.addField('معلومه:',`[SFA] => بمعني فل داتا - يمكن تغير الاسم والرمز والسكن فقط
-[NFA] => يعني حسابات عاديه - لا يمكن تغير اي شئ فقط اللعب بها`)// ahmeD_Hossam
-.addField('الاسعار:',`[1xSFA] => ${SFAP} Credits ProBot\n[1xNFA] => ${NFAP} Credits ProBot`)// ahmeD_Hossam
-.setFooter(`${prefix}buy [SFA/NFA] [الحسابات لا يوجد عليها ضمان | لشراء حساب الرجاء كتابه الامر التالي [الكميه`) )}// ahmeD_Hossam
+  .addField('**[SFA | فل داتا] > **',`**${ahmed} Account(s)**`,true)  .addField('**[NFA | عادي] > **',`**${hossam} Account(s)  **`,true).setColor('GREEN')// ahmeD_Hossam
+.addField('**هل تعلم ؟**',`**\`[SFA]\` > فل داتا - حساب يمكنك اللعب وتغيير الاسم والباسوورد والسكن
+\`[NFA]\` > العادي = حساب لا يمكنك تغيير اي شيئ فيه, للعب فقط**`)// ahmeD_Hossam
+.addField('**الاسعار**',`\`[1 NFA] > 8500 Credits ProBot\` \n \`[1 SFA] > 250 Credits ProBot\``)// ahmeD_Hossam
+.setFooter(`تنبيه : الحسابات ليست مضمونة للابد, اي ان الحسابات ليست دائمة`) )}// ahmeD_Hossam
 if(message.content.startsWith(prefix+'buy')){// ahmeD_Hossam
 let cmd = message.content.split(" ")[1];// ahmeD_Hossam
 let args = message.content.split(" ")[2];// ahmeD_Hossam
-if(!cmd || !args || isNaN(args)) return message.channel.send(`**USE: ${prefix}buy [SFA/NFA]  [الكميه]**`);// ahmeD_Hossam
+if(!cmd || !args || isNaN(args)) return message.channel.send(`**استخدام خاطئ ّ! \n Correct Usage Example: $buy SFA 1**`);// ahmeD_Hossam
 if(cmd == 'SFA') {// ahmeD_Hossam
 message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{// ahmeD_Hossam
 let P = Math.floor(args*(SFAP))// ahmeD_Hossam
