@@ -74,57 +74,6 @@ console.log("Bot Online 24/7");
 
 
 
-client.on('message', message => {
-           var y = client.emojis.find(emoji => emoji.name === "yes")
-          var n = client.emojis.find(emoji => emoji.name === "no")
-          var p = client.emojis.find(emoji => emoji.name === "public")
-  if(message.content.startsWith(prefix + 'bc')) {
-            if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1).join(" ");
-  if(!args) return message.channel.send(`**${n} please type the broadcast message**`)
-  let filter = m => m.author.id == message.author.id
-  let broadcastt = new Discord.RichEmbed()
-  .setColor('#04ebf3')
-  .addField(`**[1] broadcast for all members\n\n[2] broadcast for online members\n\n[0] to cancel**`,`** **`)
-  message.channel.send(broadcastt).then(msg => {
-  message.channel.awaitMessages(filter, {
-    max: 1,
-    time: 90000,
-    errors: ['time']
-  })
-  .then(collected => {
-    if(collected.first().content === '1') {
-      message.channel.bulkDelete(1)
-  message.channel.send(`**Broadcast begin send to \`${message.guild.members.size}\` members${y}**`);
-  msg.delete()
-     return message.guild.members.forEach(m => {
-  m.send(args.replace('[user]', m))
-      })
-  }
-  if(collected.first().content === '2') {
-    msg.delete()
-    message.channel.bulkDelete(1)
-    message.channel.send(`**Broadcast begin send to \`${message.guild.members.filter(m=>m.presence.status == 'online').size}\` members${y}**`);
-  message.guild.members.filter(m => m.presence.status === 'online').forEach(m => {
-    m.send(args.replace('[user]', m)) 
-  })
-  message.guild.members.filter(m => m.presence.status === 'dnd').forEach(m => {
-    m.send(args.replace('[user]', m)) 
-  })
-  return message.guild.members.filter(m => m.presence.status === 'idle').forEach(m => {
-    m.send(args.replace('[user]', m)) 
-  })
-    }
-  if(collected.first().content === '0') {
-    message.channel.bulkDelete(1)
-    msg.delete()
-    return message.channel.send(`**Broadcast Has Been Canceld**`);
-  }})})}
-  
-  
-  
-  });
-
 
 
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
@@ -144,7 +93,7 @@ if(message.content.startsWith(prefix+'buy')){// ahmeD_Hossam
 let cmd = message.content.split(" ")[1];// ahmeD_Hossam
 let args = message.content.split(" ")[2];// ahmeD_Hossam
 if(!cmd || !args || isNaN(args)) return message.channel.send(`**استخدام خاطئ ّ! \n Correct Usage Example: $buy SFA 1**`);// ahmeD_Hossam
-if(cmd == 'SFA') {// ahmeD_Hossam
+if(cmd == 'sfa') {// ahmeD_Hossam
   let ahmed = 0
   sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});
       if(ahmed < 1) return message.channel.send("لا يوجد حسابات")
@@ -166,7 +115,7 @@ fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error
 });message.channel.send('**Done,,\nNow Check Your DM**!')
 message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
 });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) }
-if(cmd == 'NFA') {
+if(cmd == 'nfa') {
   let hossam = 0;
   sfa.forEach(acc =>{if(!acc.email) return;hossam++;})
   if(hossam < 1) return message.channel.send("لا يوجد حسابات")
