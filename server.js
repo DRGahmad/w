@@ -146,8 +146,9 @@ let args = message.content.split(" ")[2];// ahmeD_Hossam
 if(!cmd || !args || isNaN(args)) return message.channel.send(`**استخدام خاطئ ّ! \n Correct Usage Example: $buy SFA 1**`);// ahmeD_Hossam
 if(cmd == 'SFA') {// ahmeD_Hossam
   let ahmed = 0
-  sfa.forEach(acc =)
+  sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});
       if(ahmed < 1) return message.channel.send("لا يوجد حسابات")
+  if()
 message.author.send('✅ Nothing.. Just Check  If Your DM open or no').then(()=>{// ahmeD_Hossam
 let P = Math.floor(args*(SFAP))// ahmeD_Hossam
 message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('#918383')// ahmeD_Hossam
