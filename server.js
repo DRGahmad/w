@@ -134,7 +134,7 @@ client.on('message',async message => {// ahmeD_Hossam
 if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
   sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
   nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam // i will kill you soon ok ? xD
-  message.channel.send(new Discord.RichEmbed().setAuthor('✅ متجر الحسابات')// ahmeD_Hossam
+  message.channel.send(new Discord.RichEmbed().setTitle('💵 متجر اوريو 💵')// ahmeD_Hossam
   .addField('SFA [فل داتا]:',`${ahmed} Account(s)`,true)  .addField('NFA [عادي]:',`${hossam} Account(s)`,true).setColor('GREEN')// ahmeD_Hossam
 .addField('معلومه:',`[SFA] => بمعني فل داتا - يمكن تغير الاسم والرمز والسكن فقط
 [NFA] => يعني حسابات عاديه - لا يمكن تغير اي شئ فقط اللعب بها`)// ahmeD_Hossam
@@ -152,7 +152,7 @@ message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,messag
 \`#credits <@${URID}> ${P}\`
 لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
 let P2 = Math.floor(P-(P*(5/100)));// ahmeD_Hossam
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}>`);// ahmeD_Hossam// ahmeD_Hossam
+let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$4750\` to <@603456072954544141> **`);// ahmeD_Hossam// ahmeD_Hossam
 message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })// ahmeD_Hossam
 .then( collected =>{// ahmeD_Hossam
 let C = 0;let Accs = [];// ahmeD_Hossam
@@ -170,12 +170,11 @@ if(cmd == 'NFA') {
   \`#credits <@${URID}> ${P}\`
   لديك 3 دقائق قبل الالغاء.**`));
   let P2 = Math.floor(P-(P*(5/100)));
-  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}>`);
+  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$4750\` to <@603456072954544141> **`)
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
   let C = 0;let Accs = [];
-  nfa.forEach(acc =>{if(!acc.email) return;if(C == args)return;;Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;
-  delete acc.email;delete acc.pass;
+  nfa.forEach(acc =>{if(!acc.email) return;if(C == args)return;;Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;  delete acc.email;delete acc.pass;
   fs.writeFile("./nfa.json", JSON.stringify(nfa), (err) => {if (err) console.error(err)})
   });message.channel.send('**Done,,\nNow Check Your DM**!')
   message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
