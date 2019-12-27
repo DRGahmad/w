@@ -132,11 +132,11 @@ let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف ال�
 let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message',async message => {// ahmeD_Hossam
 if(message.content.startsWith(prefix+'stock')){// ahmeD_Hossam
-let ahmed = 0;let hossam = 0;// ahmeD_Hossam
-  sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
-  nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam
-  message.channel.send(new Discord.RichEmbed().setAuthor('✅ متجر الحسابات')// ahmeD_Hossam
-  .addField('SFA [فل داتا]:',`${ahmed} Account(s)`,true)  .addField('NFA [عادي]:',`${hossam} Account(s)`,true).setColor('GREEN')// ahmeD_Hossam
+let m7 = 0;let mahdi = 0;// ahmeD_Hossam
+  sfa.forEach(acc =>{if(!acc.email) return;m7++;});// ahmeD_Hossam
+  nfa.forEach(acc =>{if(!acc.email) return;mahdi++;});// ahmeD_Hossam
+  message.channel.send(new Discord.RichEmbed().setTitle(':dollar: Orio Host Shop')// ahmeD_Hossam
+  .addField('SFA [فل داتا]:',`${m7} Account(s)`,true)  .addField('**NFA [عادي]:**',`${mahdi} Account(s)`,true).setColor(message.guild.me.highestRole.hexColor === "#000000" ? "#ffffff" : message.guild.me.displayHexColor)// ahmeD_Hossam
 .addField('معلومه:',`[SFA] => بمعني فل داتا - يمكن تغير الاسم والرمز والسكن فقط
 [NFA] => يعني حسابات عاديه - لا يمكن تغير اي شئ فقط اللعب بها`)// ahmeD_Hossam
 .addField('الاسعار:',`[1xSFA] => ${SFAP} Credits ProBot\n[1xNFA] => ${NFAP} Credits ProBot`)// ahmeD_Hossam
@@ -148,7 +148,7 @@ if(!cmd || !args || isNaN(args)) return message.channel.send(`**USE: ${prefix}bu
 if(cmd == 'SFA') {// ahmeD_Hossam
 message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{// ahmeD_Hossam
 let P = Math.floor(args*(SFAP))// ahmeD_Hossam
-message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('GREEN')// ahmeD_Hossam
+message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor(message.member.highestRole.hexColor === "#000000" ? "#ffffff" : message.member.displayHexColor)// ahmeD_Hossam
 .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 \`#credits <@${URID}> ${P}\`
 لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
