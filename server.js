@@ -147,7 +147,7 @@ if(!cmd || !args || isNaN(args)) return message.channel.send(`**استخدام �
 if(cmd == 'SFA') {// ahmeD_Hossam
 message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{// ahmeD_Hossam
 let P = Math.floor(args*(SFAP))// ahmeD_Hossam
-message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('GREEN')// ahmeD_Hossam
+message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('RED')// ahmeD_Hossam
 .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 \`#credits <@${URID}> ${P}\`
 لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
