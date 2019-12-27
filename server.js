@@ -120,8 +120,10 @@ client.on('message', message => {
     msg.delete()
     return message.channel.send(`**Broadcast Has Been Canceld**`);
   }})})}
+  
+  
+  
   });
-
 
 
 
@@ -129,14 +131,10 @@ let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف ال�
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
 let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message',async message => {// ahmeD_Hossam
-  if(message.content.startsWith(prefix + 'stock')) {
-  let ahmed = 0; 
-  let hossam = 0;// ahmeD_Hossam // لا تعدل يا ورع xD
-  
-    sfa.forEach(sfa =>{
-      if(!sfa.email) return; ahmed++;});// ahmeD_Hossam
-  nfa.forEach(acc =>{
-    if(!acc.email) return; hossam++;});// ahmeD_Hossam
+if(message.content.startsWith(prefix+'stock')){// ahmeD_Hossam
+let ahmed = 0;let hossam = 0;// ahmeD_Hossam
+  sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
+  nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam
   message.channel.send(new Discord.RichEmbed().setAuthor('✅ متجر الحسابات')// ahmeD_Hossam
   .addField('SFA [فل داتا]:',`${ahmed} Account(s)`,true)  .addField('NFA [عادي]:',`${hossam} Account(s)`,true).setColor('GREEN')// ahmeD_Hossam
 .addField('معلومه:',`[SFA] => بمعني فل داتا - يمكن تغير الاسم والرمز والسكن فقط
@@ -185,21 +183,6 @@ if(cmd == 'NFA') {
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
 })
 
-
-
-
-
-
-
-client.on('message',message => {
-    if (message.content.startsWith(prefix + 'vip info')) {
-message.channel.send(`> Vip Info
-> Owner : <@${data.ownerID}>
-> prefix : $
-> End in : 
-                   ` )
-    }
-});
 
 
 
