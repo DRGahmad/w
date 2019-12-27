@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://roe-sprint.glitch.me/`);
+  http.get(`http://orio-host.glitch.me/`);
 }, 280000);
 
 // كل البكجات الي ممكن تحتجها في اي بوت 
@@ -129,66 +129,36 @@ client.on('message', message => {
 
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
-let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//
-client.on('message',async message => {// 
-  
-  let messageArray = message.content.split(" ");
-  let cmd = messageArray[0];
-  let args = messageArray.slice(1);
-  const devloper = ["603456072954544141"] 
-  if(message.content.startsWith(prefix+'add')){
-              // if (!devloper.includes(message.author.id)) return message.channel.send("<@603456072954544141> بس يقدر يستعمله");
-    let email = args[0];
-    let pass = args[1];
-    let accType = args[2]
-
-    if(!email || !pass) return message.reply(":x: -| ضع الحسابات المرادة");
-    if(!accType) return message.reply("يجب عليك وضع نوع الحساب \`SFA, NFA\`")
-        if(accType === "SFA") {
-        
-          message.channel.send(`Done !!`)
-          
-          fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => { // عادي حطها ترا ال // تخلي القارئ ما يقرا الكو
-            if (err) console.error(err)
-            .catch(err => {
-              console.error(err);
-          });
-            });
-        }  
-    if(accType === "NFA") {
-                  message.channel.send("تم اضافة حسابات عادية")
-
-    }
-
-  }
-if(message.content.startsWith(prefix+'stock')){
-let m7 = 0;let mahdi = 0;
-  sfa.forEach(acc =>{if(!acc.email) return;m7++;});
-  nfa.forEach(acc =>{if(!acc.email) return;mahdi++;});
-  message.channel.send(new Discord.RichEmbed().setTitle(':dollar: Orio Host Shop')
-  .addField('SFA [فل داتا]:',`${m7} Account(s)`,true)  .addField('**NFA [عادي]:**',`${mahdi} Account(s)`,true).setColor(message.guild.me.highestRole.hexColor === "#000000" ? "#ffffff" : message.guild.me.displayHexColor)// 
+let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '432231487916736542'//مين بيتحوله الكريديت// ahmeD_Hossam
+client.on('message',async message => {// ahmeD_Hossam
+if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
+  sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
+  nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam // i will kill you soon ok ? xD
+  message.channel.send(new Discord.RichEmbed().setAuthor('✅ متجر الحسابات')// ahmeD_Hossam
+  .addField('SFA [فل داتا]:',`${ahmed} Account(s)`,true)  .addField('NFA [عادي]:',`${hossam} Account(s)`,true).setColor('GREEN')// ahmeD_Hossam
 .addField('معلومه:',`[SFA] => بمعني فل داتا - يمكن تغير الاسم والرمز والسكن فقط
-[NFA] => يعني حسابات عاديه - لا يمكن تغير اي شئ فقط اللعب بها`)
-.addField('الاسعار:',`[1xSFA] => ${SFAP} Credits ProBot\n[1xNFA] => ${NFAP} Credits ProBot`)
-.setFooter(`${prefix}buy [SFA/NFA] [الحسابات لا يوجد عليها ضمان | لشراء حساب الرجاء كتابه الامر التالي [الكميه`) )}
-if(message.content.startsWith(prefix+'buy')){
-let cmd = message.content.split(" ")[1];
-let args = message.content.split(" ")[2];
-if(!cmd || !args || isNaN(args)) return message.channel.send(`**USE: ${prefix}buy [SFA/NFA]  [الكميه]**`);
-if(cmd == 'SFA') {
-message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{//
-let P = Math.floor(args*(SFAP))
-message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor(message.member.highestRole.hexColor === "#000000" ? "#ffffff" : message.member.displayHexColor)
-.setDescription(`**]اكتب الامر التالي لأكمال عمليه الشراء
+[NFA] => يعني حسابات عاديه - لا يمكن تغير اي شئ فقط اللعب بها`)// ahmeD_Hossam
+.addField('الاسعار:',`[1xSFA] => ${SFAP} Credits ProBot\n[1xNFA] => ${NFAP} Credits ProBot`)// ahmeD_Hossam
+.setFooter(`${prefix}buy [SFA/NFA] [الحسابات لا يوجد عليها ضمان | لشراء حساب الرجاء كتابه الامر التالي [الكميه`) )}// ahmeD_Hossam
+if(message.content.startsWith(prefix+'buy')){// ahmeD_Hossam
+let cmd = message.content.split(" ")[1];// ahmeD_Hossam
+let args = message.content.split(" ")[2];// ahmeD_Hossam
+if(!cmd || !args || isNaN(args)) return message.channel.send(`**USE: ${prefix}buy [SFA/NFA]  [الكميه]**`);// ahmeD_Hossam
+if(cmd == 'SFA') {// ahmeD_Hossam
+message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{// ahmeD_Hossam
+let P = Math.floor(args*(SFAP))// ahmeD_Hossam
+message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('GREEN')// ahmeD_Hossam
+.setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 \`#credits <@${URID}> ${P}\`
-لديك 3 دقائق قبل الالغاء.**`));
-let P2 = Math.floor(P-(P*(5/100)));
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@603456072954544141> **`)
-.then( collected =>{
-let C = 0;let Accs = [];
-sfa.forEach(acc =>{if(!acc.email) return;if(C == args)return;;Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;
-delete acc.email;delete acc.pass;
-fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})
+لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
+let P2 = Math.floor(P-(P*(5/100)));// ahmeD_Hossam
+let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}>`);// ahmeD_Hossam// ahmeD_Hossam
+message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })// ahmeD_Hossam
+.then( collected =>{// ahmeD_Hossam
+let C = 0;let Accs = [];// ahmeD_Hossam
+sfa.forEach(acc =>{if(!acc.email) return;if(C == args)return;;Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;// ahmeD_Hossam// ahmeD_Hossam
+delete acc.email;delete acc.pass;// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
+fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
 });message.channel.send('**Done,,\nNow Check Your DM**!')
 message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
 });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) }
@@ -200,7 +170,7 @@ if(cmd == 'NFA') {
   \`#credits <@${URID}> ${P}\`
   لديك 3 دقائق قبل الالغاء.**`));
   let P2 = Math.floor(P-(P*(5/100)));
-  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@603456072954544141> **`);
+  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}>`);
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
   let C = 0;let Accs = [];
@@ -211,7 +181,6 @@ if(cmd == 'NFA') {
   message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
 })
-
 
 
 
