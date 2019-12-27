@@ -131,6 +131,22 @@ let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف ال�
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
 let SFAP = 10;/*سعر الحساب الواحد الفل داتا*/let NFAP = 12;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message',async message => {// ahmeD_Hossam
+  
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0];
+  let args = messageArray.slice(1);
+  const devloper = ["603456072954544141"] //wait انا وانت لا تنساني يا ورع xD :(
+  if(message.content.startsWith(prefix+'add')){// ahmeD_Hossam
+             if(message.author.id )return   message.channel.send("<@603456072954544141> بس يقدر يستعمله");
+    let email = args[0];
+    let pass = args[1];
+    let accType = args[2]
+
+    if(!email || !pass) return message.reply(":x: -| ضع الحسابات المرادة");
+    if(!accType) return message.reply("يجب عليك وضع نوع الحساب \`SFA, NFA\`")
+    if(accType !== "SFA" || accType !== "NFA") return message.reply("Error ! -| SFA / NFA Only !")
+    
+  }
 if(message.content.startsWith(prefix+'stock')){// ahmeD_Hossam
 let m7 = 0;let mahdi = 0;// ahmeD_Hossam
   sfa.forEach(acc =>{if(!acc.email) return;m7++;});// ahmeD_Hossam
