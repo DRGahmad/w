@@ -148,7 +148,7 @@ if(cmd == 'SFA') {// ahmeD_Hossam
   let ahmed = 0
   sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});
       if(ahmed < 1) return message.channel.send("لا يوجد حسابات")
-  if()
+  if(ahmed < args) return message.channel.send("لا يوجد حسابات كافية") // 
 message.author.send('✅ Nothing.. Just Check  If Your DM open or no').then(()=>{// ahmeD_Hossam
 let P = Math.floor(args*(SFAP))// ahmeD_Hossam
 message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('#918383')// ahmeD_Hossam
@@ -167,6 +167,10 @@ fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error
 message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
 });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) }
 if(cmd == 'NFA') {
+  let hossam = 0;
+  sfa.forEach(acc =>{if(!acc.email) return;hossam++;})
+  if(hossam < 1) return message.channel.send("لا يوجد حسابات")
+  if(hossam < args) return message.channel.send("لا يوجد حسابات كافية")
   message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(()=>{
   let P = Math.floor(args*(NFAP))
   message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('GREEN')
