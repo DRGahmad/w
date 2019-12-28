@@ -141,10 +141,10 @@ if(cmd == 'nfa') {
 
 
 
-
 client.on('message',message => {
   const countdown = require("parse-ms");
       let timeout = 2592000000
+      let countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
           let time = countdown(timeout - (Date.now() - data.ownerID));
     if (message.content.startsWith(prefix + 'vip info')) {
             if(data.ownerID !== null && timeout - (Date.now() - data.ownerID) > 0) {
@@ -153,7 +153,7 @@ client.on('message',message => {
 message.channel.send(`> **Vip Info
 > Owner : <@${data.ownerID}>
 > prefix : $
-> Ends in : ${time.days}d ${time.hours}h ${time.minutes}m ${time.seconds}s!**
+> Ends in : 
                    ` )
     }
       } else {
