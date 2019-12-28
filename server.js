@@ -143,11 +143,16 @@ if(cmd == 'nfa') {
 
 
 client.on('message',message => {
+  const countdown = require("parse-ms");
+  let cooldown = 8.46e+7;
+          let timeObj = countdown(cooldown - (Date.now() - lastDaily));
+
     if (message.content.startsWith(prefix + 'vip info')) {
                   if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 message.channel.send(`> **Vip Info
 > Owner : <@${data.ownerID}>
 > prefix : $**
+> Ends in : 
                    ` )
     }
 });
