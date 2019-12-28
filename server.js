@@ -142,18 +142,27 @@ if(cmd == 'nfa') {
 
 
 client.on('message',message => {
-  const countdown = require("parse-ms");
-      let timeout = 2592000000
-        var distance = c - now;
-    var now = new Date().getTime();
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      var c = new Date("Jan 5, 2021 15:37:25").getTime();
-          let time = countdown(timeout - (Date.now() - data.ownerID));
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor((1000 * 60 * 60 * 24));
+  var hours = Math.floor(( (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor(( (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor(( (1000 * 60)) / 1000);
+    
+}); 
     if (message.content.startsWith(prefix + 'vip info')) {
-            if(data.ownerID !== null && timeout - (Date.now() - data.ownerID) > 0) {
+          var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
   
                   if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 message.channel.send(`> **Vip Info
@@ -161,9 +170,7 @@ message.channel.send(`> **Vip Info
 > prefix : $
 > Ends in : ` )
     }
-      } else {
-        
-      }
+      
 });
 
 
