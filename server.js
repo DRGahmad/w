@@ -154,21 +154,21 @@ var x = setInterval(function() {
   var distance = countDownDate - now;
     
   // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor((1000 * 60 * 60 * 24));
-  var hours = Math.floor(( (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor(( (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor(( (1000 * 60)) / 1000);
+ 
     
 }); 
     if (message.content.startsWith(prefix + 'vip info')) {
-          var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-
+          var countDownDate = new Date("Jan 5, 2020 15:37:25").getTime();
+ var days = Math.floor((1000 * 60 * 60 * 24));
+  var hours = Math.floor(( (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor(( (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor(( (1000 * 60)) / 1000);
   
                   if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 message.channel.send(`> **Vip Info
 > Owner : <@${data.ownerID}>
 > prefix : $
-> Ends in : ` )
+> Ends in : ${minutes+"m"}` )
     }
       
 });
