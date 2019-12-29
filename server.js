@@ -105,7 +105,7 @@ message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,messag
 \`#credits <@${URID}> ${P}\`
 لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
 let P2 = Math.floor(P-(P*(5/100)));// ahmeD_Hossam
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@603456072954544141> **`);// ahmeD_Hossam// ahmeD_Hossam
+let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@603456072954544141> **`);// ahmeD_Hossam// ahmeD_Hossam
 message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })// ahmeD_Hossam
 .then( collected =>{// ahmeD_Hossam
 let C = 0;let Accs = [];// ahmeD_Hossam
@@ -124,10 +124,10 @@ if(cmd == 'nfa') {
   let P = Math.floor(args*(NFAP))
   message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,message.author.avatarURL).setColor('#918383')
   .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
-  Ex : #credits @Mahdi#7777 8500
+  Ex : #credits @Mahdi#7777 ${P}
   لديك 3 دقائق قبل الالغاء.**`));
   let P2 = Math.floor(P-(P*(5/100)));
-  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`${P2}\` to <@603456072954544141> **`)
+  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`${P}\` to <@603456072954544141> **`)
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
   let C = 0;let Accs = [];
