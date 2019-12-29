@@ -87,8 +87,8 @@ if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
   .addField('**[SFA | فل داتا] > **',`**${ahmed} Account(s)**`,true)  .addField('**[NFA | عادي] > **',`**${hossam} Account(s)  **`,true).setColor('GREEN')// ahmeD_Hossam
 .addField('**هل تعلم ؟**',`**\`[SFA]\` > فل داتا - حساب يمكنك اللعب وتغيير الاسم والباسوورد والسكن
 \`[NFA]\` > العادي = حساب لا يمكنك تغيير اي شيئ فيه, للعب فقط**`)// ahmeD_Hossam
-.addField('**الاسعار**',`\`[1 NFA] > 8500 Credits ProBot\` \n \`[1 SFA] > 250 Credits ProBot\``)// ahmeD_Hossam
-.setFooter(`تنبيه : الحسابات ليست مضمونة للابد, اي ان الحسابات ليست دائمة`) )}// ahmeD_Hossam
+.addField('**الاسعار**',`\`[1 SFA] > 8500 Credits ProBot\` \n \`[1 NFA] > 250 Credits ProBot\``)// ahmeD_Hossam
+.setFooter(`$buy [sfa/nfa] [الحسابات لا يوجد عليها ضمان | لشراء حساب الرجاء كتابة الأمر التالي [الكمية`) )}// ahmeD_Hossam
 if(message.content.startsWith(prefix+'buy')){// ahmeD_Hossam
 let cmd = message.content.split(" ")[1];// ahmeD_Hossam
 let args = message.content.split(" ")[2];// ahmeD_Hossam
