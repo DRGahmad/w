@@ -127,7 +127,7 @@ if(cmd == 'nfa') {
   Ex : #credits @Mahdi#7777 ${P}
   لديك 3 دقائق قبل الالغاء.**`));
   let P2 = Math.floor(P-(P*(5/100)));
-  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@603456072954544141> **`)
+  let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@603456072954544141> **`)
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
   let C = 0;let Accs = [];
