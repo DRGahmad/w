@@ -71,34 +71,6 @@ console.log("Bot Online 24/7");
 
 
 
-const db = require("quick.db");
-client.on('message', async message => {// ahmeD_Hossam
-    let prefix ='$';
- const args2 = message.content.slice(prefix.length).trim().split(/ +/g);
-    const cmd2 = args2.shift().toLowerCase();
-   let user = message.mentions.users.first();
-  let blacklist =  db.fetch(`blackList_${user.id}`);
-  if(blacklist === null) blacklist = `white`;
-      if(cmd2 === `${prefix}blacklist`) {
-    if(!user) return message.reply("Please mention a user");
-    if(!message.member.haspermission("MANAGE_SERVER")) return message.channel.send("You Don't have permisssions")
-    db.set(`blacklisted_${user.id}`, `black`)
-    message.channel.send(`Succesfully blacklisted <@${user.id}>`);
-  }
-   
-      if(cmd2 === `${prefix}unblacklist`) {
-    if(!user) return message.reply("Please mention a user");
-    if(!message.member.haspermission("MANAGE_SERVER")) return message.channel.send("You Don't have permisssions")
-    db.set(`blacklisted_${user.id}`, `white`)
-    message.channel.send(`Succesfully unblacklisted <@${user.id}>`);
-  }
-      if(cmd2 === `${prefix}testing`) {
-     if(blacklist === "black") return message.reply("You're blacklisted")
-          if(blacklist === "white") return message.reply("You're un  blacklisted")
-
-    }
-});
-
 
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
@@ -169,166 +141,96 @@ if(cmd == 'nfa') {
 
 
 
-client.on('message', message => {
+
+
+
+client.on('message',async message => {
   if(message.author.bot) return;
-  if(message.content.startsWith(prefix + 'new')) {
-  if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
-  let log = message.guild.channels.find("name", "log");
-  let args = message.content.split(' ').slice(1).join(' ');
-  let support = message.guild.roles.find("name","Support Team");
-  let ticketsStation = message.guild.channels.find("name", "TICKETS");
-  let reason = message.content.split(" ").slice(1).join(" ");
-  if(!reason) reason = 'NONE';
-  const embed = new Discord.RichEmbed()
-  .setColor("#36393e")
-  .addField(`**Error :interrobang:**`, `This server doesn't have a \`Support Team\` role made so the ticket won't be opened.`)
-  .setTimestamp();
-  if (!message.guild.roles.exists("name", "Support")) return message.channel.send({ embed: embed });
-  if(message.guild.channels.exists("name", `ticket-${message.author.username}`)) return message.channel.send(`You already have a ticket open :no_entry:`);
-  if(!ticketsStation) return message.channel.send(`**Error! **:interrobang:\n please create \`category\` Called \`TICKETS\``)
-  message.guild.createChannel(`ticket-` + message.author.username, "text").then(c => {
-  c.setParent(ticketsStation);
-  const done = new Discord.RichEmbed()
-  .setColor(`GREEN`)
-  .setTitle(`Ticket Created`)
-  .setDescription(`Ticket : #${c.name}
-  by :<@${message.author.id}>
-  Reason : ${reason}`)
-  .setTimestamp()
-  .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033107635208193/563111847692337174.png`)
-  .setFooter(message.author.tag)
-  if(log) log.send(done)
-  let role = message.guild.roles.find("name", "Support Team");
-  let role2 = message.guild.roles.find("name", "@everyone");
-  c.overwritePermissions(role, {
-  SEND_MESSAGES: true,
-  READ_MESSAGES: true
-  });
-  c.overwritePermissions(role2, {
-  SEND_MESSAGES: false,
-  READ_MESSAGES: false
-  });
-                c.overwritePermissions(message.author, {
-                    SEND_MESSAGES: true,
-                    READ_MESSAGES: true
-                });
+var prefix = "$"
+if(message.content.indexOf(prefix) !== 0) return;
+const args = message.content.slice(prefix.length).trim().split(/ +/g);
+const command = args.shift().toLowerCase();
+if(command === "start") {
+var title = args[0].split('-').join(" ");
+if(args[2]) {
+  message.channel.send(` \`\`\`MD
+  # Title format <word>-<word>-<word> 
+  < do not use spaces use - insted
+   \`\`\``);
+}
+var time = args[1].split(":");
+var sec = time[3];
+var min = time[2];
+var hou = time[1];
+var day = time[0];
 
-                /////////////
-  const eembed = new Discord.RichEmbed()
-  .setColor("#00ffd4")
-  //.setThumbnail(message.author.avatarURL)
-  .addField(`Your ticket has been created :white_check_mark:`, `<#${c.id}>`)
-  .setFooter(`${client.user.tag} BY |`,client.user.displayAvatarURL);
-  //////////////////
-  message.channel.send({ embed: eembed });
-  const embed = new Discord.RichEmbed()
-  .setColor(0xCF40FA)
-  .setThumbnail(message.author.avatarURL)
-  .addField(`**Welcome**`, `<@${message.author.id}>`)
-  .addField(`Our **__Support Team__** will be here soon to help.`, `** **`)
-  .addField(`Reason :`, `${reason}`)
-  .setFooter(`${client.user.tag} BY | `,client.user.displayAvatarURL)
-  .setTimestamp();
-  c.send({ embed: embed }).then
-  c.send(`<@${message.author.id}>`).then(b=>{
-    b.delete();
-  })
-  }) .catch();
-    }
-    if(message.content.startsWith(prefix + 'close')) {
-       
-      if(message.author.bot) return;
-        if(!message.channel.name.startsWith("ticket-")) return message.channel.send(`this command only for the tickets`)
-  let close = new Discord.RichEmbed()
-  .addField(`type \`${prefix}close\` again to confirm`, `** **`)
-  .setColor("#36393e");
-  message.channel.sendEmbed(close) .then(m => {
-  const filter = msg => msg.content.startsWith(prefix + 'close');
-  if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return
-  message.channel.awaitMessages(response => response.content === prefix + 'close', {
-  max: 1,
-  time: 20000,
-  errors: ['time']
-  })
-  .then((collect) => {
-  message.channel.delete();
-  let Reason = message.content.split(" ").slice(1).join(" ");
-  if(!Reason) Reason = 'NONE';
-let closee = new Discord.RichEmbed()
-.setColor(`BLUE`)
-.setAuthor(`Ticket Closed`)
-.setDescription(`Ticket : #${message.channel.name}
-By : <@${message.author.id}>
-Reason : ${Reason}`)
-.setTimestamp()
-.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033109178712074/563111850162520077.png`)
-.setFooter(message.author.tag)
-let log = message.guild.channels.find("name", "log");
-if(log) log.send(closee)
-  }) .catch(() => {
-  m.delete()
-  .then(message.channel.send('Ticket close timed out, the ticket was not closed')) .then((c) => {
-  c.delete(4000);
-  }) 
-  })
-  })     
-    } if(message.content.startsWith(prefix + `multiclose`)) {
-      if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
-      if(!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply('You don\'t have Permission **MANAGE_CHANNELS** to close all tickets');
-      message.guild.channels.filter(c => c.name.toLowerCase().startsWith("ticket-")).forEach(channel => { channel.delete(); })
-const ttt = new Discord.RichEmbed()
-.setColor("GREEN")
-.addField(`**Done all Tickets has been closed :white_check_mark:**`,`** **`)
-message.channel.send(ttt)
-let log = message.guild.channels.find("name", "log");
-const rr = new Discord.RichEmbed()
-.setColor("GREEN")
-.addField(`**all Tickets channels has been closed :white_check_mark:**`, `**by <@${message.author.id}>**`)
-.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588151961279397898/582096914376425501.png`)
-.setTimestamp();
-if(log) return log.send(rr)
-//
-} if(message.content.startsWith(prefix + `add`)) {
-  if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission to do this`)
-  if(!message.channel.name.startsWith("ticket-")) return message.channel.send(`this command only for the tickets`);
-let member = message.mentions.members.first();
-if(!member) return message.channel.send(`**Please mention the user :x:**`);
-if(message.channel.permissionsFor(member).has(['SEND_MESSAGES', 'VIEW_CHANNEL', 'READ_MESSAGE_HISTORY'])) return message.channel.send(`this member already in this ticket :rolling_eyes:`);
-message.channel.overwritePermissions(member.id, { SEND_MESSAGES: true, VIEW_CHANNEL: true, READ_MESSAGE_HISTORY: true });
-message.channel.send(`**Done :white_check_mark:\nSuccessfully added <@${member.user.id}> to the ticket**`)
-let tgt = new Discord.RichEmbed()
-.setColor(`GREEN`)
-.setAuthor(`Added member to a ticket`)
-.setDescription(`Ticket : #${message.channel.name}
-Member : ${member}
-by : <@${message.author.id}>`)
-.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033109539160066/563111851165220885.png`)
-.setTimestamp();
-let log = message.guild.channels.find("name", "log");
-if(log) return log.send(tgt);
-} if(message.content.startsWith(prefix + `remove`)) {
-  if(!message.channel.name.startsWith("ticket-")) {
-      return message.channel.send(`this command only for the tickets`);
-  }
-  let member = message.mentions.members.first();
-  if(!member || member.id === client.user.id) {
-      return message.channel.send(`**Please mention the user :x:**`);
-  }
-  if(!message.channel.permissionsFor(member).has(['SEND_MESSAGES', 'VIEW_CHANNEL', 'READ_MESSAGE_HISTORY'])) {
-      return message.channel.send(`:x: **${member.user.tag}** is not in this ticket to remove them`);
-  }
-  message.channel.overwritePermissions(member.id, { SEND_MESSAGES: false, VIEW_CHANNEL: false, READ_MESSAGE_HISTORY: false });
-  message.channel.send(`**Done :white_check_mark:\nSuccessfully removed \`${member.user.tag}\` from the ticket**`)
-  let gtg = new Discord.RichEmbed()
-.setColor(`BLUE`)
-.setAuthor(`removed member from a ticket`)
-.setDescription(`Ticket : #${message.channel.name}
-Member : ${member}
-by : <@${message.author.id}>`)
-.setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033111212949555/563111852352077886.png`)
-.setTimestamp();
-let log = message.guild.channels.find("name", "log");
-if(log) return log.send(gtg);
-  }
+if((hou * 1) > 24) {
+  message.channel.send(` \`\`\`MD
+  # time format <days> : <hours> : <minutes> : <secondes>
+  < hours must be 24 or less
+   \`\`\``);
+}
+else if((sec * 1) > 60) {
+  message.channel.send(` \`\`\`MD
+  # time format <days> : <hours> : <minutes> : <secondes>
+  < minutes must be 60 or less 
+  \`\`\``);
+}
+else if((min * 1) > 60) {
+  message.channel.send(` \`\`\`MD
+  # time format <days> : <hours> : <minutes> : <secondes>
+  < seconds must be 60 or less
+  \`\`\``);
+} 
+else  {
 
-  });
+var upgradeTime = sec;
+upgradeTime = upgradeTime * 2 / 2 + (min * 60);
+upgradeTime = upgradeTime * 2 / 2 + (hou * 60 * 60);
+upgradeTime = upgradeTime * 2 / 2 + (day * 24 * 60 * 60);
+var seconds = upgradeTime;
+var duration = (upgradeTime * 1000)
+  if(!message.guild.member(message.author).hasPermission('MANAGE_GUILD')) return message.channel.send(':heavy_multiplication_x:| **s You Dont Have Premission**');
+  if(!args) return message.channel.send(`**Use : #start  <Presentse> <Time>**`);
+  if(!title) return message.channel.send(`**Use : **\`#start ${args[0]} Minutes\`** <Presentse>**`);
+  if(!isNaN(args[1])) return message.channel.send(':heavy_multiplication_x:| **The Time Be Nambers `` Do the Commend Agin``**');
+        let giveEmbed = new Discord.RichEmbed()
+      .setAuthor(message.guild.name, message.guild.iconURL)
+      .setDescription(`**${title}** \nReact Whit 🎁 To Enter! \n**Ends  after   ${day} day  ${hou} hour  ${min} minute ${sec} second**`)
+      .setFooter(message.author.username, message.author.avatarURL);
+      message.channel.send(' :heavy_check_mark: **Giveaway Created** :heavy_check_mark:' , {embed: giveEmbed}).then(m => {
+          message.delete();
+          m.react('🎁');
+              var giveAwayCut = setInterval(function() {
+                  var days        = Math.floor(seconds/24/60/60);
+                  var hoursLeft   = Math.floor((seconds) - (days*86400));
+                  var hours       = Math.floor(hoursLeft/3600);
+                  var minutesLeft = Math.floor((hoursLeft) - (hours*3600));
+                  var minutes     = Math.floor(minutesLeft/60);
+                  var remainingSeconds = seconds % 60;
+                  if (seconds != 0) {
+                    seconds--;
+                  }
+              let updateGiveEmbed = new Discord.RichEmbed()
+              .setAuthor(message.guild.name, message.guild.iconURL)
+              .setDescription(`**${title}** \nReact With 🎁 To Enter! \n**Ends  after   ${days} day  ${hours} hour  ${minutes} minute ${remainingSeconds} second**`)
+              .setFooter(message.author.username, message.author.avatarURL);
+              m.edit(updateGiveEmbed)
+            }, 1000);
+         setTimeout(() => {
+          clearInterval(giveAwayCut)
+           let users = m.reactions.get("🎁").users;
+           let list = users.array().filter(u => u.id !== client.user.id);
+           let gFilter = list[Math.floor(Math.random() * list.length) + 0]
+           let endEmbed = new Discord.RichEmbed()
+           endEmbed.setAuthor(message.author.username, message.author.avatarURL)
+           endEmbed.setTitle(title)
+           endEmbed.addField('Giveaway End !🎁',`Winners : ${gFilter}`)
+         m.edit('** 🎁 GIVEAWAY ENDED 🎁**' , {embed: endEmbed});
+         },duration);
+       });
+  }
+}
+});
+
+
