@@ -73,23 +73,26 @@ console.log("Bot Online 24/7");
 
 const db = require("quick.db");
 client.on('message', async message => {// ahmeD_Hossam
+    let prefix ='$';
+ const args2 = message.content.slice(prefix.length).trim().split(/ +/g);
+    const cmd2 = args2.shift().toLowerCase();
    let user = message.mentions.users.first();
-  let blacklist = await db.fetch(`blacklist_${user.id}`);
+  let blacklist =  db.fetch(`blackList_${user.id}`);
   if(blacklist === null) blacklist = `white`;
-      if(message.content === "$blacklist") {
+      if(cmd2 === `${prefix}blacklist`) {
     if(!user) return message.reply("Please mention a user");
     if(!message.member.haspermission("MANAGE_SERVER")) return message.channel.send("You Don't have permisssions")
     db.set(`blacklisted_${user.id}`, `black`)
     message.channel.send(`Succesfully blacklisted <@${user.id}>`);
   }
    
-  if(message.content === "$unblacklist") {
+      if(cmd2 === `${prefix}unblacklist`) {
     if(!user) return message.reply("Please mention a user");
     if(!message.member.haspermission("MANAGE_SERVER")) return message.channel.send("You Don't have permisssions")
     db.set(`blacklisted_${user.id}`, `white`)
     message.channel.send(`Succesfully unblacklisted <@${user.id}>`);
   }
-   if(message.content === "$blacktest") {
+      if(cmd2 === `${prefix}testing`) {
      if(blacklist === "black") return message.reply("You're blacklisted")
           if(blacklist === "white") return message.reply("You're un  blacklisted")
 
