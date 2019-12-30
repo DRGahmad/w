@@ -202,7 +202,7 @@ client.on('message', message => {
       if(message.guild.member(user.user).highestRole.position >= message.guild.member(client.user).highestRole.position) return message.channel.send(`I can't ban **${user.user.tag}** because his role highest than my role!`);
       if(message.guild.member(user.user).hasPermission('MANAGE_GUILD') || user.user.id == message.guild.owner.id) return message.channel.send(`You can't ban **${user.user.tag}** because he have Administration permissions!`);
       if(!message.guild.member(user.user).bannable) return message.channel.send(`I can't ban **${user.user.tag}**.`);
-                message.gulid.member.send(`**You have been kicked from ${guild.name} because, Verifaction time is out.**`)
+                message.mentions.members.send(`**You have been kicked from ${guild.name} because, Verifaction time is out.**`)
       message.guild.member(user).ban(reason, user);
       message.channel.send(`Done :+1:, I Banned ${user.user.username} from the server!\nReason: \`\`${reason}\`\``);
     }
