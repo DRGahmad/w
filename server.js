@@ -184,7 +184,7 @@ let number = stevNum;
             member.send(`**You have been kicked from ${guild.name} because, Verifaction time is out.**`)
             member.kick("Verifaction time is out.");
     })
-})//3Mo_Steve the best xD
+})
 
 
 client.on('message', message => {
