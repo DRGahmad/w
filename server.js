@@ -72,7 +72,29 @@ console.log("Bot Online 24/7");
 
 
 const db = require("quick.db");
+client.on('message', async message => {// ahmeD_Hossam
+   let user = message.mentions.users.first();
+  let blacklist = await db.fetch(`blacklist_${user.id}`);
+  if(blacklist === null) blacklist = `white`;
+      if(message.content === "$blacklist") {
+    if(!user) return message.reply("Please mention a user");
+    if(!message.member.haspermission("MANAGE_SERVER")) return message.channel.send("You Don't have permisssions")
+    db.set(`blacklisted_${user.id}`, `black`)
+    message.channel.send(`Succesfully blacklisted <@${user.id}>`);
+  }
+   
+  if(message.content === "$unblacklist") {
+    if(!user) return message.reply("Please mention a user");
+    if(!message.member.haspermission("MANAGE_SERVER")) return message.channel.send("You Don't have permisssions")
+    db.set(`blacklisted_${user.id}`, `white`)
+    message.channel.send(`Succesfully unblacklisted <@${user.id}>`);
+  }
+   if(message.content === "$blacktest") {
+     if(blacklist === "black") return message.reply("You're blacklisted")
+          if(blacklist === "white") return message.reply("You're un  blacklisted")
 
+    }
+});
 
 
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
