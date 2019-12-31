@@ -122,12 +122,17 @@ c.setTopic(`ticket by: ${message.author.id}`)
  }) .catch();
    }
      if(message.content.startsWith(prefix + 'rename')) {
+            let three = message.content.split(' ').slice(1).join(" ");
+
         if(!message.channel.name.startsWith("ticket-")) return message.channel.send(`this command only for the tickets`)
         if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return
-        message.channel.setName(`ticket-`)
+
+        message.channel.setName(`ticket-${three}`)
+       .then(newChannel => message.channel.send(`$**Successfully changed the ticket name to ${three}**`))
+      .catch(console.error);
      }
    if(message.content.startsWith(prefix + 'close')) {
-     
+
      if(message.author.bot) return;
        if(!message.channel.name.startsWith("ticket-")) return message.channel.send(`this command only for the tickets`)
  let close = new Discord.RichEmbed()
