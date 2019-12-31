@@ -112,7 +112,7 @@ client.on('message', message => {
  .addField(`**Welcome**`, `<@${message.author.id}>`)
  .addField(`Our **__Support Team__** will be here soon to help.`, `** **`)
  .addField(`Reason :`, `${reason}`)
- .setFooter(`${client.user.tag} BY | ${message.author_tag}`,client.user.displayAvatarURL)
+ .setFooter(`${client.user.tag} BY | `,client.user.displayAvatarURL)
  .setTimestamp();
  c.send({ embed: embed }).then
  c.send(`<@${message.author.id}>`).then(b=>{
