@@ -73,6 +73,7 @@ client.on('message', message => {
  if(!ticketsStation) return message.channel.send(`**Error! **:interrobang:\n please create \`category\` Called \`TICKETS\``)
  message.guild.createChannel(`ticket-` + message.author.username, "text").then(c => {
  c.setParent(ticketsStation);
+c.setTopic(`ticket by: ${message.author.id}`)
  const done = new Discord.RichEmbed()
  .setColor(`GREEN`)
  .setTitle(`Ticket Created`)
@@ -120,6 +121,11 @@ client.on('message', message => {
  })
  }) .catch();
    }
+     if(message.content.startsWith(prefix + 'rename')) {
+        if(!message.channel.name.startsWith("ticket-")) return message.channel.send(`this command only for the tickets`)
+        if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return
+        message.channel.setName(`ticket-`)
+     }
    if(message.content.startsWith(prefix + 'close')) {
      
      if(message.author.bot) return;
