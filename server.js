@@ -55,6 +55,25 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
 });
 
 client.on('message', message => {
+   let args = message.content.split(' ').slice(1).join(' ');
+
+    let user = message.guild.members.get(args)
+
+    const db = require("quick.db");
+  let prefix = "$";
+  let bl = db.fetch(`blacklist_${user}`)
+           if (!message.channel.guild) return;
+           if(message.content.startsWith(prefix + "blacklist")) {
+                db.set(`blacklist_${user}`, "on")
+             
+             message.channel.send("blacklisted")
+          }
+        
+          if(message.content.startsWith(prefix + "bt")) {
+            if(bl === "on") message.channel.send("you're black listed")
+        }
+});
+client.on('message', message => {
 
   if(message.content.startsWith(prefix + 'new')) {
   if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
