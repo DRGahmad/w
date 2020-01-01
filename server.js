@@ -54,28 +54,43 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
   }
 });
 
-client.on('message', message => {
+client.on('message', async message => {
    let args = message.content.split(' ').slice(1).join(' ');
 
     let user = message.guild.members.get(args)
 
     const db = require("quick.db");
   let prefix = "$";
-  let bl = db.fetch(`blacklist_${user}`)
+  let bl = await db.fetch(`blacklist_${user}`)
            if (!message.channel.guild) return;
            if(message.content.startsWith(prefix + "blacklist")) {
                 db.set(`blacklist_${user}`, "on")
              
              message.channel.send("blacklisted")
           }
-        
-          if(message.content.startsWith(prefix + "bt")) {
+          if(message.content.startsWith(prefix + "unblacklist")) {
+                db.set(`blacklist_${user}`, "off")
+             
+             message.channel.send("unblacklisted")
+          }
+          if(message.content.startsWith("bt")) {
             if(bl === "on") message.channel.send("you're black listed")
+              if(bl === "off") message.channel.send("you're not black listed")
+              if(bl === null) message.channel.send("you're not black listed2")
+
+
         }
 });
-client.on('message', message => {
+client.on('message', async message => {
+      const db = require("quick.db");
+ let args = message.content.split(' ').slice(1).join(' ');
+
+    let user = message.guild.members.get(args)
+  let bl = await db.fetch(`blacklist_${user}`)
 
   if(message.content.startsWith(prefix + 'new')) {
+                if(bl === "on") return message.channel.send("**you're black listed from tickets system !!**")
+
   if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
  let log = message.guild.channels.find("name", "tickets-log");
  let args = message.content.split(' ').slice(1).join(' ');
