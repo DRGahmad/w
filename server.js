@@ -236,7 +236,8 @@ client.on('message', async message => {
                     let closee = new Discord.RichEmbed()
                         .setColor(`BLUE`)
                         .setAuthor(`Ticket Closed`)
-                        .setDescription(`Ticket : #${message.channel.name}
+                        .setDescription(`**Your Ticket in \`Orio Host\` has been closed!**
+Ticket : #${message.channel.name}
 By : <@${message.author.id}>
 Opened By: <@${ticketInfos[message.guild.id+message.channel.id].by}>
 Reason : ${Reason}`)
