@@ -9,7 +9,6 @@ setInterval(() => {
     http.get(`http://rose-sprint.glitch.me/`);
 }, 280000);
 
-// كل البكجات الي ممكن تحتجها في اي بوت 
 const {
     Client,
     RichEmbed
