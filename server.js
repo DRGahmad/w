@@ -236,11 +236,10 @@ client.on('message', async message => {
                     let closee = new Discord.RichEmbed()
                         .setColor(`BLUE`)
                         .setAuthor(`Ticket Closed`)
-                        .setDescription(`**Your Ticket in \`Orio Host\` has been closed!**
-`\`\` #${message.channel.name}`\`\`\`
-<@${message.author.id}>
-Opened By: <@${ticketInfos[message.guild.id+message.channel.id].by}>
-Reason : ${Reason}`)
+                        .setDescription(`**Your Ticket in \`Orio Host\` has been closed!
+ \`\`\`#${message.channel.name}\`\`\`\
+Deleted By: <@${message.author.id}> \`|\` Opened By: <@${ticketInfos[message.guild.id+message.channel.id].by}>
+Reason : ${Reason}**`)
                         .setTimestamp()
                         .setFooter(message.author.tag)
                     let log = message.guild.channels.find("name", "tickets-log");
