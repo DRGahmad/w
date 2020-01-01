@@ -58,17 +58,17 @@ client.on('message', message => {
   if(message.author.bot) return;
   if(message.content.startsWith(prefix + 'new')) {
   if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
- let log = message.guild.channels.find("name", "log");
+ let log = message.guild.channels.find("name", "tickets-log");
  let args = message.content.split(' ').slice(1).join(' ');
- let support = message.guild.roles.find("name","Support Team");
+ let support = message.guild.roles.find("name","Support");
  let ticketsStation = message.guild.channels.find("name", "TICKETS");
  let reason = message.content.split(" ").slice(1).join(" ");
  if(!reason) reason = 'NONE';
  const embed = new Discord.RichEmbed()
  .setColor("#36393e")
- .addField(`**Error :interrobang:**`, `This server doesn't have a \`Support Team\` role made so the ticket won't be opened.`)
+ .addField(`**Error :interrobang:**`, `This server doesn't have a \`Support\` role made so the ticket won't be opened.`)
  .setTimestamp();
- if (!message.guild.roles.exists("name", "Support Team")) return message.channel.send({ embed: embed });
+ if (!message.guild.roles.exists("name", "Support")) return message.channel.send({ embed: embed });
  if(message.guild.channels.exists("name", `ticket-${message.author.username}`)) return message.channel.send(`You already have a ticket open :no_entry:`);
  if(!ticketsStation) return message.channel.send(`**Error! **:interrobang:\n please create \`category\` Called \`TICKETS\``)
  message.guild.createChannel(`ticket-` + message.author.username, "text").then(c => {
@@ -84,7 +84,7 @@ c.setTopic(`ticket by: ${message.author.id}`)
  .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033107635208193/563111847692337174.png`)
  .setFooter(message.author.tag)
  if(log) log.send(done)
- let role = message.guild.roles.find("name", "Support Team");
+ let role = message.guild.roles.find("name", "Support");
  let role2 = message.guild.roles.find("name", "@everyone");
  c.overwritePermissions(role, {
  SEND_MESSAGES: true,
@@ -159,7 +159,7 @@ Reason : ${Reason}`)
 .setTimestamp()
 .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033109178712074/563111850162520077.png`)
 .setFooter(message.author.tag)
-let log = message.guild.channels.find("name", "log");
+let log = message.guild.channels.find("name", "tickets-log");
 if(log) log.send(closee)
  }) .catch(() => {
  m.delete()
@@ -176,7 +176,7 @@ const ttt = new Discord.RichEmbed()
 .setColor("GREEN")
 .addField(`**Done all Tickets has been closed :white_check_mark:**`,`** **`)
 message.channel.send(ttt)
-let log = message.guild.channels.find("name", "log");
+let log = message.guild.channels.find("name", "tickets-log");
 const rr = new Discord.RichEmbed()
 .setColor("GREEN")
 .addField(`**all Tickets channels has been closed :white_check_mark:**`, `**by <@${message.author.id}>**`)
@@ -200,7 +200,7 @@ Member : ${member}
 by : <@${message.author.id}>`)
 .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033109539160066/563111851165220885.png`)
 .setTimestamp();
-let log = message.guild.channels.find("name", "log");
+let log = message.guild.channels.find("name", "tickets-log");
 if(log) return log.send(tgt);
 } if(message.content.startsWith(prefix + `remove`)) {
  if(!message.channel.name.startsWith("ticket-")) {
@@ -223,7 +223,7 @@ Member : ${member}
 by : <@${message.author.id}>`)
 .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033111212949555/563111852352077886.png`)
 .setTimestamp();
-let log = message.guild.channels.find("name", "log");
+let log = message.guild.channels.find("name", "tickets-log");
 if(log) return log.send(gtg);
  }
  
