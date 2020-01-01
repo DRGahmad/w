@@ -107,7 +107,7 @@ client.on('message', async message => {
  .addField(`**Error :interrobang:**`, `This server doesn't have a \`Support\` role made so the ticket won't be opened.`)
  .setTimestamp();
  if (!message.guild.roles.exists("name", "Support")) return message.channel.send({ embed: embed });
- if(message.guild.channels.exists("name", `ticket-${message.author.username}`)) return message.channel.send(`You already have a ticket open :no_entry:`);
+if (message.guild.channels.exists("name", `ticket-${message.author.name}`)) return message.channel.send(`بس يا كسمك`);     
  if(!ticketsStation) return message.channel.send(`**Error! **:interrobang:\n please create \`category\` Called \`TICKETS\``)
  message.guild.createChannel(`ticket-` + message.author.username, "text").then(c => {
  c.setParent(ticketsStation);
@@ -167,7 +167,7 @@ c.setTopic(`ticket by: ${message.author.id}`)
         if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return
 
         message.channel.setName(`ticket-${three}`)
-       .then(newChannel => message.channel.send(`$**Successfully changed the ticket name to ${three}**`))
+       .then(newChannel => message.channel.send(`**Successfully changed the ticket name to ${three}**`))
       .catch(console.error);
      }
    if(message.content.startsWith(prefix + 'close')) {
@@ -351,27 +351,6 @@ if(cmd == 'nfa') {
 
 
 
-const settings = [];
-client.on("message", message => {
-  if(!settings[message.guild.id+message.author.id])settings[message.guild.id+message.author.id]={
-    status: "off"
-  }
-  var you = settings[message.guild.id+message.author.id].status;
-  if(you=="on")message.delete();
-  if(message.content.startsWith(prefix+"target")){
-    var user = message.mentions.users.first();
-    if(!user)return message.reply("Mention user");
-    if(!settings[message.guild.id+user.id])settings[message.guild.id+user.id]={
-    status: "off"
-  }
-    if(settings[message.guild.id+user.id].status =="off"){
-      settings[message.guild.id+user.id].status ="on";
-    }else{
-            settings[message.guild.id+user.id].status ="off";
-
-    }
-  }
-})
 
 
 
