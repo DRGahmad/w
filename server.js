@@ -211,7 +211,7 @@ client.on('message', async message => {
         if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return
 
         message.channel.setName(`ticket-${three}`)
-            .then(newChannel => message.channel.send(`**Successfully changed the ticket name to ${three}**`))
+            .then(newChannel => message.channel.send(`**Successfully changed the ticket name to \`${three}\`**`))
             .catch(console.error);
     }
     if (message.content.startsWith(prefix + 'close')) {
