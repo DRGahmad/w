@@ -237,12 +237,11 @@ client.on('message', async message => {
                         .setColor(`BLUE`)
                         .setAuthor(`Ticket Closed`)
                         .setDescription(`**Your Ticket in \`Orio Host\` has been closed!**
-Ticket : #${message.channel.name}
-By : <@${message.author.id}>
+`\`\` #${message.channel.name}`\`\`\`
+<@${message.author.id}>
 Opened By: <@${ticketInfos[message.guild.id+message.channel.id].by}>
 Reason : ${Reason}`)
                         .setTimestamp()
-                        .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033109178712074/563111850162520077.png`)
                         .setFooter(message.author.tag)
                     let log = message.guild.channels.find("name", "tickets-log");
                     if (log) log.send(closee)
