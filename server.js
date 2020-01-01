@@ -64,11 +64,15 @@ client.on('message', async message => {
   let bl = await db.fetch(`blacklist_${user}`)
            if (!message.channel.guild) return;
            if(message.content.startsWith(prefix + "blacklist")) {
+                     if (!args) return message.channel.send("**Please Give me id or mention **");
+
                 db.set(`blacklist_${user}`, "on")
              
              message.channel.send("blacklisted")
           }
           if(message.content.startsWith(prefix + "unblacklist")) {
+                                 if (!args) return message.channel.send("**Please Give me id or mention **");
+
                 db.set(`blacklist_${user}`, "off")
              
              message.channel.send("unblacklisted")
@@ -347,3 +351,24 @@ if(cmd == 'nfa') {
 
 
 
+const settings = [];
+client.on("message", message => {
+  if(!settings[message.guild.id+message.author.id])settings[message.guild.id+message.author.id]={
+    status: "off"
+  }
+  var you = settings[message.guild.id+message.author.id].status;
+  if(you=="on")message.delete();
+  if(message.content.startsWith(prefix+"target")){
+    var user = message.mentions.users.first();
+    if(!user)return message.reply("Mention user");
+    if(!settings[message.guild.id+user.id])settings[message.guild.id+user.id]={
+    status: "off"
+  }
+    if(settings[message.guild.id+user.id].status =="off"){
+      settings[message.guild.id+user.id].status ="on";
+    }else{
+            settings[message.guild.id+user.id].status ="off";
+
+    }
+  }
+})
