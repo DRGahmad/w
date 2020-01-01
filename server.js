@@ -248,6 +248,7 @@ Reason : ${Reason}`)
                     if (log) log.send(closee)
                     message.author.send(closee);
                     client.users.get(ticketInfos[message.guild.id + message.channel.id].by).send(closee)
+              delete ticketInfos[message.guild.id + message.channel.id];
                 }).catch(() => {
                     m.delete()
                         .then(message.channel.send('Ticket close timed out, the ticket was not closed')).then((c) => {
