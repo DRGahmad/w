@@ -107,7 +107,7 @@ client.on('message', async message => {
  .addField(`**Error :interrobang:**`, `This server doesn't have a \`Support\` role made so the ticket won't be opened.`)
  .setTimestamp();
  if (!message.guild.roles.exists("name", "Support")) return message.channel.send({ embed: embed });
-if (message.guild.channels.exists("name", `ticket-${message.author.name}`)) return message.channel.send(`بس يا كسمك`);     
+if (message.guild.channels.exists("name", `ticket-${message.author.name}`)) return message.channel.send(`do you have ticket`);     
  if(!ticketsStation) return message.channel.send(`**Error! **:interrobang:\n please create \`category\` Called \`TICKETS\``)
  message.guild.createChannel(`ticket-` + message.author.username, "text").then(c => {
  c.setParent(ticketsStation);
