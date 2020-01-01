@@ -55,7 +55,7 @@ Discord API: ${client.ping.toFixed(0)} ms\`\`\``);
 });
 
 client.on('message', message => {
-  if(message.author.bot) return;
+
   if(message.content.startsWith(prefix + 'new')) {
   if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
  let log = message.guild.channels.find("name", "tickets-log");
@@ -115,6 +115,7 @@ c.setTopic(`ticket by: ${message.author.id}`)
  .addField(`Reason :`, `${reason}`)
  .setFooter(`${client.user.tag} BY | `,client.user.displayAvatarURL)
  .setTimestamp();
+   c.send(`${role}`)
  c.send({ embed: embed }).then
  c.send(`<@${message.author.id}>`).then(b=>{
    b.delete();
