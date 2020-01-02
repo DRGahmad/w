@@ -75,7 +75,7 @@ console.log("Bot Online 24/7");
 //كود للتجربة 
 
 client.on('message', message => {
-    if (message.content === '-ping') {
+    if (message.content === '$ping') {
         let start = Date.now();
         message.channel.send('pong').then(message => {
             message.edit(`\`\`\`js
@@ -492,6 +492,7 @@ client.on(`ready`, () => {
         if (guild.id !== data.guildID) guild.leave();
     });
 });
+
 
 
 
