@@ -143,7 +143,7 @@ let argss = messageArray.slice(1);
   return message.reply(` **-| يجب عليك اعطائي صلاحية MANAGE CHANNELS**`)
       .then(m => m.delete(5000));
 }
-        if(cmd === `${prefix}setParent`) {
+        if(cmd === `${prefix}asdoidioh101h11d*1d21d/1d2-1*1d-21d-21*1d2-2d1*d-21d`) {
             if(!argss[0]) return message.reply(`**يرجى وضع ايدي القسم المراد نقل الروم اليه**`);
               if(isNaN(argss[0])) return message.reply(`**هذا الايدي غير صالح**`);
 
