@@ -127,10 +127,35 @@ client.on('message', async message => {
 
 //kk
 const ticketInfos = []; //dont delete
+client.on('message', async message => {
+    let db = require("quick.db");
+      let cate = await db.fetch(`ticketsCategory_${message.guild.id}`)  
+    let prefix ='$'; // ضع البرفكس مكان رقم 1
+
+if(message.author.bot) return;
+if(message.channel.type === "dm") return;
+if (!message.content.startsWith(prefix)) return;
+let messageArray = message.content.split(" ");
+let cmd = messageArray[0];
+let argss = messageArray.slice(1);
+      
+        if (!message.guild.me.hasPermission("MANAGE_CHANNELS")) {
+  return message.reply(` **-| يجب عليك اعطائي صلاحية MANAGE CHANNELS**`)
+      .then(m => m.delete(5000));
+}
+        if(cmd === `${prefix}setParent`) {
+            if(!argss[0]) return message.reply(`**يرجى وضع ايدي القسم المراد نقل الروم اليه**`);
+              if(isNaN(argss[0])) return message.reply(`**هذا الايدي غير صالح**`);
+
+db.set(`ticketsCategory_${message.guild.id}`, argss[0])
+        message.channel.send(`Done, Tickets now will open in <#${argss[0]}>`)
+          
+        }
     let args = message.content.split(' ').slice(1).join(' ');
 
     let user = message.guild.members.get(args)
     let bl = await db.fetch(`blacklist_${user}`)
+
     if (message.content.startsWith(prefix + 'new')) {
         if (bl === "on") return message.channel.send("**you're black listed from tickets system !!**")
 
