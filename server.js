@@ -405,6 +405,29 @@ if(cmd == 'nfa') {
   
 
 
+client.on('message',message => {
+    if (message.content.startsWith(prefix + 'help')) {
+message.author.send(`Support Server : discord.gg/msnc3ZD
+
+> This bot has been registered for <@${data.ownerID}>
+                   ` )
+    }
+});
+
+
+
+client.on('message',message => {
+    if (message.content.startsWith(prefix + 'vip info')) {
+                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+message.channel.send(`> **Vip Info
+> Owner : <@${data.ownerID}>
+> prefix : ${data.prefix}**
+                   ` )
+    }
+});
+  
+
+
 
 
 if (!Discord) {
