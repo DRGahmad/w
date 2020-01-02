@@ -71,6 +71,44 @@ console.log("Bot Online 24/7");
 
 
 
+   //حطه
+                
+    client.on("message", async message => {
+
+        
+    let prefix ='$'; // ضع البرفكس مكان رقم 1
+
+if(message.author.bot) return;
+if(message.channel.type === "dm") return;
+if (!message.content.startsWith(prefix)) return;
+let messageArray = message.content.split(" ");
+let cmd = messageArray[0];
+let args = messageArray.slice(1);
+      
+        if (!message.guild.me.hasPermission("MANAGE_CHANNELS")) {
+  return message.reply(` **-| يجب عليك اعطائي صلاحية MANAGE CHANNELS**`)
+      .then(m => m.delete(5000));
+}
+
+      if(!message.channel.guild) return;
+      if (!message.member.hasPermission("ADMINISTRATOR")) {
+          return message.channel.send(` **-| ليس لديك صلاحية تعديل الرومات !**`)
+          .then(m => m.delete(5000));
+      } 
+    
+        if(cmd === `${prefix}setParent`) {
+            if(!args[0]) return message.reply(`**يرجى وضع ايدي القسم المراد نقل الروم اليه**`);
+              if(isNaN(args[0])) return message.reply(`**هذا الايدي غير صالح**`);
+
+
+          message.channel.setParent(`${args[0]}`)
+          .then(newChannel => message.channel.send(`**-| تم تغيير قسم الروم الى <#${args[0]}>**`))
+    .catch(console.error);
+
+          
+        }
+    });
+
 
 //كود للتجربة 
 
