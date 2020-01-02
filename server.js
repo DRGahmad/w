@@ -149,14 +149,13 @@ let argss = messageArray.slice(1);
           return message.channel.send(` **-| ليس لديك صلاحية تعديل الرومات !**`)
           .then(m => m.delete(5000));
       } 
-let three = message.content.split(' ').slice(1).join(" ");
-
+    
         if(cmd === `${prefix}setParent`) {
             if(!argss[0]) return message.reply(`**يرجى وضع ايدي القسم المراد نقل الروم اليه**`);
-        if (!message.guild.channels.exists("name", `${three}`)) return message.channel.send(`لا يوجد قسم بهذا الاسم`);
+              if(isNaN(argss[0])) return message.reply(`**هذا الايدي غير صالح**`);
 
-db.set(`ticketsCategory_${message.guild.id}`, three)
-        message.channel.send(`Done, Tickets now will open in <#${three}>`)
+db.set(`ticketsCategory_${message.guild.id}`, argss[0])
+        message.channel.send(`Done, Tickets now will open in <#${argss[0]}>`)
           
         }
     let args = message.content.split(' ').slice(1).join(' ');
