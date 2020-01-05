@@ -73,12 +73,39 @@ console.log("Bot Online 24/7");
 
    // 
 
-                
-    client.on("message", async message => {
+ 
+const db = require("quick.db"); // ثبت بكج ذا عن طريق npm i quick.db
+client.on("message", async message => {
+    const prefix = "$";
+    let tMsg = await db.fetch(`tMsg_${message.guild.id}`) 
+      if(tMsg === null) tMsg = "Welcome, Please wait some time for stuff to come and help you :D"; // هاذي الرسالة الافتراضية
 
+ 
+    if (message.author.bot) return;
+    if (!message.guild) return;
+    if (!message.content.startsWith(prefix)) return;
+
+ 
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const cmd = args.shift().toLowerCase();
+
+    if(cmd === "set-msg") {
+        if(!message.member.hasPermission("MANAGE_SERVER")) return message.channel.send("يجب عليك امتلاك صلاحيات MANAGE_SERVER");
+
+      let msg = args.join(" ");
+            db.set(`tMsg_${message.guild.id}`, msg);
+            let embed = new RichEmbed()
+            .setTitle("Ticket Message has been set")
+            .setDescription(msg);
+
+            message.channel.send(embed)
      
-    });
+    
+ 
+    }
 
+   //// الحين حط مكان الرسالة الي في امر التكت حقك ذا tMsg وبس
+});
 
 //كود للتجربة 
 
@@ -131,6 +158,7 @@ client.on('message', async message => {
     let db = require("quick.db");
       let cate = await db.fetch(`ticketsCategory_${message.guild.id}`)  
     let prefix ='$'; // ضع البرفكس مكان رقم 1
+              const tMsg = await db.fetch(`tMsg_${message.guild.id}`) 
 
 if(message.author.bot) return;
 if(message.channel.type === "dm") return;
@@ -217,11 +245,12 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
             message.channel.send({
                 embed: eembed
             });
+
             const embed = new Discord.RichEmbed()
                 .setColor(0xCF40FA)
                 .setThumbnail(message.author.avatarURL)
                 .addField(`**Welcome**`, `<@${message.author.id}>`)
-                .addField(`Our **__Support Team__** will be here soon to help.`, `** **`)
+                .addField(tMsg, "Hi!")
                 .addField(`Reason :`, `${reason}`)
                 .setFooter(`${client.user.tag} BY | `, client.user.displayAvatarURL)
                 .setTimestamp();
