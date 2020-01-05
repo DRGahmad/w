@@ -90,7 +90,7 @@ client.on("message", async message => {
     const cmd = args.shift().toLowerCase();
 
     if(cmd === "set-msg") {
-        if(!message.member.hasPermission("MANAGE_SERVER")) return message.channel.send("يجب عليك امتلاك صلاحيات MANAGE_SERVER");
+        if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("يجب عليك امتلاك صلاحيات MANAGE_SERVER");
 
       let msg = args.join(" ");
             db.set(`tMsg_${message.guild.id}`, msg);
@@ -250,7 +250,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
                 .setColor(0xCF40FA)
                 .setThumbnail(message.author.avatarURL)
                 .addField(`**Welcome**`, `<@${message.author.id}>`)
-                .addField(tMsg, "Hi!")
+                .addField("Hello !", tMsg)
                 .addField(`Reason :`, `${reason}`)
                 .setFooter(`${client.user.tag} BY | `, client.user.displayAvatarURL)
                 .setTimestamp();
