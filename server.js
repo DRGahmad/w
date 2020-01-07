@@ -152,6 +152,7 @@ client.on('message', async message => {
     }
 });
 
+
 //kk
 const ticketInfos = []; //dont delete
 client.on('message', async message => {
@@ -159,7 +160,6 @@ client.on('message', async message => {
       let cate = await db.fetch(`ticketsCategory_${message.guild.id}`)  
     let prefix ='$'; // ضع البرفكس مكان رقم 1
               const tMsg = await db.fetch(`tMsg_${message.guild.id}`) 
-
 if(message.author.bot) return;
 if(message.channel.type === "dm") return;
 if (!message.content.startsWith(prefix)) return;
