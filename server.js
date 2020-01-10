@@ -490,3 +490,7 @@ if(cmd == 'nfa') {
   message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
 })
+
+
+
+
