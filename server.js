@@ -71,7 +71,38 @@ console.log("Bot Online 24/7");
 
 
 
-   // 
+client.on('message', async message => {
+
+  if(message.content.split(' ')[0] == `${prefix}ban`){
+  if(!message.guild || message.author.bot) return undefined;
+      if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('You don\'t have permission.');
+      if(!message.guild.member(client.user).hasPermission('BAN_MEMBERS')) return message.channel.send('I don\'t have permission.');
+      let args = message.content.split(" ").slice(1);
+      let user = message.guild.members.get(message.content.split(' ')[1]) || message.mentions.members.first();
+      let reason = message.content.split(" ").slice(2).join(" ");
+      if(!user) return message.channel.send(`Usage: ${prefix}ban @mention reason`);
+      if(!reason) reason = 'No reason provided.';
+      if(user.user.id === message.author.id) return message.channel.send('You can\'t ban yourself!');
+      if(message.guild.member(user.user).highestRole.position >= message.guild.member(message.member).highestRole.position) return message.channel.send(`You can't ban **${user.user.tag}** because his role highest than your role!`);
+      if(message.guild.member(user.user).highestRole.position >= message.guild.member(client.user).highestRole.position) return message.channel.send(`I can't ban **${user.user.tag}** because his role highest than my role!`);
+      if(message.guild.member(user.user).hasPermission('MANAGE_GUILD') || user.user.id == message.guild.owner.id) return message.channel.send(`You can't ban **${user.user.tag}** because he have Administration permissions!`);
+      if(!message.guild.member(user.user).bannable) return message.channel.send(`I can't ban **${user.user.tag}**.`);
+      let embed = new Discord.RichEmbed()
+      .setTitle("**You have banned From Orio Host !**")
+      .setDescription(`
+        **- Banned By: ** ${message.author.username}
+        **- Ban Reason: ** ${reason}
+      `)
+            await user.send(embed)
+
+      message.guild.member(user).ban(reason, user);
+
+      message.channel.send(`Done :+1:, I Banned ${user.user.username} from the server!\nReason: \`\`${reason}\`\``);
+    }
+});
+
+
+  
 
  
 const db = require("quick.db"); // ثبت بكج ذا عن طريق npm i quick.db
@@ -459,23 +490,3 @@ if(cmd == 'nfa') {
   message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
 })
-
-client.on('message', message => {
-  if(message.content.split(' ')[0] == `${prefix}ban`){
-  if(!message.guild || message.author.bot) return undefined;
-      if(!message.member.hasPermission('BAN_MEMBERS')) return message.channel.send('You don\'t have permission.');
-      if(!message.guild.member(client.user).hasPermission('BAN_MEMBERS')) return message.channel.send('I don\'t have permission.');
-      let args = message.content.split(" ").slice(1);
-      let user = message.guild.members.get(message.content.split(' ')[1]) || message.mentions.members.first();
-      let reason = message.content.split(" ").slice(2).join(" ");
-      if(!user) return message.channel.send(`Usage: ${prefix}ban @mention reason`);
-      if(!reason) reason = 'No reason provided.';
-      if(user.user.id === message.author.id) return message.channel.send('You can\'t ban yourself!');
-      if(message.guild.member(user.user).highestRole.position >= message.guild.member(message.member).highestRole.position) return message.channel.send(`You can't ban **${user.user.tag}** because his role highest than your role!`);
-      if(message.guild.member(user.user).highestRole.position >= message.guild.member(client.user).highestRole.position) return message.channel.send(`I can't ban **${user.user.tag}** because his role highest than my role!`);
-      if(message.guild.member(user.user).hasPermission('MANAGE_GUILD') || user.user.id == message.guild.owner.id) return message.channel.send(`You can't ban **${user.user.tag}** because he have Administration permissions!`);
-      if(!message.guild.member(user.user).bannable) return message.channel.send(`I can't ban **${user.user.tag}**.`);
-      message.guild.member(user).ban(reason, user);
-      message.channel.send(`Done :+1:, I Banned ${user.user.username} from the server!\nReason: \`\`${reason}\`\``);
-    }
-});
