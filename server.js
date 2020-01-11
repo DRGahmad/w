@@ -234,7 +234,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
         if (!message.guild.roles.exists("name", "Support")) return message.channel.send({
             embed: embed
         });
-        if (message.guild.channels.exists("name", `ticket-${message.author.name}`)) return message.channel.send(`do you have ticket`);
+        if (message.guild.channels.exists("name", `ticket-${message.author.name}`)) 
         if (!ticketsStation) return message.channel.send(`**Error! **:interrobang:\n please create \`category\` Called \`TICKETS\``)
         message.guild.createChannel(`ticket-` + message.author.username, "text").then(c => {
             if (!ticketInfos[message.guild.id + c.id]) ticketInfos[message.guild.id + c.id] = {
