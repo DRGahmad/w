@@ -185,7 +185,7 @@ client.on('message', async message => {
 
 
 //kk
-const ticketInfos = []; //dont delete
+  const ticketInfos = []; //dont delete
 client.on('message', async message => {
     let db = require("quick.db");
       let cate = await db.fetch(`ticketsCategory_${message.guild.id}`)  
