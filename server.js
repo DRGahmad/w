@@ -214,6 +214,8 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
 
     let user = message.guild.members.get(args)
     let bl = await db.fetch(`blacklist_${user}`)
+    
+
 
     if (message.content.startsWith(prefix + 'new')) {
         if (bl === "on") return message.channel.send("**you're black listed from tickets system !!**")
