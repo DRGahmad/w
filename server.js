@@ -96,15 +96,15 @@ client.on('message', async message => {
     .setTitle(`**${message.author.username} - Welcome !**`)
     .setDescription(`لديك 5 دقائق لتحويل 1000 كريدت الى <@603456072954544141>`)
     message.channel.send(embed)
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**💰 | ${message.author.username}, has transferred \`$95\` to <@603456072954544141>**`)
+      let P2 = "95"; // xD
+  let filter = response => response.author.id == "567703512763334685" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@603456072954544141> **`)
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
       
             message.channel.send(`done !`)
     
-       message.guild.createChannel(
-            `room-${message.author.username}`, 
-      {
+     message.guild.createChannel(
+            `room-${message.author.username}`,{
             "type": "text",
             "topic": message.author.username,
              }).then(c => {
