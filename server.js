@@ -129,7 +129,7 @@ client.on('message', async message => {
   message.channel.send(`done !`)
    var role = message.guild.roles.find(role => role.name === "VIP");
 message.member.addRole(role);
-       let room = filter2
+       let room = collected.first().content
      message.guild.createChannel(room, "text").then(c => {
             let role2 = message.guild.roles.find("name", "@everyone");
   
