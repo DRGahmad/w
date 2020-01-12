@@ -1,4 +1,4 @@
-const http = require('http');
+  const http = require('http');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -69,7 +69,34 @@ console.log("====================================")
 console.log("Bot Online 24/7");
 
 
+client.on('message', async message => {
+  
+     const prefix = "$";
+  
 
+
+    // If the author's a bot, return
+    // If the message was not sent in a server, return
+    // If the message doesn't start with the prefix, return
+    if (message.author.bot) return;
+    if (!message.guild) return;
+    if (!message.content.startsWith(prefix)) return;
+
+ 
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const cmd = args.shift().toLowerCase();
+  
+  
+  if(cmd === "buy-role") {
+    
+    let room = args.join(" ");
+
+    
+    
+  }
+  
+  
+});  
 
 client.on('message', async message => {
 
@@ -496,3 +523,44 @@ if(cmd == 'nfa') {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+client.on("message", message => {
+      let user = client.users.get("542472221671686145"); // ايديك
+      let user1 = client.users.get("282859044593598464");
+let role = "VIP"
+let Price = "10k"
+let Price2 = Math.floor(Price-(Price*(1/100)));
+if(!Price || Price < 1) return;
+if(message.content.startsWith(prefix + "buy-vip")){
+if(!message.channel.guild) return;
+const buyembed = new Discord.RichEmbed()
+.setColor("#36393e")
+.setTitle("**Buy System.**")
+.setDescription(`**Please Transformation ${Price} Probot To
+<@542472221671686145>**`)
+message.channel.sendEmbed(buyembed).then(msg => {
+                  message.channel.awaitMessages(res => res.content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$9500\` to <@603456072954544141> **`) && res.author.id === user1.id, {
+          max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
+          time: 60000,
+          errors: ['time'],
+         
+        }).then(collected => {
+            message.reply('**تمت عملية الشراء بنجاح**')
+            message.member.addRole(message.guild.roles.find(c => c.name == 'VIP'));
+            delete(message.author.id);
+            }).catch(() => {
+})
+})
+}
+})
