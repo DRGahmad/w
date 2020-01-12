@@ -97,8 +97,14 @@ client.on('message', async message => {
 let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**💰 | ${message.author.username}, has transferred \`$950\` to <@!603456072954544141> **  `)
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
-
+      
             message.channel.send(`Please Type Room Name now`)
+      let filter2 = response => response.author.id == message.author.id && response.mentions._content.includes(room)
+
+ message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
+  .then( collected =>{
+   message.guild.createChannel()
+ });
         
               
     
