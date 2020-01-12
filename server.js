@@ -90,7 +90,6 @@ client.on('message', async message => {
     if(cmd === "vip") {
     
     let room = args.join(" ");
-      if(!room) return message.reply("Type room name now !")
 
     let embed = new Discord.RichEmbed()
     .setTitle(`**${message.author.username} - Welcome !**`)
@@ -101,10 +100,36 @@ client.on('message', async message => {
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
       
-            message.channel.send(`done !`)
+        let filter2 = m => m.author.id === message.author.id;
+    
+      let thisMessage;
+ 
+    let thisFalse;
+
+        message.channel.send('📝 **| من فضلك اكتب اسم الروم الان... ✏ **').then(msg => {
+
+     message.channel.awaitMessages(filter2, {
+ 
+      max: 1,
+ 
+      time: 90000,
+ 
+      errors: ['time']
+ 
+    })
+            
+             .then(collected => {
+ 
+      collected.first().delete();
+ 
+      thisMessage = collected.first().content;
+ 
+      let boi;
+ 
+  message.channel.send(`done !`)
    var role = message.guild.roles.find(role => role.name === "VIP");
 message.member.addRole(role);
-    
+       let room = filter2
      message.guild.createChannel(room, "text").then(c => {
             let role2 = message.guild.roles.find("name", "@everyone");
   
@@ -132,6 +157,25 @@ message.member.addRole(role);
                     embed: embed
                 });
         }).catch(console.error);
+       message.reply("Done !").then(msg => {
+ 
+ 
+ 
+          message.channel.awaitMessages(filter, {
+ 
+            max: 1,
+ 
+            time: 90000,
+ 
+            errors: ['time']
+ 
+          })
+         })
+ })
+          })
+    
+    
+          
         
  
   });
