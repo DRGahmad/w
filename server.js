@@ -87,35 +87,65 @@ client.on('message', async message => {
     const cmd = args.shift().toLowerCase();
   
   
-  if(cmd === "buy-role") {
+    if(cmd === "vip") {
     
     let room = args.join(" ");
+      if(!room) return message.reply("Type room name now !")
 
     let embed = new Discord.RichEmbed()
     .setTitle(`**${message.author.username} - Welcome !**`)
     .setDescription(`لديك 5 دقائق لتحويل 1000 كريدت الى <@603456072954544141>`)
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**💰 | ${message.author.username}, has transferred \`$950\` to <@!603456072954544141> **  `)
+    message.channel.send(embed)
+let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**💰 | ${message.author.username}, has transferred \`$95\` to <@603456072954544141>**`)
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
   .then( collected =>{
       
-            message.channel.send(`Please Type Room Name now`)
-      let filter2 = response => response.author.id == message.author.id && response.mentions._content.includes(room)
+            message.channel.send(`done !`)
+    
+       message.guild.createChannel(
+            `room-${message.author.username}`, 
+      {
+            "type": "text",
+            "topic": message.author.username,
+             }).then(c => {
+            let role2 = message.guild.roles.find("name", "@everyone");
+  
+            c.overwritePermissions(role2, {
+                SEND_MESSAGES: false,
+                READ_MESSAGES: false
+            });
+            c.overwritePermissions(message.author, {
+                SEND_MESSAGES: true,
+                READ_MESSAGES: true
+            });
 
- message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
-  .then( collected =>{
-   message.guild.createChannel()
- });
+            let embed2 = new RichEmbed()
+            .setTitle(`**${message.author.username}**`)
+            .setDescription(`Done, Your ticket was created in <#${c.id}>`)
+            .setTimestamp()
+            message.channel.send(embed2);
+           
+            const embed = new Discord.RichEmbed()
+                .setColor(0xCF40FA)
+                .setTitle(`Room For ${message.author.username}`)
+                .setDescription(`Enjoy !`)
+                .setTimestamp()
+                c.send({
+                    embed: embed
+                });
+        }).catch(console.error);
         
-              
-    
+ 
   });
+    
+ }
 
   
     
-  }
   
   
-});  
+  
+  });
 
 client.on('message', async message => {
 
@@ -552,34 +582,3 @@ if(cmd == 'nfa') {
 
 
 
-
-
-client.on("message", message => {
-      let user = client.users.get("542472221671686145"); // ايديك
-      let user1 = client.users.get("282859044593598464");
-let role = "VIP"
-let Price = "10k"
-let Price2 = Math.floor(Price-(Price*(1/100)));
-if(!Price || Price < 1) return;
-if(message.content.startsWith(prefix + "buy-vip")){
-if(!message.channel.guild) return;
-const buyembed = new Discord.RichEmbed()
-.setColor("#36393e")
-.setTitle("**Buy System.**")
-.setDescription(`**Please Transformation ${Price} Probot To
-<@542472221671686145>**`)
-message.channel.sendEmbed(buyembed).then(msg => {
-                  message.channel.awaitMessages(res => res.content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$9500\` to <@603456072954544141> **`) && res.author.id === user1.id, {
-          max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
-          time: 60000,
-          errors: ['time'],
-         
-        }).then(collected => {
-            message.reply('**تمت عملية الشراء بنجاح**')
-            message.member.addRole(message.guild.roles.find(c => c.name == 'VIP'));
-            delete(message.author.id);
-            }).catch(() => {
-})
-})
-}
-})
