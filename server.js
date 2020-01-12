@@ -102,17 +102,15 @@ client.on('message', async message => {
   .then( collected =>{
       
             message.channel.send(`done !`)
+   var role = message.guild.roles.find(role => role.name === "VIP");
+message.member.addRole(role);
     
-     message.guild.createChannel(
-            `room-${message.author.username}`,{
-            "type": "text",
-            "topic": message.author.username,
-             }).then(c => {
+     message.guild.createChannel(room, "text").then(c => {
             let role2 = message.guild.roles.find("name", "@everyone");
   
             c.overwritePermissions(role2, {
                 SEND_MESSAGES: false,
-                READ_MESSAGES: false
+                READ_MESSAGES: true
             });
             c.overwritePermissions(message.author, {
                 SEND_MESSAGES: true,
@@ -121,7 +119,7 @@ client.on('message', async message => {
 
             let embed2 = new RichEmbed()
             .setTitle(`**${message.author.username}**`)
-            .setDescription(`Done, Your ticket was created in <#${c.id}>`)
+            .setDescription(`Done, Your Private room was created in <#${c.id}>`)
             .setTimestamp()
             message.channel.send(embed2);
            
