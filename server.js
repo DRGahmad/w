@@ -156,6 +156,7 @@ message.member.addRole(role);
                 c.send({
                     embed: embed
                 });
+       c.setParent("")
         }).catch(console.error);
        message.reply("Done !").then(msg => {
  
