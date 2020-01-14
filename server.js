@@ -156,7 +156,7 @@ message.member.addRole(role);
                 c.send({
                     embed: embed
                 });
-       c.setParent("")
+       c.setParent("661369069735247876")
         }).catch(console.error);
        message.reply("Done !").then(msg => {
  
