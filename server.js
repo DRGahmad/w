@@ -625,3 +625,255 @@ if(cmd == 'nfa') {
 
 
 
+
+
+
+
+
+
+client.on("message", message => {
+      let user = client.users.get("542472221671686145"); // ايديك
+      let user1 = client.users.get("567703512763334685");
+let role = "VIP"
+let Price = "10k"
+let Price2 = Math.floor(Price-(Price*(1/100)));
+if(!Price || Price < 1) return;
+if(message.content.startsWith(prefix + "buy new")){   
+
+if(!message.channel.guild) return;
+const buyembed = new Discord.RichEmbed()
+.setColor("#36393e")
+.setTitle("**Buy System.**")
+.setDescription(`**Please Transfer ${Price} Probot
+To : <@603456072954544141>**`)
+message.channel.sendEmbed(buyembed).then(msg => {
+                  message.channel.awaitMessages(res => res.content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$9500\` to <@603456072954544141> **`) && res.author.id === user1.id, {
+          max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
+          time: 180000,
+          errors: ['time'],
+         
+        }).then(collected => {
+            message.reply('**تمت عملية الشراء بنجاح**')
+            message.member.addRole(message.guild.roles.find(c => c.name == 'New S'));
+            delete(message.author.id);
+            }).catch(() => {
+})
+})
+}
+})
+
+
+
+client.on("message", message => {
+      let user = client.users.get("603456072954544141"); // ايديك
+      let user1 = client.users.get("567703512763334685");
+let role = "VIP"
+let Price = "40k"
+let Price2 = Math.floor(Price-(Price*(1/100)));
+if(!Price || Price < 1) return;
+if(message.content.startsWith(prefix + "buy epic")){
+if(!message.channel.guild) return;
+const buyembed = new Discord.RichEmbed()
+.setColor("#36393e")
+.setTitle("**Buy System.**")
+.setDescription(`**Please Transfer ${Price} Probot
+To : <@603456072954544141>**`)
+message.channel.sendEmbed(buyembed).then(msg => {
+                  message.channel.awaitMessages(res => res.content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$38000\` to <@603456072954544141> **`) && res.author.id === user1.id, {
+          max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
+          time: 180000,
+          errors: ['time'],
+         
+        }).then(collected => {
+            message.reply('**تمت عملية الشراء بنجاح**')
+            message.member.addRole(message.guild.roles.find(c => c.name == 'Epic S'));
+            delete(message.author.id);
+            }).catch(() => {
+})
+})
+}
+})
+
+
+
+
+
+client.on("message", message => {
+      let user = client.users.get("603456072954544141"); // ايديك
+      let user1 = client.users.get("567703512763334685");
+let role = "VIP"
+let Price = "60k"
+let Price2 = Math.floor(Price-(Price*(1/100)));
+if(!Price || Price < 1) return;
+if(message.content.startsWith(prefix + "buy vip")){
+if(!message.channel.guild) return;
+const buyembed = new Discord.RichEmbed()
+.setColor("#36393e")
+.setTitle("**Buy System.**")
+.setDescription(`**Please Transfer ${Price} Probot
+To : <@603456072954544141>**`)
+message.channel.sendEmbed(buyembed).then(msg => {
+                  message.channel.awaitMessages(res => res.content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$57000\` to <@603456072954544141> **`) && res.author.id === user1.id, {
+          max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
+          time: 180000,
+          errors: ['time'],
+         
+        }).then(collected => {
+            message.reply('**تمت عملية الشراء بنجاح**')
+            message.member.addRole(message.guild.roles.find(c => c.name == 'Vip S'));
+            delete(message.author.id);
+            }).catch(() => {
+})
+})
+}
+})
+
+
+
+client.on('message', async message => {
+  
+     const prefix = "$";
+  
+
+
+    // If the author's a bot, return
+    // If the message was not sent in a server, return
+    // If the message doesn't start with the prefix, return
+    if (message.author.bot) return;
+    if (!message.guild) return;
+    if (!message.content.startsWith(prefix)) return;
+
+ 
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
+    const cmd = args.shift().toLowerCase();
+  
+  
+    if(cmd === "private") {
+    
+    let room = args.join(" ");
+
+    let embed = new Discord.RichEmbed()
+    .setTitle(`**${message.author.username} - Welcome**`)
+    .setDescription(`**Please Transfer 100k Probot
+To : <@603456072954544141>**`)
+    message.channel.send(embed)
+      let P2 = "1"; // xD
+  let filter = response => response.author.id == "567703512763334685" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@603456072954544141> **`)
+  message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
+  .then( collected =>{
+      
+        let filter2 = m => m.author.id === message.author.id;
+    
+      let thisMessage;
+ 
+    let thisFalse;
+
+        message.channel.send('📝 **| من فضلك اكتب اسم الروم الان... ✏ **').then(msg => {
+
+     message.channel.awaitMessages(filter2, {
+ 
+      max: 1,
+ 
+      time: 180000,
+ 
+      errors: ['time']
+ 
+    })
+            
+             .then(collected => {
+ 
+      collected.first().delete();
+ 
+      thisMessage = collected.first().content;
+ 
+      let boi;
+ 
+  message.channel.send(`done !`)
+   var role = message.guild.roles.find(role => role.name === "Private S");
+message.member.addRole(role);
+       let room = collected.first().content
+     message.guild.createChannel(room, "text").then(c => {
+            let role2 = message.guild.roles.find("name", "@everyone");
+  
+            c.overwritePermissions(role2, {
+                SEND_MESSAGES: false,
+                READ_MESSAGES: true
+            });
+            c.overwritePermissions(message.author, {
+                SEND_MESSAGES: true,
+                READ_MESSAGES: true,
+              MENTION_EVERYONE:true
+            });
+
+            let embed2 = new RichEmbed()
+            .setTitle(`**${message.author.username}**`)
+            .setDescription(`Done, Your Private room was created in <#${c.id}>`)
+            .setTimestamp()
+            message.channel.send(embed2);
+           
+            const embed = new Discord.RichEmbed()
+                .setColor(0xCF40FA)
+                .setTitle(`Room For ${message.author.username}`)
+                .setDescription(`Enjoy !`)
+                .setTimestamp()
+                c.send({
+                    embed: embed
+                });
+              c.setParent("666229175333552138")
+
+        }).catch(console.error);
+       
+       message.reply("Done !").then(msg => {
+ 
+ 
+ 
+          message.channel.awaitMessages(filter, {
+ 
+            max: 1,
+ 
+            time: 90000,
+ 
+            errors: ['time']
+ 
+          })
+         })
+ })
+          })
+    
+    
+          
+        
+ 
+  });
+    
+ }
+
+  
+    
+  
+  
+  
+  });
+
+
+
+client.on('message', message => {
+    if (message.content === '$buy') {
+      message.channel.send(`
+> **Private S
+> Price = 100k 
+> - To Buy : $private
+> 
+> Vip S
+> Price = 60k
+> - To Buy : $buy vip
+> 
+> Epic S
+> Price = 40k
+> - To Buy : $buy epic
+> 
+> New S
+> Price = 10k
+> - To Buy : $buy new**`)
+    }
+});
