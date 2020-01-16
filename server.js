@@ -673,5 +673,3 @@ message.member.addRole(role);
 
 
 
-
-
