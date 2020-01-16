@@ -327,7 +327,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
                     let closee = new Discord.RichEmbed()
                         .setColor(`BLUE`)
                         .setAuthor(`Ticket Closed`)
-                        .setDescription(`**Your Ticket in \`Orio Host\` has been closed!
+                        .setDescription(`**Your Ticket in \`Turbo Host\` has been closed!
  \`\`\`#${message.channel.name}\`\`\`\
 Deleted By: <@${message.author.id}> \`|\` Opened By: <@${ticketInfos[message.guild.id+message.channel.id].by}>
 Reason : ${Reason}**`)
