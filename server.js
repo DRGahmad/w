@@ -69,126 +69,6 @@ console.log("====================================")
 console.log("Bot Online 24/7");
 
 
-client.on('message', async message => {
-  
-     const prefix = "$";
-  
-
-
-    // If the author's a bot, return
-    // If the message was not sent in a server, return
-    // If the message doesn't start with the prefix, return
-    if (message.author.bot) return;
-    if (!message.guild) return;
-    if (!message.content.startsWith(prefix)) return;
-
- 
-    const args = message.content.slice(prefix.length).trim().split(/ +/g);
-    const cmd = args.shift().toLowerCase();
-  
-  
-    if(cmd === "vip") {
-    
-    let room = args.join(" ");
-
-    let embed = new Discord.RichEmbed()
-    .setTitle(`**${message.author.username} - Welcome !**`)
-    .setDescription(`لديك 5 دقائق لتحويل 1000 كريدت الى <@603456072954544141>`)
-    message.channel.send(embed)
-      let P2 = "95"; // xD
-  let filter = response => response.author.id == "567703512763334685" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@603456072954544141> **`)
-  message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
-  .then( collected =>{
-      
-        let filter2 = m => m.author.id === message.author.id;
-    
-      let thisMessage;
- 
-    let thisFalse;
-
-        message.channel.send('📝 **| من فضلك اكتب اسم الروم الان... ✏ **').then(msg => {
-
-     message.channel.awaitMessages(filter2, {
- 
-      max: 1,
- 
-      time: 90000,
- 
-      errors: ['time']
- 
-    })
-            
-             .then(collected => {
- 
-      collected.first().delete();
- 
-      thisMessage = collected.first().content;
- 
-      let boi;
- 
-  message.channel.send(`done !`)
-   var role = message.guild.roles.find(role => role.name === "VIP");
-message.member.addRole(role);
-       let room = collected.first().content
-     message.guild.createChannel(room, "text").then(c => {
-            let role2 = message.guild.roles.find("name", "@everyone");
-  
-            c.overwritePermissions(role2, {
-                SEND_MESSAGES: false,
-                READ_MESSAGES: true
-            });
-            c.overwritePermissions(message.author, {
-                SEND_MESSAGES: true,
-                READ_MESSAGES: true
-            });
-
-            let embed2 = new RichEmbed()
-            .setTitle(`**${message.author.username}**`)
-            .setDescription(`Done, Your Private room was created in <#${c.id}>`)
-            .setTimestamp()
-            message.channel.send(embed2);
-           
-            const embed = new Discord.RichEmbed()
-                .setColor(0xCF40FA)
-                .setTitle(`Room For ${message.author.username}`)
-                .setDescription(`Enjoy !`)
-                .setTimestamp()
-                c.send({
-                    embed: embed
-                });
-       c.setParent("661369069735247876")
-        }).catch(console.error);
-       message.reply("Done !").then(msg => {
- 
- 
- 
-          message.channel.awaitMessages(filter, {
- 
-            max: 1,
- 
-            time: 90000,
- 
-            errors: ['time']
- 
-          })
-         })
- })
-          })
-    
-    
-          
-        
- 
-  });
-    
- }
-
-  
-    
-  
-  
-  
-  });
 
 client.on('message', async message => {
 
@@ -207,7 +87,7 @@ client.on('message', async message => {
       if(message.guild.member(user.user).hasPermission('MANAGE_GUILD') || user.user.id == message.guild.owner.id) return message.channel.send(`You can't ban **${user.user.tag}** because he have Administration permissions!`);
       if(!message.guild.member(user.user).bannable) return message.channel.send(`I can't ban **${user.user.tag}**.`);
       let embed = new Discord.RichEmbed()
-      .setTitle("**You have banned From Orio Host !**")
+      .setTitle("**You have banned From Turbo Host !**")
       .setDescription(`
         **- Banned By: ** ${message.author.username}
         **- Ban Reason: ** ${reason}
@@ -342,7 +222,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
         if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
         let log = message.guild.channels.find("name", "tickets-log");
         let args = message.content.split(' ').slice(1).join(' ');
-        let support = message.guild.roles.find("name", "Support");
+        let support = message.guild.roles.find("name", "• Support");
         let ticketsStation = message.guild.channels.find("name", "TICKETS");
         let reason = message.content.split(" ").slice(1).join(" ");
         if (!reason) reason = 'NONE';
@@ -350,7 +230,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
             .setColor("#36393e")
             .addField(`**Error :interrobang:**`, `This server doesn't have a \`Support\` role made so the ticket won't be opened.`)
             .setTimestamp();
-        if (!message.guild.roles.exists("name", "Support")) return message.channel.send({
+        if (!message.guild.roles.exists("name", "• Support")) return message.channel.send({
             embed: embed
         });
         if (message.guild.channels.exists("name", `ticket-${message.author.name}`)) 
@@ -372,7 +252,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
                 .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033107635208193/563111847692337174.png`)
                 .setFooter(message.author.tag)
             if (log) log.send(done)
-            let role = message.guild.roles.find("name", "Support");
+            let role = message.guild.roles.find("name", "• Support");
             let role2 = message.guild.roles.find("name", "@everyone");
             c.overwritePermissions(role, {
                 SEND_MESSAGES: true,
@@ -638,7 +518,7 @@ let role = "VIP"
 let Price = "10k"
 let Price2 = Math.floor(Price-(Price*(1/100)));
 if(!Price || Price < 1) return;
-if(message.content.startsWith(prefix + "buy new")){   
+if(message.content.startsWith(prefix + "dnndkasndklandlakndklansdlkansdlandlandlknadnasdnasldnalsndklaadnldnsdnalsdndklasnew")){   
 
 if(!message.channel.guild) return;
 const buyembed = new Discord.RichEmbed()
@@ -664,70 +544,6 @@ message.channel.sendEmbed(buyembed).then(msg => {
 
 
 
-client.on("message", message => {
-      let user = client.users.get("603456072954544141"); // ايديك
-      let user1 = client.users.get("567703512763334685");
-let role = "VIP"
-let Price = "40k"
-let Price2 = Math.floor(Price-(Price*(1/100)));
-if(!Price || Price < 1) return;
-if(message.content.startsWith(prefix + "buy epic")){
-if(!message.channel.guild) return;
-const buyembed = new Discord.RichEmbed()
-.setColor("#36393e")
-.setTitle("**Buy System.**")
-.setDescription(`**Please Transfer ${Price} Probot
-To : <@603456072954544141>**`)
-message.channel.sendEmbed(buyembed).then(msg => {
-                  message.channel.awaitMessages(res => res.content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$38000\` to <@603456072954544141> **`) && res.author.id === user1.id, {
-          max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
-          time: 180000,
-          errors: ['time'],
-         
-        }).then(collected => {
-            message.reply('**تمت عملية الشراء بنجاح**')
-            message.member.addRole(message.guild.roles.find(c => c.name == 'Epic S'));
-            delete(message.author.id);
-            }).catch(() => {
-})
-})
-}
-})
-
-
-
-
-
-client.on("message", message => {
-      let user = client.users.get("603456072954544141"); // ايديك
-      let user1 = client.users.get("567703512763334685");
-let role = "VIP"
-let Price = "60k"
-let Price2 = Math.floor(Price-(Price*(1/100)));
-if(!Price || Price < 1) return;
-if(message.content.startsWith(prefix + "buy vip")){
-if(!message.channel.guild) return;
-const buyembed = new Discord.RichEmbed()
-.setColor("#36393e")
-.setTitle("**Buy System.**")
-.setDescription(`**Please Transfer ${Price} Probot
-To : <@603456072954544141>**`)
-message.channel.sendEmbed(buyembed).then(msg => {
-                  message.channel.awaitMessages(res => res.content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$57000\` to <@603456072954544141> **`) && res.author.id === user1.id, {
-          max: 1, //**💰 | ${message.author.username}, has transferred \`$1\` to ${user}**
-          time: 180000,
-          errors: ['time'],
-         
-        }).then(collected => {
-            message.reply('**تمت عملية الشراء بنجاح**')
-            message.member.addRole(message.guild.roles.find(c => c.name == 'Vip S'));
-            delete(message.author.id);
-            }).catch(() => {
-})
-})
-}
-})
-
 
 
 client.on('message', async message => {
@@ -748,7 +564,7 @@ client.on('message', async message => {
     const cmd = args.shift().toLowerCase();
   
   
-    if(cmd === "private") {
+    if(cmd === "تمنسىيمسشىيمنdjksakdbsdjkkdbajsjdbsakbWKjkjzbjbkbbsbdsjajbdشيىنشسييش") {
     
     let room = args.join(" ");
 
@@ -857,103 +673,5 @@ message.member.addRole(role);
 
 
 
-client.on('message', message => {
-    if (message.content === '$buy') {
-      message.channel.send(`
-> **Private S
-> Price = 100k 
-> - To Buy : $private
-> 
-> Vip S
-> Price = 60k
-> - To Buy : $buy vip
-> 
-> Epic S
-> Price = 40k
-> - To Buy : $buy epic
-> 
-> New S
-> Price = 10k
-> - To Buy : $buy new**`)
-    }
-});
 
 
-
-
-
-
-
-
-
-
-
-  const sug = require("./suggestions.json")
-
-          client.on("message", msg => {
-              let message = msg;
-              let messageArray = msg.content.split(" ");
-              let args = messageArray.slice(1);
-                      let caseid = Date.now() + msg.author.discriminator
-              if (msg.content.startsWith(prefix + "suggest" || msg.content.startsWith(prefix + "sug"))){
-                      let suggestionchat = msg.guild.channels.find(channel => channel.name === "الاقتراحات")
-                                                                                            // ^^^^^^^^^وأكيد يمديك تعدل اسم الروم لو تبي
-                      let suggestion =  args.join(' '); // بتلاقون تعريف الأرقز حقي فوق
-                      if(!suggestion) return message.channel.send('الرجاء وضع اقتراحك بعد الأمر');
-                      if(!suggestionchat) return message.channel.send('لا يمكنني ايجاد الشات');
-                      let suggestionembed = new Discord.RichEmbed()
-                          .setAuthor('New Suggestion!')
-                          .addField('الأقتراح من قبل', `${message.author.tag} **|** ${message.author.id}`, true)
-                          .addField('اسم السيرفر المرسل منه الأقتراح', `${message.guild.name} **|** ${message.guild.id}`)
-                          .addField('الأقتراح', `${suggestion}`)
-                          .setColor('#ffffff')
-                          .setFooter(`ID: ${Date.now() + msg.author.discriminator}`)
-                          .setThumbnail(message.author.avatarURL)
-                          .setTimestamp();
-                      suggestionchat.send(suggestionembed).then(send =>{
-                      sug[caseid] = {
-                          message: suggestion,
-                          by: msg.author.id,
-                          Time: message.createdAt,
-                          thisisimportant: send.id
-                         }
-                         fs.writeFile("./suggestions.json", JSON.stringify(sug, null , 4), err =>{
-                          console.log(err);
-                          })
-                        })
-                      message.channel.send("**تم أرسال اقتراحك**")
-                        }
-           
-              if (msg.content.startsWith(prefix + "allsuggestions")){
-              let data = undefined;
-
-              
-  let i = undefined ; 
-            for(i in sug){
-                if (data === undefined) {
-                  data = "";
-                }
-                let data1 = sug[i].message
-                let data2 = sug[i].by
-                const stuff = `${data1} **By** <@${data2}>`;
-                data += (stuff) + "\n\n";
-              }
-              if (data !== undefined) {
-                const richEmbed = new Discord.RichEmbed();
-                richEmbed.addField("Messages", data)
-                msg.channel.send(richEmbed)
-              }else if(data === undefined) return message.channel.send("Couldn't find any suggestion")
-            }
-            if (msg.content.startsWith(prefix + "dsug")){
-                  let that = args.join(' ')
-                  if(!that) return message.channel.send("Hmmm please put an id")
-                                if(sug[that].thisisimportant === undefined) return message.channel.send("Couldn't find that suggestion id!")
-                      message.channel.send("Deleted!")
-                      message.guild.channels.find(ch => ch.name === "الاقتراحات").fetchMessage(sug[that].thisisimportant).then(msg => msg.delete());
-                      delete sug[that];
-                      fs.writeFile("./suggestions.json", JSON.stringify(sug, null , 4), err =>{
-                          console.log(err)
-                        })
-                      }
-                 
-          });
