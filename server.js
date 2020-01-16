@@ -947,7 +947,7 @@ client.on('message', message => {
             if (msg.content.startsWith(prefix + "dsug")){
                   let that = args.join(' ')
                   if(!that) return message.channel.send("Hmmm please put an id")
-                                if(sug[that] === undefined) return message.channel.send("Couldn't find that suggestion id!")
+                                if(sug[that].thisisimportant === undefined) return message.channel.send("Couldn't find that suggestion id!")
                       message.channel.send("Deleted!")
                       message.guild.channels.find(ch => ch.name === "الاقتراحات").fetchMessage(sug[that].thisisimportant).then(msg => msg.delete());
                       delete sug[that];
