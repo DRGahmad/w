@@ -492,7 +492,7 @@ if(cmd == 'nfa') {
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
   
   if(message.content.startsWith(prefix+'add')){
-    if (message.autho.id !== URID) return message.reply("** Only <@"+URID+"> can use this command.**");
+    if (message.author.id !== URID) return message.reply("** Only <@"+URID+"> can use this command.**");
       let type = message.content.split(" ")[1];
     let email = message.content.split(" ")[2];
     let pass = message.content.split(" ")[3];
@@ -505,13 +505,21 @@ if(cmd == 'nfa') {
     if (type == "sfa") {
       sfa.push("email", email);
       sfa.push("pass", pass);
+            fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})
+
+      message.reply("**Successfully adedd this account.**");
+      
       
     } else if (type == "nfa") {
+      nfa.push("email", email);
+      nfa.push("pass", pass);
+            fs.writeFile("./nfa.json", JSON.stringify(nfa), (err) => {if (err) console.error(err)})
+
+      message.reply("**Successfully adedd this account.**");
+      
       
     }
   
-      fs.writeFile("./sfa.json", JSON.stringify(data), (err) => {if (err) console.error(err)})
-      message.reply("Done,")
   }
    if(message.content.startsWith(prefix+'re')){
      client.destroy()
