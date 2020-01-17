@@ -492,7 +492,7 @@ if(cmd == 'nfa') {
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
   
   if(message.content.startsWith(prefix+'add')){
-    
+    if (message.autho.id !== URID) return message.reply("** Only <@"+URID+"> can use this command.**");
       let type = message.content.split(" ")[1];
     let email = message.content.split(" ")[2];
     let pass = message.content.split(" ")[3];
@@ -502,10 +502,13 @@ if(cmd == 'nfa') {
   if(!types.includes(type)) return message.reply("Invalid account type !")
     if(!email.includes(".com")) message.reply("Invalid Email !")
     if(!pass) return message.reply("Password !")
-    let data = [{
-      "email": email,
-      "pass": pass
-    }]
+    if (type == "sfa") {
+      sfa.push("email", email);
+      sfa.push("pass", pass);
+      
+    } else if (type == "nfa") {
+      
+    }
   
       fs.writeFile("./sfa.json", JSON.stringify(data), (err) => {if (err) console.error(err)})
       message.reply("Done,")
