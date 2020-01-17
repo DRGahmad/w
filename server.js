@@ -470,7 +470,7 @@ fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error
 message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
 });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) }
 if(cmd == 'nfa') {
-  let hossam = 0;
+  let  hossam = 0;
   sfa.forEach(acc =>{if(!acc.email) return;hossam++;})
   if(hossam < 1) return message.channel.send("لا يوجد حسابات")
   if(hossam < args) return message.channel.send("لا يوجد حسابات كافية")
@@ -490,6 +490,22 @@ if(cmd == 'nfa') {
   });message.channel.send('**Done,,\nNow Check Your DM**!')
   message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M =>M.delete(5*60*1000))
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
+  
+  if(message.content.startsWith(prefix+'add')){
+    
+      let type = message.content.split(" ")[1];
+    let email = message.content.split(" ")[2];
+    let pass = message.content.split(" ")[3];
+    
+    let types = ["sfa", "nfa"]
+    
+  if(!types.includes(type)) return message.reply("Invalid account type !")
+    if(!email.includes(".com")) message.reply("Invalid Email !")
+    if(!pass) return message.reply("Password !")
+    
+    
+    
+  }
 })
 
 
