@@ -1,4 +1,4 @@
-  const http = require('http');
+    const http = require('http');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -502,18 +502,20 @@ if(cmd == 'nfa') {
   if(!types.includes(type)) return message.reply("Invalid account type !")
     if(!email.includes(".com")) message.reply("Invalid Email !")
     if(!pass) return message.reply("Password !")
-    let data = {
+    let data = [{
       "email": email,
       "pass": pass
-    }
+    }]
   
-      fs.writeFile("./sfa.json", JSON.stringify(nfa), (err) => {if (err) console.error(err)})
-    
+      fs.writeFile("./sfa.json", JSON.stringify(data), (err) => {if (err) console.error(err)})
+      message.reply("Done,")
   }
+   if(message.content.startsWith(prefix+'re')){
+  }
+
 })
 
-
-
+ 
 
 
 
