@@ -483,7 +483,7 @@ if(cmd == 'nfa') {
   let P2 = Math.floor(P-(P*(5/100)));
   let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@603456072954544141> **  `)
   message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })
-  .then( collected =>{
+  .then( collected =>{  
   let C = 0;let Accs = [];
   nfa.forEach(acc =>{if(!acc.email) return;if(C == args)return;;Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;  delete acc.email;delete acc.pass;
   fs.writeFile("./nfa.json", JSON.stringify(nfa), (err) => {if (err) console.error(err)})
@@ -502,8 +502,12 @@ if(cmd == 'nfa') {
   if(!types.includes(type)) return message.reply("Invalid account type !")
     if(!email.includes(".com")) message.reply("Invalid Email !")
     if(!pass) return message.reply("Password !")
-    
-    
+    let data = {
+      "email": email,
+      "pass": pass
+    }
+  
+      fs.writeFile("./sfa.json", JSON.stringify(nfa), (err) => {if (err) console.error(err)})
     
   }
 })
