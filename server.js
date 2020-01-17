@@ -432,7 +432,7 @@ by : <@${message.author.id}>`)
 
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
-let SFAP = 8500;/*سعر الحساب الواحد الفل داتا*/let NFAP = 250;/*سعر الحساب الواحد العادي*/let URID = '432231487916736542'//مين بيتحوله الكريديت// ahmeD_Hossam
+let SFAP = 8500;/*سعر الحساب الواحد الفل داتا*/let NFAP = 250;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message',async message => {// ahmeD_Hossam
 if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
   sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
