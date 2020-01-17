@@ -1,4 +1,4 @@
-    const http = require('http');
+      const http = require('http');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -511,6 +511,7 @@ if(cmd == 'nfa') {
       message.reply("Done,")
   }
    if(message.content.startsWith(prefix+'re')){
+     client.destroy()
   }
 
 })
