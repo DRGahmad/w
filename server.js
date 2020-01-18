@@ -535,7 +535,6 @@ if(cmd == 'nfa') {
   
   if(message.content.startsWith(prefix+'add')){
     
-       if(bOn === "off") return message.reply("**Sorry, Buying mode are disabled**")
 
     //if (message.author.id !== URID) return message.reply("** Only <@"+URID+"> can use this command.**");
       let type = message.content.split(" ")[1];
