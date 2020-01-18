@@ -502,7 +502,7 @@ if(cmd == 'nfa') {
     if(!email) return message.reply("Email?");
     if(!pass) return message.reply("Password !")
     if (type == "sfa") {
-      sfa.push("email", `{${email}`);
+      sfa.push("email", `${email}`);
       sfa.push("pass", `${pass}`);
             fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})
 
