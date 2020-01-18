@@ -499,13 +499,11 @@ if(cmd == 'nfa') {
     
     let types = ["sfa", "nfa", "send"]
     
-  if(!types.includes(type)) return message.reply("Invalid account type !")
-    //if(!email.includes(".com")) message.reply("Invalid Email !")
     if(!email) return message.reply("Email?");
     if(!pass) return message.reply("Password !")
     if (type == "sfa") {
-      sfa.push("email", email);
-      sfa.push("pass", pass);
+      sfa.push("email", `{${email}`);
+      sfa.push("pass", `${pass}`);
             fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})
 
       message.reply("**Successfully adedd this account.**");
