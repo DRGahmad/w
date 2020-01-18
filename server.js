@@ -502,8 +502,10 @@ if(cmd == 'nfa') {
     if(!email) return message.reply("Email?");
     if(!pass) return message.reply("Password !")
     if (type == "sfa") {
-      sfa.push("email", `${email}`);
-      sfa.push("pass", `${pass}`);
+     let alt = {
+       "email": `${email}`,"pass": `${pass}`
+     }
+     sfa.push(alt)
             fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})
 
       message.reply("**Successfully adedd this account.**");
