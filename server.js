@@ -103,7 +103,7 @@ client.on('message', async message => {
 
   client.on("message", async message => {
     const prefix = "$";
-    let bOn = await db.fetch(`bOn_{message.guild.id}`) 
+    let bOn = await db.fetch(`bOn_${message.guild.id}`) 
       if(bOn === null) bOn = "on";   
 
  
@@ -117,19 +117,25 @@ client.on('message', async message => {
 
     if(cmd === "set-buy") {
 
-    if(bOn === "on") {
-      db.set(`bOn_${message.guild.id}`, "off")
-      message.channel.send("**Done, MC Accounts buying mode is **__**OFF**__")
+      if(args[0] === "on") {
+    db.set(`bOn_${message.guild.id}`, "on")
+      message.channel.send("**Done, MC Accounts buying mode is **__**on**__")
+      
     }
-       if(bOn === "off") {
-      db.set(`bOn_${message.guild.id}`, "on")
-      message.channel.send("**Done, MC Accounts buying mode is **__**ON**__")
+       if(args[0] === "off") {
+      db.set(`bOn_${message.guild.id}`, "off")
+      message.channel.send("**Done, MC Accounts buying mode is **__**off**__")
     }
      
-    
+      
  
     }
+    
+  if(cmd === "btest") {
+    
+          message.reply(bOn)
 
+        }
    //// الحين حط مكان الرسالة الي في امر التكت حقك ذا tMsg وبس
 });
 
@@ -464,9 +470,10 @@ let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف ال�
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
 let SFAP = 8500;/*سعر الحساب الواحد الفل داتا*/let NFAP = 250;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message',async message => {// ahmeD_Hossam
-      let bOn = await db.fetch(`bOn_{message.guild.id}`) 
+      let bOn = await db.fetch(`bOn_${message.guild.id}`) 
 if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
-                               if(bOn === "off") return message.reply("**Sorry, Buying mode are disabled**")
+                              
+       if(bOn === "off") return message.reply("**Sorry, Buying mode are disabled**")
 
   sfa.forEach(acc =>{if(!acc.email) return;ahmed++;});// ahmeD_Hossam
   nfa.forEach(acc =>{if(!acc.email) return;hossam++;});// ahmeD_Hossam // i will kill you soon ok ? xD
@@ -477,7 +484,7 @@ if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
 .addField('**الاسعار**',`\`[1 SFA] > 8500 Credits ProBot\` \n \`[1 NFA] > 250 Credits ProBot\``)// ahmeD_Hossam
 .setFooter(`$buy [sfa/nfa] [الحسابات لا يوجد عليها ضمان | لشراء حساب الرجاء كتابة الأمر التالي [الكمية`) )}// ahmeD_Hossam
 if(message.content.startsWith(prefix+'buy')){// ahmeD_Hossam
-  if(bOn === "off") return message.reply("**Sorry, Buying mode are disabled**")
+       if(bOn === "off") return message.reply("**Sorry, Buying mode are disabled**")
 
 let cmd = message.content.split(" ")[1];// ahmeD_Hossam
 let args = message.content.split(" ")[2];// ahmeD_Hossam
@@ -527,6 +534,9 @@ if(cmd == 'nfa') {
   });}).catch(err=>{return message.channel.send('**:x: Please Open Your DM**!')}) } }
   
   if(message.content.startsWith(prefix+'add')){
+    
+       if(bOn === "off") return message.reply("**Sorry, Buying mode are disabled**")
+
     //if (message.author.id !== URID) return message.reply("** Only <@"+URID+"> can use this command.**");
       let type = message.content.split(" ")[1];
     let email = message.content.split(" ")[2];
