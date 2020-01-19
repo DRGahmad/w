@@ -794,7 +794,7 @@ message.member.addRole(role);
   client.on('raw', packet => {
   if(!['MESSAGE_REACTION_ADD', 'MESSAGE_REACTION_REMOVE'].includes(packet.t)) return;
   if (packet.t == 'MESSAGE_REACTION_ADD') {
-  if(packet.d.message_id == '668292600842682408') { // ايدي المسج
+  if(packet.d.message_id == '667164223062802462') { // ايدي المسج
   let emoji = packet.d.emoji.id ? `${packet.d.emoji.name}:${packet.d.emoji.id}` : packet.d.emoji.name;
   if(emoji == '🎟️'){ // الايموجي الي بيضغط عليه عشان يسوي تكت
   let u = client.users.get(packet.d.user_id);
