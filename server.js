@@ -1,4 +1,4 @@
-      const http = require('http');
+          const http = require('http');
 const express = require('express');
 const app = express();
 app.get("/", (request, response) => {
@@ -468,7 +468,7 @@ by : <@${message.author.id}>`)
 
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
-let SFAP = 8500;/*سعر الحساب الواحد الفل داتا*/let NFAP = 250;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
+let SFAP = 100;/*سعر الحساب الواحد الفل داتا*/let NFAP = 250;/*سعر الحساب الواحد العادي*/let URID = '603456072954544141'//مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message',async message => {// ahmeD_Hossam
       let bOn = await db.fetch(`bOn_${message.guild.id}`) 
 if(message == prefix+'stock') {let ahmed = 0;let hossam = 0;// ahmeD_Hossam
@@ -572,7 +572,7 @@ if(cmd == 'nfa') {
   }
    if(message.content.startsWith(prefix+'give')){
      
-             let type = message.content.split(" ")[2];
+             let type = message.content.split(" ")[2];let args = message.content.split(" ")[3];
   let user = message.mentions.users.first()
   
   if(!user) return message.channel.send("**Please mention a user**")
@@ -580,13 +580,28 @@ if(cmd == 'nfa') {
      if(!type) return message.channel.send("Please input a alt type")
            
      if(type === "sfa") {
-      
 let C = 0;let Accs = [];// ahmeD_Hossam
 sfa.forEach(acc =>{
+  
+  if(!acc.email) return;if(C == args)return;;
   Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;// ahmeD_Hossam// ahmeD_Hossam
 delete acc.email;delete acc.pass;
   
 fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
+});message.channel.send('**Done**')
+user.send(`${message.author.username} has been gifted you a sfa account \n \`\`\`${Accs.join("\n")}\`\`\` `).then(M =>M.delete(5*60*1000))
+
+     }
+     
+       if(type === "nfa") {
+let C = 0;let Accs = [];// ahmeD_Hossam
+nfa.forEach(acc =>{
+  
+  if(!acc.email) return;if(C == args)return;;
+  Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;// ahmeD_Hossam// ahmeD_Hossam
+delete acc.email;delete acc.pass;
+  
+fs.writeFile("./nfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
 });message.channel.send('**Done**')
 user.send(`${message.author.username} has been gifted you a sfa account \n \`\`\`${Accs.join("\n")}\`\`\` `).then(M =>M.delete(5*60*1000))
 
