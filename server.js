@@ -578,7 +578,7 @@ if(cmd == 'nfa') {
   if(!user) return message.channel.send("**Please mention a user**")
      
      if(!type) return message.channel.send("Please input a alt type")
-           
+           if(!args[0]) return message.reply("ضع الكمية !")
      if(type === "sfa") {
 let C = 0;let Accs = [];// ahmeD_Hossam
 sfa.forEach(acc =>{
@@ -601,9 +601,9 @@ nfa.forEach(acc =>{
   Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;// ahmeD_Hossam// ahmeD_Hossam
 delete acc.email;delete acc.pass;
   
-fs.writeFile("./nfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
+fs.writeFile("./nfa.json", JSON.stringify(nfa), (err) => {if (err) console.error(err)})// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
 });message.channel.send('**Done**')
-user.send(`${message.author.username} has been gifted you a sfa account \n \`\`\`${Accs.join("\n")}\`\`\` `).then(M =>M.delete(5*60*1000))
+user.send(`${message.author.username} has been gifted you a nfa account \n \`\`\`${Accs.join("\n")}\`\`\` `).then(M =>M.delete(5*60*1000))
 
      }
      
