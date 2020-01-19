@@ -570,7 +570,28 @@ if(cmd == 'nfa') {
     }
   
   }
-   if(message.content.startsWith(prefix+'re')){
+   if(message.content.startsWith(prefix+'give')){
+     
+             let type = message.content.split(" ")[2];
+  let user = message.mentions.users.first()
+  
+  if(!user) return message.channel.send("**Please mention a user**")
+     
+     if(!type) return message.channel.send("Please input a alt type")
+           
+     if(type === "sfa") {
+      
+let C = 0;let Accs = [];// ahmeD_Hossam
+sfa.forEach(acc =>{
+  Accs.push(`Email: ${acc.email} | pass: ${acc.pass}`);C++;// ahmeD_Hossam// ahmeD_Hossam
+delete acc.email;delete acc.pass;
+  
+fs.writeFile("./sfa.json", JSON.stringify(sfa), (err) => {if (err) console.error(err)})// ahmeD_Hossam// ahmeD_Hossam// ahmeD_Hossam
+});message.channel.send('**Done**')
+user.send(`${message.author.username} has been gifted you a sfa account \n \`\`\`${Accs.join("\n")}\`\`\` `).then(M =>M.delete(5*60*1000))
+
+     }
+     
   }
 
 })
