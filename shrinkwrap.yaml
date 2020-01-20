@@ -4,10 +4,11 @@ dependencies:
   array-sort: 1.0.0
   ascii-data-table: 2.1.1
   better-sqlite-pool: 0.2.2
-  canvas: 2.5.0
+  canvas: 2.6.0
   canvas-prebuilt: 1.6.11
   cleverbot.io: 1.0.4
   common-tags: 1.8.0
+  countdown: 2.6.0
   dateformat: 3.0.3
   delay: 4.3.0
   discord-anti-spam: 2.0.0
@@ -52,7 +53,6 @@ dependencies:
   replace: 1.1.0
   short-number: 1.0.7
   simple-youtube-api: 5.2.0
-  snekfetch: 4.0.4
   sqlite: 3.0.3
   sqlite3: 4.0.9
   stackos: 1.1.0
@@ -1033,17 +1033,17 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-ayBAayYLgFbGBX+cwtOzM4iEQP4XB5DuBbtjgvAwQ66/FMzSR7DhlCqtDZIq9UBbpFCb1QpyDgUNVclHDdBixg==
-  /canvas/2.5.0:
+  /canvas/2.6.0:
     dependencies:
       nan: 2.14.0
       node-pre-gyp: 0.11.0
-      simple-get: 3.0.3
+      simple-get: 3.1.0
     dev: false
     engines:
       node: '>=6'
     requiresBuild: true
     resolution:
-      integrity: sha512-wwRz2cLMgb9d+rnotOJCoc04Bzj3aJMpWc6JxAD6lP7bYz0ldcn0sKddoZ0vhD5T8HBxrK+XmRDJb68/2VqARw==
+      integrity: sha512-bEO9f1ThmbknLPxCa8Es7obPlN9W3stB1bo7njlhOFKIdUTldeTqXCh9YclCPAi2pSQs84XA0jq/QEZXSzgyMw==
   /capture-stack-trace/1.0.1:
     dev: false
     engines:
@@ -1513,6 +1513,10 @@ packages:
     dev: false
     resolution:
       integrity: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+  /countdown/2.6.0:
+    dev: false
+    resolution:
+      integrity: sha1-Z3+446nUzE52QVkBuiU7UYrzQXc=
   /crc/3.3.0:
     dev: false
     resolution:
@@ -1682,14 +1686,14 @@ packages:
       node: '>=0.10'
     resolution:
       integrity: sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
-  /decompress-response/3.3.0:
+  /decompress-response/4.2.1:
     dependencies:
-      mimic-response: 1.0.1
+      mimic-response: 2.0.0
     dev: false
     engines:
-      node: '>=4'
+      node: '>=8'
     resolution:
-      integrity: sha1-gKTdMjdIOEv6JICDYirt7Jgq3/M=
+      integrity: sha512-jOSne2qbyE+/r8G1VU+G/82LBs2Fs4LAsTiLSHOCOMZQl2OKZ6i8i4IyHemTe+/yIXOtTcRQMzPcgyhoFlqPkw==
   /decompress-tar/4.1.1:
     dependencies:
       file-type: 5.2.0
@@ -3953,12 +3957,12 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
-  /mimic-response/1.0.1:
+  /mimic-response/2.0.0:
     dev: false
     engines:
-      node: '>=4'
+      node: '>=8'
     resolution:
-      integrity: sha512-j5EctnkH7amfV/q5Hgmoal1g2QHFJRraOtmx0JpIqkxhBhI/lJSl1nMpQ45hVarwNETOoWEimndZ4QK0RHxuxQ==
+      integrity: sha512-8ilDoEapqA4uQ3TwS0jakGONKXVJqpy+RpM+3b7pLdOjghCrEiGp9SRkFbUHAmZW9vdnrENWHjaweIoTIJExSQ==
   /min-document/2.19.0:
     dependencies:
       dom-walk: 0.1.1
@@ -5527,14 +5531,14 @@ packages:
     dev: false
     resolution:
       integrity: sha1-c0TLuLbib7J9ZrL8hvn21Zl1IcY=
-  /simple-get/3.0.3:
+  /simple-get/3.1.0:
     dependencies:
-      decompress-response: 3.3.0
+      decompress-response: 4.2.1
       once: 1.4.0
       simple-concat: 1.0.0
     dev: false
     resolution:
-      integrity: sha512-Wvre/Jq5vgoz31Z9stYWPLn0PqRqmBDpFSdypAnHu5AvRVCYPRYGnvryNLiXu8GOBNDH82J2FRHUGMjjHUpXFw==
+      integrity: sha512-bCR6cP+aTdScaQCnQKbPKtJOKDp/hj9EDLJo3Nw4y1QksqaovlW/bnptB6/c1e+qmNIDHRK+oXFDdEqBT8WzUA==
   /simple-swizzle/0.2.2:
     dependencies:
       is-arrayish: 0.3.2
@@ -5600,11 +5604,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NjxjITIj04Ffqid5lqr7XdgwM7X61c/Dns073Ly170bPQHLm6jkmelye/eglS++1nfTWktpP6Y2bFXjdPlQqdw==
-  /snekfetch/4.0.4:
-    deprecated: use node-fetch instead
-    dev: false
-    resolution:
-      integrity: sha512-dyycG9fvwtSJqKPfMVOpXt+60qvMGe7vWLwOJDiSJaiAx+hs2EnFChG2bXCWn7ulz+zGzrHdN9/yeEb0YqEPww==
   /sntp/0.2.4:
     dependencies:
       hoek: 0.9.1
@@ -6578,10 +6577,11 @@ specifiers:
   array-sort: ^1.0.0
   ascii-data-table: ^2.1.1
   better-sqlite-pool: ^0.2.2
-  canvas: ^2.4.1
+  canvas: 2.6.0
   canvas-prebuilt: ^1.6.11
   cleverbot.io: ^1.0.4
   common-tags: ^1.8.0
+  countdown: 2.6.0
   dateformat: ^3.0.3
   delay: ^4.1.0
   discord-anti-spam: ^2.0.0
@@ -6626,7 +6626,6 @@ specifiers:
   replace: ^1.1.0
   short-number: ^1.0.6
   simple-youtube-api: ^5.1.1
-  snekfetch: ^4.0.4
   sqlite: ^3.0.3
   sqlite3: ^4.0.6
   stackos: 1.1.0
