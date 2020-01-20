@@ -818,20 +818,15 @@ client.on ("message", async (Message) => {
     if (!Message.guild
         || Message.author.bot) 
         return false;
-    if (Message.content.startsWith (prefix + "date")) {
-        var arg = Message.content.split (" ");
+   var arg = Message.content.split (" ");
        var year = arg [1],
         month = arg [2],
         day = arg [3];
+  var date = x`
+    if (Message.content.startsWith (prefix + "date")) {
+       
+      Message.channel.send(``)
       
-      if ( (!year) || (!month) || (!day))return Message.reply("**Example: ``"+prefix+"date <year> <month> <day>``**")
-        var date = new Date (`${year}-${month}-${day}`);
-
-
-      
-        Message.channel.send
-        (
-            require("countdown")(date).toString()
-        )
+       
     }
 })
