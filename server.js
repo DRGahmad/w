@@ -136,7 +136,6 @@ client.on('message', async message => {
           message.reply(bOn)
 
         }
-   //// الحين حط مكان الرسالة الي في امر التكت حقك ذا tMsg وبس
 });
 
  
@@ -258,7 +257,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
         if (!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.channel.send(`**Error** :octagonal_sign:\nI Don\'t have MANAGE_CHANNELS Permission`)
         let log = message.guild.channels.find("name", "tickets-log");
         let args = message.content.split(' ').slice(1).join(' ');
-        let support = message.guild.roles.find("name", "• Support");
+        let support = message.guild.roles.find("name", "Support");
         let ticketsStation = message.guild.channels.find("name", "TICKETS");
         let reason = message.content.split(" ").slice(1).join(" ");
         if (!reason) reason = 'NONE';
@@ -266,7 +265,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
             .setColor("#36393e")
             .addField(`**Error :interrobang:**`, `This server doesn't have a \`Support\` role made so the ticket won't be opened.`)
             .setTimestamp();
-        if (!message.guild.roles.exists("name", "• Support")) return message.channel.send({
+        if (!message.guild.roles.exists("name", "Support")) return message.channel.send({
             embed: embed
         });
         if (message.guild.channels.exists("name", `ticket-${message.author.name}`)) 
@@ -288,7 +287,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
                 .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033107635208193/563111847692337174.png`)
                 .setFooter(message.author.tag)
             if (log) log.send(done)
-            let role = message.guild.roles.find("name", "• Support");
+            let role = message.guild.roles.find("name", "Support ");
             let role2 = message.guild.roles.find("name", "@everyone");
             c.overwritePermissions(role, {
                 SEND_MESSAGES: true,
