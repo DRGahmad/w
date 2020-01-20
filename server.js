@@ -536,7 +536,7 @@ if(cmd == 'nfa') {
   if(message.content.startsWith(prefix+'add')){
     
 
-    //if (message.author.id !== URID) return message.reply("** Only <@"+URID+"> can use this command.**");
+    if (message.author.id !== URID) return message.reply("** Only <@"+URID+"> can use this command.**");
       let type = message.content.split(" ")[1];
     let email = message.content.split(" ")[2];
     let pass = message.content.split(" ")[3];
@@ -813,20 +813,3 @@ client.on("message", async message => {
 });
 
 
-
-client.on ("message", async (Message) => {
-    if (!Message.guild
-        || Message.author.bot) 
-        return false;
-   var arg = Message.content.split (" ");
-       var year = arg [1],
-        month = arg [2],
-        day = arg [3];
-  var date = x`
-    if (Message.content.startsWith (prefix + "date")) {
-       
-      Message.channel.send(``)
-      
-       
-    }
-})
