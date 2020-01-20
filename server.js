@@ -901,3 +901,30 @@ client.on("message", async message => {
           (`**This Premium Version ends after: ${require("countdown")(date).toString()}`)
       }
   })
+
+
+
+
+
+
+const dev = ["472897933789102092"]; ///تعديل مهم ايدي حسابك
+var owner = "472897933789102092"; // Owner Bot Mention /// تعديل مهم ايدي حسابك
+var number = "1"; // Unmber Bot
+client.on("message", message => {
+  var argresult = message.content
+    .split(` `)
+    .slice(1)
+    .join(" ");
+       var time = "2020/02/20";
+          var date = new Date(time.replace("/", "-"))
+
+  if (message.content === prefix + "vip") {
+    if (message.author.bot) return;
+    if (!message.guild)
+      return message.reply("**This Command Just In Servers**");
+    message.channel.send("> **# - `Premium Info` » **" + `${message.author}`);
+    message.channel.sendMessage(> **# - `Premium Info`**
+      `> **# - Premium Number:** **[** ${number} **]**\n> **# - Ends in:** **[** ${require("countdown")(date).toString()} **]**\n> **# - Owner:** **[** <@${owner}> **]**`
+    );
+  }
+});
