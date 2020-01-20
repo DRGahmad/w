@@ -789,3 +789,26 @@ message.member.addRole(role);
   
   });
 
+
+
+
+client.on("message", async message => {
+  
+  if (message.content.toLowerCase() === prefix + "profile") {
+        message.channel.startTyping();
+    setTimeout(() => {
+      message.channel.stopTyping();
+    }, Math.random() * (1 - 3) + 1 * 1000).then(
+         message.channel.send({
+        files: [
+          {
+            name: "prfoilebycutie.png",
+            attachment: `https://api.probot.io/profile/${message.author.id}` 
+          }
+          
+        ]
+      }) 
+      )
+    }
+});
+
