@@ -4,7 +4,7 @@ dependencies:
   array-sort: 1.0.0
   ascii-data-table: 2.1.1
   better-sqlite-pool: 0.2.2
-  canvas: 2.6.0
+  canvas: 2.6.1
   canvas-prebuilt: 1.6.11
   cleverbot.io: 1.0.4
   common-tags: 1.8.0
@@ -33,6 +33,7 @@ dependencies:
   guild: 1.2.2
   hastebin-gen: 1.3.1
   hero: 0.0.1
+  hex.js: 1.0.1
   hh-mm-ss: 1.2.0
   hypixel-api: 1.1.0
   jimp: 0.6.4
@@ -59,6 +60,7 @@ dependencies:
   steam-search: 1.0.0
   superagent: 4.1.0
   table: 5.4.1
+  to-time: 1.0.2
   until: 0.1.1
   ustat: 0.0.2
   winston: 3.2.1
@@ -810,6 +812,10 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-Uj1ZYOcq1GtFyFgJgqMVDoDLTy1B1pM9+bULnlX8szRX4cPjE/7JbKxCzQGhYlZlLkHQvtXXhCZ3skqsQ2byMA==
+  /bignumber.js/2.4.0:
+    dev: false
+    resolution:
+      integrity: sha1-g4qZLan51zfg9LLbC+YrsJ3Qxeg=
   /binary-extensions/1.13.1:
     dev: false
     engines:
@@ -1033,7 +1039,7 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-ayBAayYLgFbGBX+cwtOzM4iEQP4XB5DuBbtjgvAwQ66/FMzSR7DhlCqtDZIq9UBbpFCb1QpyDgUNVclHDdBixg==
-  /canvas/2.6.0:
+  /canvas/2.6.1:
     dependencies:
       nan: 2.14.0
       node-pre-gyp: 0.11.0
@@ -1043,7 +1049,7 @@ packages:
       node: '>=6'
     requiresBuild: true
     resolution:
-      integrity: sha512-bEO9f1ThmbknLPxCa8Es7obPlN9W3stB1bo7njlhOFKIdUTldeTqXCh9YclCPAi2pSQs84XA0jq/QEZXSzgyMw==
+      integrity: sha512-S98rKsPcuhfTcYbtF53UIJhcbgIAK533d1kJKMwsMwAIFgfd58MOyxRud3kktlzWiEkFliaJtvyZCBtud/XVEA==
   /capture-stack-trace/1.0.1:
     dev: false
     engines:
@@ -3041,6 +3047,10 @@ packages:
       node: '>=0.4.0'
     resolution:
       integrity: sha1-DF0rqvcpc9PF2qb10owBK51Vwwk=
+  /hex.js/1.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-GXMP1Xbb3CdrlmFQMRjSa5kGucjsKPsoq5RBbtlpHWAFGzX22jxxaLXBnGebSaEvlq5i7fx4a0gkOt4uTvXexg==
   /hh-mm-ss/1.2.0:
     dependencies:
       zero-fill: 2.2.3
@@ -6043,6 +6053,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-FWtleNAtZ/Ki2qtqej2CXTOayOH9bHDQF+Q48VpWyDXjbYxA4Yz8iDB31zXOBUlOHHKidDbqGVrTUvQMPmBGBw==
+  /to-time/1.0.2:
+    dependencies:
+      bignumber.js: 2.4.0
+    dev: false
+    resolution:
+      integrity: sha1-T4FFoH2F9jVqYuHOoKep5mYXduM=
   /toidentifier/1.0.0:
     dev: false
     engines:
@@ -6577,7 +6593,7 @@ specifiers:
   array-sort: ^1.0.0
   ascii-data-table: ^2.1.1
   better-sqlite-pool: ^0.2.2
-  canvas: 2.6.0
+  canvas: ^2.4.1
   canvas-prebuilt: ^1.6.11
   cleverbot.io: ^1.0.4
   common-tags: ^1.8.0
@@ -6606,6 +6622,7 @@ specifiers:
   guild: ^1.2.2
   hastebin-gen: ^1.3.1
   hero: ^0.0.1
+  hex.js: ^1.0.1
   hh-mm-ss: ^1.2.0
   hypixel-api: 1.1.0
   jimp: ^0.6.0
@@ -6632,6 +6649,7 @@ specifiers:
   steam-search: ^1.0.0
   superagent: 4.1.0
   table: ^5.2.2
+  to-time: 1.0.2
   until: ^0.1.1
   ustat: 0.0.2
   winston: ^3.2.1
