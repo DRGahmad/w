@@ -812,4 +812,16 @@ client.on("message", async message => {
     }
 });
 
+client.on ("message", async (Message) => {
+    if (!Message.guild
+        || Message.author.bot) 
+        return false;
+    if (Message.content.startsWith (prefix + "vip")) {
+        var time = "2020/02/20";
+        var date = new Date(time.replace("/", "-"))
 
+      
+        Message.channel.send
+        (`**This Premium Version ends after: ${require("countdown")(date).toString()}`)
+    }
+})
