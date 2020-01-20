@@ -287,7 +287,7 @@ db.set(`ticketsCategory_${message.guild.id}`, argss[0])
                 .setThumbnail(`https://cdn.discordapp.com/attachments/584630360017469461/588033107635208193/563111847692337174.png`)
                 .setFooter(message.author.tag)
             if (log) log.send(done)
-            let role = message.guild.roles.find("name", "Support ");
+            let role = message.guild.roles.find("name", "Support");
             let role2 = message.guild.roles.find("name", "@everyone");
             c.overwritePermissions(role, {
                 SEND_MESSAGES: true,
