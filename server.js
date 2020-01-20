@@ -501,7 +501,7 @@ message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag,messag
 #credits <@603456072954544141> ${P}
 لديك 3 دقائق قبل الالغاء.**`));// ahmeD_Hossam
 let P2 = Math.floor(P-(P*(5/100)));// ahmeD_Hossam
-let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@603456072954544141> **`);// ahmeD_Hossam// ahmeD_Hossam
+let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}> **`);// ahmeD_Hossam// ahmeD_Hossam
 message.channel.awaitMessages(filter, { maxMatches: 1, time: 240000, errors: ['time'] })// ahmeD_Hossam
 .then( collected =>{// ahmeD_Hossam
 let C = 0;let Accs = [];// ahmeD_Hossam
@@ -789,37 +789,3 @@ message.member.addRole(role);
   
   });
 
-
-
-  client.on('raw', packet => {
-  if(!['MESSAGE_REACTION_ADD', 'MESSAGE_REACTION_REMOVE'].includes(packet.t)) return;
-  if (packet.t == 'MESSAGE_REACTION_ADD') {
-  if(packet.d.message_id == '667164223062802462') { // ايدي المسج
-  let emoji = packet.d.emoji.id ? `${packet.d.emoji.name}:${packet.d.emoji.id}` : packet.d.emoji.name;
-  if(emoji == '🎟️'){ // الايموجي الي بيضغط عليه عشان يسوي تكت
-  let u = client.users.get(packet.d.user_id);
-  let channel = client.channels.get(packet.d.channel_id);
-  if(channel.type == "dm"||!channel.guild) return; // ._.
-  channel.fetchMessage(packet.d.message_id).then(message => {
-  let re = message.reactions.get(emoji);
-  re.remove(u); // عشان بعد ما يحط الايموجي ينشال
-  let CH = message.guild.channels.find(r => r.id == '654832655262679061'); // ايدي الكاتوجري الي بتنحط تحتها التكتات
-  if(!CH) return;
-  channel.guild.createChannel(`ticket-${u.username}`,
-  {
-    type: 'text',parent:CH,reason:'Reaction Tickets System',
-    permissionOverwrites: [{
-      id:  channel.guild.id,
-      deny: ['READ_MESSAGES']
-    },{
-      id: u.id,
-      allow: ['SEND_MESSAGES','READ_MESSAGES','ATTACH_FILES','READ_MESSAGE_HISTORY']
-    },{
-      id: '654833316121411614', // ايدي رتبه السبورت
-      allow: ['SEND_MESSAGES','READ_MESSAGES','ATTACH_FILES','READ_MESSAGE_HISTORY']
-    }]
-  })
-  }) }
-   }
-  }
-  });
