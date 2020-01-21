@@ -905,6 +905,7 @@ client.on("message", message => {
     if (message.author.bot) return;
     if (!message.guild)
       return message.reply("**This Command Just In Servers**");
+
     message.channel.sendMessage(`> **# - \`Premium Info\`**
       > **# - Premium Number:** **[** ${number} **]**\n> **# - Ends in:** **[** ${require("countdown")(date).toString()} **]**\n> **# - Owner:** **[** <@${owner}> **]**`
     );
