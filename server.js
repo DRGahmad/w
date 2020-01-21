@@ -913,12 +913,8 @@ client.on("message", message => {
 });
 
 
-
-client.on("message", msg => {
-if(msg.content.startsWith(prefix + "screenshare")) {
-if(!msg.member.hasPermission(`MANAGE_GUILD`)) return msg.channel.send(`**Sorry But You Dont Have Permission \`MANAGE_GUILD\`**`)
-if(!msg.member.voiceChannel) return msg.channel.send(`**:x: | Error , Please Join Room**`)
-msg.channel.send(`**\`-\` ScreenShare Link :
-\`-\` https://www.discordapp.com/channels/${msg.guild.id}/${msg.member.voiceChannel.id}**`)
-}
-});
+//client.on('ready', () => {
+  //  setTimeout(function(){
+    //    client.destroy();
+   // }, 60000);
+//});
