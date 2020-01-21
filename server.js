@@ -913,70 +913,9 @@ client.on("message", message => {
 });
 
 
-//client.on('ready', () => {
-  //  setTimeout(function(){
-    //    client.destroy();
-   // }, 60000);
-//});
-
-
-  client.on('message', async message =>{
-if (message.author.omar) return;
-if (!message.content.startsWith(prefix)) return;
-if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
-if(!message.member.hasPermission('MANAGE_ROLES'));
-if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.reply("**I Don't Have `MANAGE_ROLES` Permission**").then(msg => msg.delete(6000))
-var command = message.content.split(" ")[0];
-command = command.slice(prefix.length);
-var args = message.content.split(" ").slice(1);
-    if(command == "mute") {
-    let tomute = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!tomute) return message.reply("**يجب عليك المنشن اولاّ**:x: ") .then(m => m.delete(5000));
-    if(tomute.hasPermission("MANAGE_MESSAGES"))return      message.channel.send('**للأسف لا أمتلك صلاحية** `MANAGE_MASSAGEES`');
-    let muterole = message.guild.roles.find(`name`, "muted");
-    if(!muterole){
-      try{
-        muterole = await message.guild.createRole({
-          name: "muted",
-          color: "#000000",
-          permissions:[]
-        })
-        message.guild.channels.forEach(async (channel, id) => {
-          await channel.overwritePermissions(muterole, {
-            SEND_MESSAGES: false,
-            ADD_REACTIONS: false
-          });
-        });
-      }catch(e){
-        console.log(e.stack);
-      }
-    }
-    message.channel.send('هل انت متأكد؟').then(msg => {
-       msg.react('✅')
-   .then(() => msg.react('❌'))
-   
-   
-      let NoFilter = (reaction, user) => reaction.emoji.name === '❌' && user.id === message.author.id;
-   let YesFilter = (reaction, user) => reaction.emoji.name === '✅' && user.id === message.author.id;
-   
-   
-   let No = msg.createReactionCollector(NoFilter, { time: 60000 });
-   let Yes = msg.createReactionCollector(YesFilter, { time: 60000 });
-   
-     No.on("collect", r => {
-       msg.delete();
-       message.channel.send(`**تم الغاء الميوت.**`).then(m => m.delete(5000));
- 
-       })
-         Yes.on("collect", r => {
-       msg.delete();
-    (tomute.addRole(muterole.id));
-    message.channel.send(`<@${tomute.id}> تم اعطائه ميوت`).then(m => m.delete(5000));
- 
-       })
-
-  })
-    
-  }
-
+client.on('ready', () => {
+    setTimeout(function(){
+        client.destroy();
+   }, 60000);
 });
+
