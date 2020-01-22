@@ -209,7 +209,6 @@ client.on('message', async message => { // ahmeD_Hossam
                     });
             }).catch(err => {
                   delete cools [message.author.id + message.guild.id];
-                return message.channel.send('**:x: Please Open Your DM**!')
             })
         }
     }
