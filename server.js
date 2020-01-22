@@ -71,45 +71,6 @@ console.log("Bot Online 24/7");
 
 
 
-  client.on("message", async message => {
-    const prefix = "$";
-    let bOn = await db.fetch(`bOn_${message.guild.id}`) 
-      if(bOn === null) bOn = "on";   
-
- 
-    if (message.author.bot) return;
-    if (!message.guild) return;
-    if (!message.content.startsWith(prefix)) return;
-
- 
-    const args = message.content.slice(prefix.length).trim().split(/ +/g);
-    const cmd = args.shift().toLowerCase();
-
-    if(cmd === "set-buy") {
-
-      if(args[0] === "on") {
-    db.set(`bOn_${message.guild.id}`, "on")
-      message.channel.send("**Done, MC Accounts buying mode is **__**on**__")
-      
-    }
-       if(args[0] === "off") {
-      db.set(`bOn_${message.guild.id}`, "off")
-      message.channel.send("**Done, MC Accounts buying mode is **__**off**__")
-    }
-     
-      
- 
-    }
-    
-  if(cmd === "btest") {
-    
-          message.reply(bOn)
-
-        }
-});
-
- 
-
 
 
 
@@ -120,7 +81,7 @@ console.log("Bot Online 24/7");
 const cools = [];
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
-let SFAP = 10; /*سعر الحساب الواحد الفل داتا*/
+let SFAP = 100; /*سعر الحساب الواحد الفل داتا*/
 let NFAP = 250; /*سعر الحساب الواحد العادي*/
 let URID = '535864833380450374' //مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message', async message => { // ahmeD_Hossam
@@ -132,7 +93,7 @@ client.on('message', async message => { // ahmeD_Hossam
         if (bOn === "off") return message.reply("**Sorry, Buying mode are disabled**")
 
         sfa.forEach(acc => {
-            if (!acc.email) return;
+            if (!acc.email) return;  
             ahmed++;
         }); // ahmeD_Hossam
         nfa.forEach(acc => {
@@ -170,10 +131,10 @@ client.on('message', async message => { // ahmeD_Hossam
               let P = Math.floor(args * (SFAP)) // ahmeD_Hossam
                 message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag, message.author.avatarURL).setColor('#918383')
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
-#credits <@535864833380450374> ${P}
+#credits <@${URID}> ${P}
 لديك 3 دقائق قبل الالغاء.**`));
                 let P2 = Math.floor(P - (P * (5 / 100))); // ahmeD_Hossam
-                let filter = response => response.author.id == "535864833380450374" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}> **`); // ahmeD_Hossam// ahmeD_Hossam
+                let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}> **`); // ahmeD_Hossam// ahmeD_Hossam
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
                         time: 240000,
@@ -219,7 +180,7 @@ client.on('message', async message => { // ahmeD_Hossam
               };
                 message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag, message.author.avatarURL).setColor('#918383')
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
-  Ex : #credits <@535864833380450374> ${P2}
+  Ex : #credits <@${URID}> ${P2}
   لديك 3 دقائق قبل الالغاء.**`));
                 let P2 = Math.floor(P - (P * (5 / 100)));
                 let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}> **  `)
@@ -345,14 +306,6 @@ client.on('message', async message => { // ahmeD_Hossam
     }
 
 })
-
-
-
-
-
-
-
-
 
 
 
