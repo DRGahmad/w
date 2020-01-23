@@ -174,17 +174,17 @@ client.on('message', async message => { // ahmeD_Hossam
             if (hossam < 1) return message.channel.send("لا يوجد حسابات")
             if (hossam < args) return message.channel.send("لا يوجد حسابات كافية")
             message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(() => {
-                const P = Math.floor(args * (NFAP)) // ahmeD_Hossam
+                let P = Math.floor(args * (NFAP)) // ahmeD_Hossam
                 cools[message.author.id + message.guild.id] = {
                 status: "on"
               };
-             P = Math.floor(args * (NFAP)) // ahmeD_Hossam
+                        let P3 = Math.floor(args * (NFAP)) // ahmeD_Hossam
                 message.channel.send(new Discord.RichEmbed().setAuthor(message.author.tag, message.author.avatarURL).setColor('#918383')
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
-#credits <@${URID}> ${P}
+#credits <@${URID}> ${P3}
 لديك 3 دقائق قبل الالغاء.**`));
-                let P2 = Math.floor(P - (P * (5 / 100)));
-                let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@${URID}> **  `)
+                let P4 = Math.floor(P3 - (P3 * (5 / 100)));
+                let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@${URID}> **  `)
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
                         time: 240000,
