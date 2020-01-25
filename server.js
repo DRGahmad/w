@@ -183,8 +183,8 @@ client.on('message', async message => { // ahmeD_Hossam
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 #credits <@${URID}> ${P3}
 لديك 3 دقائق قبل الالغاء.**`));
-                let P4 = Math.floor(P3 - (P3 * (5 / 100)));
-                let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$1\` to <@${URID}> **  `)
+                 P = Math.floor(P - (P * (5 / 100)));
+                let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@${URID}>**`)
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
                         time: 240000,
