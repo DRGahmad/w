@@ -167,7 +167,7 @@ client.on('message', async message => { // ahmeD_Hossam
                     if (cools [message.author.id + message.guild.id] && cools [message.author.id + message.guild.id].status == "on")return message.reply("**لديك عملية شراء بل فعل.**"); 
 
             let ahmed = 0;
-            sfa.forEach(acc => {
+            nfa.forEach(acc => {
                 if (!acc.email) return;
                 ahmed++;
             })
