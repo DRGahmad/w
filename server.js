@@ -166,13 +166,13 @@ client.on('message', async message => { // ahmeD_Hossam
         if (cmd == 'nfa') {
                     if (cools [message.author.id + message.guild.id] && cools [message.author.id + message.guild.id].status == "on")return message.reply("**لديك عملية شراء بل فعل.**"); 
 
-            let hossam = 0;
+            let ahmed = 0;
             sfa.forEach(acc => {
                 if (!acc.email) return;
-                hossam++;
+                ahmed++;
             })
-            if (hossam < 1) return message.channel.send("لا يوجد حسابات")
-            if (hossam < args) return message.channel.send("لا يوجد حسابات كافية")
+            if (ahmed < 1) return message.channel.send("لا يوجد حسابات")
+            if (ahmed < args) return message.channel.send("لا يوجد حسابات كافية")
             message.author.send('✅ Nothing.. Just Check If Your DM open or no').then(() => {
                 let P = Math.floor(args * (NFAP)) // ahmeD_Hossam
                 cools[message.author.id + message.guild.id] = {
@@ -183,16 +183,16 @@ client.on('message', async message => { // ahmeD_Hossam
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 #credits <@${URID}> ${P3}
 لديك 3 دقائق قبل الالغاء.**`));
-                 P = Math.floor(P - (P * (5 / 100)));
-                let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@${URID}>**`)
+                 P = Math.floor(P3 - (P3 * (5 / 100)));
+                   let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@${URID}> **`); // ahmeD_Hossam// ahmeD_Hossam
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
                         time: 240000,
                         errors: ['time']
                     })
-                    .then(collected => {
+                    .then(collected => { // ahmeD_Hossam
                         let C = 0;
-                        let Accs = [];
+                        let Accs = []; // ahmeD_Hossam
                         nfa.forEach(acc => {
                             if (!acc.email) return;
                             if (C == args) return;;
