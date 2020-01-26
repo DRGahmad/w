@@ -82,8 +82,8 @@ const cools = [];
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
 let SFAP = 6000; /*سعر الحساب الواحد الفل داتا*/
-let NFAP = 500; /*سعر الحساب الواحد العادي*/
-let URID = '547457331802144798' //مين بيتحوله الكريديت// ahmeD_Hossam
+let NFAP = 250; /*سعر الحساب الواحد العادي*/
+let URID = '535864833380450374' //مين بيتحوله الكريديت// ahmeD_Hossam
 client.on('message', async message => { // ahmeD_Hossam
     let bOn = await db.fetch(`bOn_${message.guild.id}`)
     if (message == prefix + 'stock') {
