@@ -240,8 +240,11 @@ client.on('message', async message => { // ahmeD_Hossam
 
 
         } else if (type == "nfa") {
-            nfa.push("email", email);
-            nfa.push("pass", pass);
+let alt = {      
+  "email" : `${email}`,
+"pass" : `${pass}`
+}
+            nfa.push(alt)
             fs.writeFile("./nfa.json", JSON.stringify(nfa), (err) => {
                 if (err) console.error(err)
             })
