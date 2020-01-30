@@ -77,11 +77,10 @@ client.on("message", message => {
 
   if (message.content === prefix + "help") {
     message.channel.send(`**اوامـر الـبوت
-● | ${prefix}buy sfa/nfa amount -> لشراء حساب ●
-● | ${prefix}stock -> لمعرفة كمية الحسابات المتوفرة ●
-● | ${prefix}add sfa/nfa email pass -> لاضافة حساب للبوت ●
-● | ${prefix}give -> اوامر الموسيقي ●
-● | __-Ticket__ -> اوامر التيكت ●
+● | ${prefix}buy sfa/nfa amount -> لشراء حساب
+● | ${prefix}stock -> لمعرفة كمية الحسابات المتوفرة
+● | ${prefix}add sfa/nfa email pass -> لاضافة حساب للبوت
+● | ${prefix}give mention sfa/nfa amount -> لإرسال حساب لشخص
 **`);
   }
 });
@@ -124,7 +123,7 @@ client.on('message', async message => {
 
         let cmd = message.content.split(" ")[1]; 
         let args = message.content.split(" ")[2]; 
-        if (!cmd || !args || isNaN(args)) return message.channel.send(`**Correct Usage Example: $buy SFA 1**`); ///2
+        if (!cmd || !args || isNaN(args)) return message.channel.send(`**Correct Usage Example: ${prefix}buy SFA 1**`); ///2
         if (cmd == 'sfa') { 
           if (cools [message.author.id + message.guild.id] && cools [message.author.id + message.guild.id].status == "on")return message.reply("**لديك عملية شراء بل فعل.**"); 
             let ahmed = 0
@@ -274,8 +273,8 @@ let alt = {
 
         if (!user) return message.channel.send("**Please mention a user**")
 
-        if (!type) return message.channel.send("Please input a alt type")
-        if (!args[0]) return message.reply("ضع الكمية !")
+        if (!type) return message.channel.send("**Please input a alt type**")
+        if (!args[0]) return message.reply("**Please input amount**")
         if (type === "sfa") {
             let C = 0;
             let Accs = []; 
