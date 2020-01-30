@@ -81,9 +81,9 @@ console.log("Bot Online 24/7");
 const cools = [];
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
-let SFAP = 5; /*سعر الحساب الواحد الفل داتا*/
-let NFAP = 5; /*سعر الحساب الواحد العادي*/
-let URID = '535864833380450374' //مين بيتحوله الكريديت
+let SFAP = 1000; /*سعر الحساب الواحد الفل داتا*/
+let NFAP = 1000; /*سعر الحساب الواحد العادي*/
+let URID = '672521637345755145' //مين بيتحوله الكريديت
 client.on('message', async message => { 
     let bOn = await db.fetch(`bOn_${message.guild.id}`)
     if (message == prefix + 'stock') {
@@ -100,7 +100,7 @@ client.on('message', async message => {
             if (!acc.email) return;
             hossam++;
         }); 
-        message.channel.send(new Discord.RichEmbed().setTitle('💵 اسم المتجر 💵') //1
+        message.channel.send(new Discord.RichEmbed().setTitle('💵 اسم المتجر 💵') ///1
             .addField('**[SFA | فل داتا] > **', `**${ahmed} Account(s)**`, true).addField('**[NFA | عادي] > **', `**${hossam} Account(s)  **`, true).setColor('GREEN') 
             .addField('**هل تعلم ؟**', `**\`[SFA]\` > فل داتا - حساب يمكنك اللعب وتغيير الاسم والباسوورد والسكن
 \`[NFA]\` > العادي = حساب لا يمكنك تغيير اي شيئ فيه, للعب فقط**`) 
@@ -133,7 +133,7 @@ client.on('message', async message => {
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 #credits <@${URID}> ${P}
 لديك 3 دقائق قبل الالغاء.**`));
-                let P2 = Math.floor(P - (P * (5 / 100))); 
+                let P2 = Math.floor(P - (P * (5 / 100)));///2
                 let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}> **`); 
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
@@ -183,7 +183,7 @@ client.on('message', async message => {
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 #credits <@${URID}> ${P3}
 لديك 3 دقائق قبل الالغاء.**`));
-                 P = Math.floor(P3 - (P3 * (5 / 100))); ///
+                 P = Math.floor(P3 - (P3 * (5 / 100))); ///3
                    let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@${URID}> **`); 
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
