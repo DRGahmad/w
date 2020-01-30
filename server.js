@@ -94,7 +94,7 @@ let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف ال�
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
 let SFAP = 1000; /*سعر الحساب الواحد الفل داتا*/
 let NFAP = 1000; /*سعر الحساب الواحد العادي*/
-let URID = '672521637345755145' //مين بيتحوله الكريديت
+let URID = '' //مين بيتحوله الكريديت
 client.on('message', async message => { 
     let bOn = await db.fetch(`bOn_${message.guild.id}`)
     if (message == prefix + 'stock') {
