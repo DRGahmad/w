@@ -72,7 +72,19 @@ console.log("Bot Online 24/7");
 
 
 
+client.on("message", message => {
+  if (message.author.bot) return;
 
+  if (message.content === prefix + "help") {
+    message.channel.send(`**اوامـر الـبوت
+● 👥 | __-Public__ -> لشراء حساب ●
+● 👑 | __-Admin__ -> اوامر الادمن ●
+● 🎮 | __-Games__ -> اوامر الالعاب ●
+● 🎵 | __-Music__ -> اوامر الموسيقي ●
+● 🎟️ | __-Ticket__ -> اوامر التيكت ●
+**`);
+  }
+});
 
 
 
@@ -112,7 +124,7 @@ client.on('message', async message => {
 
         let cmd = message.content.split(" ")[1]; 
         let args = message.content.split(" ")[2]; 
-        if (!cmd || !args || isNaN(args)) return message.channel.send(`**استخدام خاطئ ّ! \n Correct Usage Example: $buy SFA 1**`); 
+        if (!cmd || !args || isNaN(args)) return message.channel.send(`**Correct Usage Example: $buy SFA 1**`); ///2
         if (cmd == 'sfa') { 
           if (cools [message.author.id + message.guild.id] && cools [message.author.id + message.guild.id].status == "on")return message.reply("**لديك عملية شراء بل فعل.**"); 
             let ahmed = 0
@@ -133,7 +145,7 @@ client.on('message', async message => {
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 #credits <@${URID}> ${P}
 لديك 3 دقائق قبل الالغاء.**`));
-                let P2 = Math.floor(P - (P * (5 / 100)));///2
+                let P2 = Math.floor(P - (P * (5 / 100)));///3
                 let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P2}\` to <@${URID}> **`); 
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
@@ -156,7 +168,7 @@ client.on('message', async message => {
                         });
                   delete cools [message.author.id + message.guild.id];
                         message.channel.send('**Done,,\nNow Check Your DM**!')
-                        message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M => M.delete(5 * 60 * 1000))
+                        message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم حذف الرساله بعد 5 دقائق !`).then(M => M.delete(5 * 60 * 1000))
                     });
             }).catch(err => {
                   delete cools [message.author.id + message.guild.id];
@@ -183,7 +195,7 @@ client.on('message', async message => {
                     .setDescription(`**اكتب الامر التالي لأكمال عمليه الشراء
 #credits <@${URID}> ${P3}
 لديك 3 دقائق قبل الالغاء.**`));
-                 P = Math.floor(P3 - (P3 * (5 / 100))); ///3
+                 P = Math.floor(P3 - (P3 * (5 / 100))); ///4
                    let filter = response => response.author.id == "282859044593598464" && response.mentions._content.includes(`**:moneybag: | ${message.author.username}, has transferred \`$${P}\` to <@${URID}> **`); 
                 message.channel.awaitMessages(filter, {
                         maxMatches: 1,
@@ -205,7 +217,7 @@ client.on('message', async message => {
                             })
                         });
                   delete cools [message.author.id + message.guild.id];
-                        message.channel.send('**Done,,\nNow Check Your DM**!')
+                        message.channel.send('**Done, Now Check Your DM**!')
                         message.author.send(`Your Accs :)\`\`\`json\n${Accs.join("\n")}\n\`\`\`سيتم خذف الرساله بعد 5 دقائق !`).then(M => M.delete(5 * 60 * 1000))
                     });
             }).catch(err => {
