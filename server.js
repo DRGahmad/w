@@ -6,7 +6,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-    http.get(`http://acounts-shop.glitch.me/`);
+    http.get(`http://.glitch.me/`);
 }, 280000);
 
 const {
@@ -17,8 +17,6 @@ var {
     Util
 } = require('discord.js');
 const {
-    TOKEN,
-    YT_API_KEY,
     prefix,
     devs
 } = require('./config')
@@ -51,7 +49,7 @@ const hastebins = require('hastebin-gen');
 const getYoutubeID = require('get-youtube-id');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const pretty = require("pretty-ms");
-client.login(TOKEN);
+client.login(process.env.BOT_TOKEN);
 const queue = new Map();
 var table = require('table').table
 const Discord = require('discord.js');
@@ -93,7 +91,7 @@ const cools = [];
 let sfa = JSON.parse(fs.readFileSync('./sfa.json', 'utf8')); // الملف الي بتحط به الحسابات الفل داتا
 let nfa = JSON.parse(fs.readFileSync('./nfa.json', 'utf8')); // الملف الي بتحط به الحسابات العاديه
 let SFAP = 1000; /*سعر الحساب الواحد الفل داتا*/
-let NFAP = 1000; /*سعر الحساب الواحد العادي*/
+let NFAP = 100; /*سعر الحساب الواحد العادي*/
 let URID = '' //مين بيتحوله الكريديت
 client.on('message', async message => { 
     let bOn = await db.fetch(`bOn_${message.guild.id}`)
@@ -111,11 +109,11 @@ client.on('message', async message => {
             if (!acc.email) return;
             hossam++;
         }); 
-        message.channel.send(new Discord.RichEmbed().setTitle('💵 اسم المتجر 💵') ///1
+        message.channel.send(new Discord.RichEmbed().setTitle('💵 shop 💵') ///1
             .addField('**[SFA | فل داتا] > **', `**${ahmed} Account(s)**`, true).addField('**[NFA | عادي] > **', `**${hossam} Account(s)  **`, true).setColor('GREEN') 
             .addField('**هل تعلم ؟**', `**\`[SFA]\` > فل داتا - حساب يمكنك اللعب وتغيير الاسم والباسوورد والسكن
 \`[NFA]\` > العادي = حساب لا يمكنك تغيير اي شيئ فيه, للعب فقط**`) 
-            .addField('**الاسعار**', `\`[1 SFA] > 8500 Credits ProBot\` \n \`[1 NFA] > 250 Credits ProBot\``) 
+            .addField('**الاسعار**', `\`[1 SFA] > ${SFAP} Credits ProBot\` \n \`[1 NFA] > ${NFAP} Credits ProBot\``) 
             .setFooter(`$buy [sfa/nfa] [الحسابات لا يوجد عليها ضمان | لشراء حساب الرجاء كتابة الأمر التالي [الكمية`))
     } 
     if (message.content.startsWith(prefix + 'buy')) { 
