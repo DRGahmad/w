@@ -1,0 +1,2588 @@
+{
+	"registry.npmjs.org/3amyah/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@babel/polyfill/7.4.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/bmp/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/core/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/custom/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/gif/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/jpeg/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-blit/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-blur/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-color/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-contain/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-cover/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-crop/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-displace/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-dither/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-flip/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-gaussian/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-invert/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-mask/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-normalize/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-print/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-resize/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-rotate/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugin-scale/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/plugins/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/png/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/tiff/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/types/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@jimp/utils/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/@types/node/12.0.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/abab/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/abbrev/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/accepts/1.2.13": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/accepts/1.3.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/acorn-globals/1.0.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/acorn/2.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/after/0.8.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ajv/4.11.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ajv/6.10.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ansi-regex/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ansi-regex/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ansi-regex/4.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ansi-styles/3.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/anti-spam/0.2.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/any-base/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/anymatch/1.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/aproba/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/are-we-there-yet/1.1.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/arr-diff/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/arr-diff/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/arr-flatten/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/arr-union/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/array-back/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/array-flatten/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/array-sort/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/array-unique/0.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/array-unique/0.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/arraybuffer.slice/0.0.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ascii-data-table/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/asn1/0.1.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/asn1/0.2.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/assert-plus/0.1.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/assert-plus/0.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/assert-plus/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/assign-symbols/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/astral-regex/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/async-each/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/async-limiter/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/async/0.2.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/async/0.2.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/async/0.9.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/async/2.6.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/asynckit/0.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/atob/2.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/aws-sign2/0.5.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/aws-sign2/0.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/aws-sign2/0.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/aws4/1.8.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/axios/0.19.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/backo2/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/balanced-match/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/base/0.11.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/base64-arraybuffer/0.1.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/base64-js/1.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/base64-url/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/base64id/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/basic-auth-connect/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/basic-auth/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/batch/0.5.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bcrypt-pbkdf/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/better-assert/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/better-sqlite-pool/0.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/better-sqlite3/4.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/better-sqlite3/5.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bignumber.js/2.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/binary-extensions/1.13.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bindings/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bindings/1.5.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bl/1.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/blob/0.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bluebird/3.5.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bmp-js/0.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/body-parser/1.13.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/body-parser/1.19.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/boolbase/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/boom/0.4.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/boom/2.10.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/brace-expansion/1.1.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/braces/1.8.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/braces/2.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/broadway/0.3.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/buffer-alloc-unsafe/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/buffer-alloc/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/buffer-crc32/0.2.13": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/buffer-equal/0.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/buffer-fill/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/buffer/5.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bytes/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bytes/2.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/bytes/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cache-base/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/caller/0.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/callsite/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/camelcase/5.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/canvas-prebuilt/1.6.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/canvas/2.6.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/capture-stack-trace/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/caseless/0.12.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/centra/2.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/chalk/2.4.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cheerio/0.19.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cheerio/0.20.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cheerio/1.0.0-rc.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/chokidar/1.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/chownr/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/class-utils/0.3.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cleverbot.io/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cli-cursor/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cli-spinners/1.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cliff/0.1.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cliff/0.1.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cliui/4.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/clone/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/co/4.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/code-point-at/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/collection-visit/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/color-convert/1.9.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/color-name/1.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/color-name/1.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/color-string/1.5.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/color/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/colornames/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/colors/0.6.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/colors/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/colors/1.2.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/colors/1.3.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/colorspace/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/combined-stream/0.0.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/combined-stream/1.0.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/command-line-args/5.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/commander/2.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/commander/2.20.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/commander/2.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/commander/2.8.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/common-tags/1.8.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/component-bind/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/component-emitter/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/component-emitter/1.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/component-inherit/0.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/compressible/2.0.17": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/compression/1.5.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/concat-map/0.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/configstore/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/connect-timeout/1.6.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/connect/2.30.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/console-control-strings/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/content-disposition/0.5.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/content-disposition/0.5.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/content-type/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cookie-parser/1.3.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cookie-signature/1.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cookie/0.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cookie/0.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cookie/0.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cookiejar/2.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/copy-descriptor/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/core-js/2.6.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/core-util-is/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/countdown/2.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/crc/3.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/create-error-class/3.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cross-spawn/6.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cryptiles/0.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cryptiles/2.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/csrf/3.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/css-select/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/css-select/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/css-what/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/css-what/2.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cssom/0.3.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cssstyle/0.2.37": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/csurf/1.8.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ctype/0.5.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/cycle/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/dashdash/1.14.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/dateformat/3.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/debug/2.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/debug/2.6.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/debug/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/debug/3.2.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/debug/4.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decamelize/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decode-uri-component/0.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decompress-response/4.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decompress-tar/4.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decompress-tarbz2/4.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decompress-targz/4.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decompress-tarxz/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decompress-unzip/4.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/decompress/4.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/deep-equal/0.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/deep-equal/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/deep-extend/0.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/deep-is/0.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/default-compare/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/defaults/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/define-properties/1.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/define-property/0.2.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/define-property/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/define-property/2.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/defined/0.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/delay/4.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/delayed-stream/0.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/delayed-stream/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/delegates/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/depd/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/depd/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/destroy/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/destroy/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/detect-libc/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/diagnostics/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/director/1.2.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/discord-anti-spam/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/discord.js/11.4.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/dom-serializer/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/dom-walk/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/domelementtype/1.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/domhandler/2.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/domhandler/2.4.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/domutils/1.4.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/domutils/1.5.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/domutils/1.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/dot-prop/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/duplexer3/0.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ecc-jsbn/0.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ee-first/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/emoji-regex/7.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/enabled/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/encodeurl/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/end-of-stream/1.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/engine.io-client/3.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/engine.io-parser/2.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/engine.io/3.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/enmap/4.8.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/entities/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/entities/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/env-variable/0.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/errorhandler/1.4.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/es-abstract/1.13.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/es-to-primitive/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/escape-html/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/escape-html/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/escape-string-regexp/1.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/escodegen/1.11.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/esprima/3.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/estraverse/4.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/esutils/2.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/etag/1.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/etag/1.8.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/event-stream/0.5.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/eventemitter2/0.4.14": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/execa/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/exif-parser/0.1.12": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/expand-brackets/0.1.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/expand-brackets/2.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/expand-range/1.8.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/express-session/1.11.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/express/3.21.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/express/4.17.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/extend-shallow/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/extend-shallow/3.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/extend/3.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/extglob/0.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/extglob/2.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/extsprintf/1.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/extsprintf/1.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/eyes/0.1.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fast-deep-equal/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fast-json-stable-stringify/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fast-levenshtein/2.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fast-safe-stringify/2.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fd-slicer/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fecha/2.3.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ffmpeg-binaries/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ffmpeg/0.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/figlet/1.2.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/file-match/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/file-system/2.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/file-type/3.9.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/file-type/5.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/file-type/6.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/file-type/9.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/file-uri-to-path/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/filename-regex/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fill-range/2.2.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fill-range/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/finalhandler/0.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/finalhandler/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/find-replace/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/find-up/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/flatiron/0.4.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/follow-redirects/1.5.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/for-each/0.3.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/for-in/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/for-own/0.1.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/forever-agent/0.5.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/forever-agent/0.6.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/forever-monitor/1.7.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/forever/0.15.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/form-data/0.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/form-data/2.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/form-data/2.3.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/form-data/2.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/formidable/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fortnite-api/3.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fortnite/4.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/forwarded/0.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fragment-cache/0.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fresh/0.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fresh/0.5.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fs-constants/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fs-minipass/1.2.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fs-nextra/0.4.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fs.realpath/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/fsevents/1.2.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/function-bind/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/gauge/2.7.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/get-caller-file/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/get-stream/2.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/get-stream/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/get-stream/4.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/get-value/2.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/get-youtube-id/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/get/1.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/getpass/0.1.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/gif-search/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/giphy-api/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/glob-base/0.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/glob-parent/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/glob/7.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/global/4.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/goo.gl/0.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/google-it/1.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/google-translate-api/2.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/google-translate-token/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/got/6.7.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/graceful-fs/4.1.15": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/graceful-readlink/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/guild/1.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/har-schema/1.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/har-schema/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/har-validator/4.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/har-validator/5.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-binary2/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-cors/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-flag/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-symbols/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-unicode/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-value/0.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-value/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-values/0.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has-values/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/has/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hastebin-gen/1.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hawk/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hawk/3.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hero/0.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hex.js/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hh-mm-ss/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hoek/0.9.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hoek/2.16.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/html-entities/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/htmlparser2/3.10.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/htmlparser2/3.8.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/http-errors/1.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/http-errors/1.7.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/http-signature/0.10.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/http-signature/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/http-signature/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/hypixel-api/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/i/0.3.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/iconv-lite/0.4.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/iconv-lite/0.4.13": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/iconv-lite/0.4.24": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ieee754/1.1.13": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ignore-walk/3.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/imurmurhash/0.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/indexof/0.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/inflight/1.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/inherits/2.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/inherits/2.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ini/1.3.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/integer/1.0.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/integer/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/invert-kv/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ip-regex/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ipaddr.js/1.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ipaddr.js/1.9.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-accessor-descriptor/0.1.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-accessor-descriptor/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-arrayish/0.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-binary-path/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-buffer/1.1.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-buffer/2.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-callable/1.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-data-descriptor/0.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-data-descriptor/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-date-object/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-descriptor/0.1.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-descriptor/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-dotfile/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-equal-shallow/0.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-extendable/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-extendable/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-extglob/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-fullwidth-code-point/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-fullwidth-code-point/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-function/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-glob/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-natural-number/4.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-number/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-number/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-number/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-obj/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-plain-object/2.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-posix-bracket/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-primitive/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-redirect/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-regex/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-retry-allowed/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-stream/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-symbol/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-typedarray/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/is-windows/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/isarray/0.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/isarray/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/isarray/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/isexe/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/iso8601-duration/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/isobject/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/isobject/3.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/isstream/0.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/jimp/0.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/jpeg-js/0.3.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/jsbn/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/jsdom/7.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/json-schema-traverse/0.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/json-schema/0.2.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/json-stable-stringify/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/json-stringify-safe/5.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/jsonify/0.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/jsprim/1.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/kind-of/3.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/kind-of/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/kind-of/5.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/kind-of/6.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/kuler/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lazy/1.0.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lcid/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/levn/0.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/load-bmfont/1.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/locate-path/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash.camelcase/4.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash.get/4.4.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash.isfunction/3.0.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash.set/4.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash.sortby/4.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash.toarray/4.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash/1.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash/3.10.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lodash/4.17.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/log-symbols/2.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/logform/2.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/long/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lowercase-keys/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/lzma-native/3.0.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/m3u8stream/0.6.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/make-dir/1.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/map-age-cleaner/0.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/map-cache/0.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/map-visit/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/math-expression-evaluator/1.2.17": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/math-random/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/media-typer/0.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mem/4.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/merge-descriptors/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/merge-descriptors/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/message/0.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/method-override/2.3.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/methods/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/micromatch/2.3.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/micromatch/3.1.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mime-db/1.40.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mime-types/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mime-types/2.1.24": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mime/1.2.11": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mime/1.3.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mime/1.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mime/2.4.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mimic-fn/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mimic-fn/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mimic-response/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/min-document/2.19.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/miniget/1.5.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/minimatch/3.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/minimist/0.0.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/minimist/0.0.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/minimist/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/minipass/2.3.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/minizlib/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mixin-deep/1.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mkdirp/0.5.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/moment/2.24.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/morgan/1.6.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ms/0.7.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ms/0.7.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ms/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ms/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ms/2.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/multiparty/3.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/mute-stream/0.0.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/name/0.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nan/2.14.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nanomatch/1.2.13": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nconf/0.6.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ncp/0.4.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/needle/2.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/negotiator/0.5.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/negotiator/0.6.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/new/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nice-try/1.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/node-emoji/1.10.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/node-fetch/2.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/node-opus/0.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/node-pre-gyp/0.10.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/node-pre-gyp/0.11.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/node-uuid/1.4.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nopt/4.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/normalize-path/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/npm-bundled/1.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/npm-packlist/1.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/npm-run-path/2.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/npm/6.9.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/npmlog/4.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nssocket/0.5.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nth-check/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/number-is-nan/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/nwmatcher/1.4.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/oauth-sign/0.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/oauth-sign/0.8.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/oauth-sign/0.9.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object-assign/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object-assign/4.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object-component/0.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object-copy/0.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object-keys/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object-visit/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object.omit/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/object.pick/1.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ogg-packet/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/omggif/1.0.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/on-finished/2.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/on-headers/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/once/1.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/one-time/0.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/onetime/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/optimist/0.2.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/optimist/0.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/optimist/0.6.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/optionator/0.8.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/opusscript/0.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ora/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/os-homedir/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/os-locale/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/os-tmpdir/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/osenv/0.1.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/p-defer/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/p-finally/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/p-is-promise/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/p-limit/2.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/p-locate/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/p-try/2.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pako/1.0.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse-bmfont-ascii/1.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse-bmfont-binary/1.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse-bmfont-xml/1.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse-glob/3.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse-headers/2.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse-ms/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse5/1.5.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parse5/3.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parseqs/0.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parseuri/0.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/parseurl/1.3.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pascalcase/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/path-exists/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/path-is-absolute/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/path-key/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/path-to-regexp/0.1.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/path/0.12.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pause/0.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pend/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/performance-now/0.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/performance-now/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/phin/2.9.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pify/2.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pify/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pinkie-promise/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pinkie/2.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pixelmatch/4.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pkginfo/0.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pkginfo/0.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pngjs/3.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/posix-character-classes/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/prelude-ls/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/prepend-http/1.0.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/preserve/0.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pretty-ms/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/prettyjson/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/prism-media/0.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/process-nextick-args/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/process/0.11.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/process/0.5.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/prompt/0.2.14": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/proxy-addr/1.0.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/proxy-addr/2.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ps-tree/0.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/psl/1.1.33": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/pump/3.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/punycode/1.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/punycode/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/q/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/qs/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/qs/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/qs/6.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/qs/6.5.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/qs/6.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/queue/6.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/quick.db/6.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/random-bytes/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/randomatic/3.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/range-parser/1.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/range-parser/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/raw-body/2.1.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/raw-body/2.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/rc/1.2.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/read/1.0.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/readable-stream/1.1.14": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/readable-stream/2.3.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/readable-stream/3.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/readdirp/2.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/redis/0.8.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ref-struct/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ref/1.3.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/regenerator-runtime/0.13.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/regex-cache/0.4.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/regex-not/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/remove-trailing-separator/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/repeat-element/1.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/repeat-string/1.6.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/replace/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/request-promise-core/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/request-promise/4.2.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/request/2.40.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/request/2.81.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/request/2.88.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/require-directory/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/require-main-filename/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/resolve-url/0.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/response-time/2.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/restore-cursor/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/resumer/0.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ret/0.1.15": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/revalidator/0.1.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/rimraf/2.6.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/rndm/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/safe-buffer/5.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/safe-eval/0.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/safe-regex/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/safer-buffer/2.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/sax/1.2.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/seek-bzip/1.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/semver/5.7.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/send/0.13.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/send/0.13.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/send/0.17.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/serve-favicon/2.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/serve-index/1.7.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/serve-static/1.10.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/serve-static/1.14.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/set-blocking/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/set-value/0.4.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/set-value/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/setprototypeof/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/shebang-command/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/shebang-regex/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/short-number/1.0.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/shush/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/signal-exit/3.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/simple-concat/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/simple-get/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/simple-swizzle/0.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/simple-youtube-api/5.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/slice-ansi/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/slide/1.1.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/snapdragon-node/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/snapdragon-util/3.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/snapdragon/0.8.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/snekfetch/3.6.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/sntp/0.2.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/sntp/1.0.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/socket.io-adapter/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/socket.io-client/2.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/socket.io-parser/3.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/socket.io/2.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/source-map-resolve/0.5.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/source-map-url/0.4.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/source-map/0.5.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/source-map/0.6.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/split-string/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/sql-template-strings/2.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/sqlite/3.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/sqlite3/4.0.9": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/sshpk/1.16.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/stack-trace/0.0.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/stackos/1.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/static-extend/0.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/statuses/1.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/statuses/1.5.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/stealthy-require/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/steam-search/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/stream-counter/0.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/string-width/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/string-width/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/string-width/3.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/string.prototype.trim/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/string_decoder/0.10.31": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/string_decoder/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/string_decoder/1.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/stringstream/0.0.6": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/strip-ansi/3.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/strip-ansi/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/strip-ansi/5.2.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/strip-dirs/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/strip-eof/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/strip-json-comments/0.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/strip-json-comments/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/superagent/4.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/supports-color/5.5.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/symbol-tree/3.2.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/table/5.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tape/2.3.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tar-stream/1.6.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tar/4.4.10": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/text-hex/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/through/2.3.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/timed-out/4.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/timespan/2.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/timm/1.6.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tinycolor2/1.4.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/to-array/0.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/to-buffer/1.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/to-object-path/0.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/to-regex-range/2.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/to-regex/3.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/to-time/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/toidentifier/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tough-cookie/2.3.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tough-cookie/2.4.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tough-cookie/2.5.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tough-cookie/3.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tr46/0.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/triple-beam/1.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tsscmp/1.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tunnel-agent/0.4.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tunnel-agent/0.6.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tweetnacl/0.14.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/tweetnacl/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/type-check/0.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/type-is/1.6.18": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/typical/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/uid-safe/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/uid-safe/2.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/unbzip2-stream/1.3.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/union-value/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/unpipe/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/unset-value/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/until/0.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/unzip-response/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/uri-js/4.2.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/urix/0.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/url-parse-lax/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/use/3.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ustat/0.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/utif/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/util-deprecate/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/util/0.10.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/utile/0.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/utils-extend/1.0.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/utils-merge/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/utils-merge/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/uuid/2.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/uuid/3.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/vary/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/vary/1.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/verror/1.10.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/vhost/3.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/wcwidth/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/webidl-conversions/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/whatwg-url-compat/0.6.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/when/3.7.8": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/which-module/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/which/1.3.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/wide-align/1.1.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/winston-transport/4.3.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/winston/0.8.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/winston/0.8.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/winston/3.2.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/wordwrap/0.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/wordwrap/1.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/wrap-ansi/2.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/wrappy/1.0.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/write-file-atomic/1.3.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ws/4.1.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ws/6.1.4": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xdg-basedir/2.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xhr/2.5.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xml-name-validator/2.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xml-parse-from-string/1.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xml2js/0.4.19": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xmlbuilder/9.0.7": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xmlhttprequest-ssl/1.5.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/xtend/4.0.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/y18n/4.0.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/yallist/3.0.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/yargs-parser/11.1.1": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/yargs/12.0.5": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/yauzl/2.10.0": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/yeast/0.1.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/youtube-info/1.3.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/ytdl-core/0.29.2": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	],
+	"registry.npmjs.org/zero-fill/2.2.3": [
+		"/rbd/pnpm-volume/96359a6a-5037-4c39-94d9-f6eb9b2a0fad"
+	]
+}
